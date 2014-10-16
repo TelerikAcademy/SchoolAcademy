@@ -43,6 +43,7 @@ UI (http://en.wikipedia.org/wiki/ASCII http://www.theasciicode.com.ar/extended-a
     *..........*    **    *
     *..........*    **    *
     *..........*          *
+    *..........*          *
     *..........*  Score:  *
     *..........*  100000  *
     *..........*          *
@@ -54,7 +55,6 @@ UI (http://en.wikipedia.org/wiki/ASCII http://www.theasciicode.com.ar/extended-a
     *..........*   < >    *
     *..........*    v     *
     *..........*  space   *
-    *..........*          *
     ***********************
 	Console.Title = "Tetris";
 	Console.WindowWidth = 23;
