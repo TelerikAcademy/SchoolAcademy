@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Handling Exceptions", "HandlingExceptions\1. Handling Exceptions.csproj", "{003BBEF0-95BE-4EFA-950C-33ED142A14FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Throwing Exceptions", "ThrowingExceptions\3. Throwing Exceptions.csproj", "{9A9489E7-CC15-4F73-AD60-EF2D7513450D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Try - Finally", "TryFinally\4. Try - Finally.csproj", "{C9CECF1A-07A4-4706-8427-B190C5ED2F2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. ExceptionsProperties", "ExceptionsProperties\2. ExceptionsProperties.csproj", "{5E970F80-1689-46C9-9756-6E746F885C58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{003BBEF0-95BE-4EFA-950C-33ED142A14FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003BBEF0-95BE-4EFA-950C-33ED142A14FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003BBEF0-95BE-4EFA-950C-33ED142A14FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003BBEF0-95BE-4EFA-950C-33ED142A14FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9489E7-CC15-4F73-AD60-EF2D7513450D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9489E7-CC15-4F73-AD60-EF2D7513450D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9489E7-CC15-4F73-AD60-EF2D7513450D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9489E7-CC15-4F73-AD60-EF2D7513450D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9CECF1A-07A4-4706-8427-B190C5ED2F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9CECF1A-07A4-4706-8427-B190C5ED2F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9CECF1A-07A4-4706-8427-B190C5ED2F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9CECF1A-07A4-4706-8427-B190C5ED2F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E970F80-1689-46C9-9756-6E746F885C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E970F80-1689-46C9-9756-6E746F885C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E970F80-1689-46C9-9756-6E746F885C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E970F80-1689-46C9-9756-6E746F885C58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
