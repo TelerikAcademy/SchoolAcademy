@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. ConnectingToMongoDb", "ConnectingToMongoDb\1. ConnectingToMongoDb.csproj", "{6066E0EC-FAE3-438A-A55D-A2D7039F37E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. LinqToMongoDB", "LinqToMongoDB\5. LinqToMongoDB.csproj", "{FAC6ABB8-1D08-478F-BC76-A1A0DC8EC9D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. CrudOperations", "CrudOperations\2. CrudOperations.csproj", "{7C30EE60-3900-4A5D-86D6-631522B97AD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsMethods", "ExtensionsMethods\ExtensionsMethods.csproj", "{FD25F861-2FFF-4B73-A995-FF1AF798648F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. NativelikeMongoDBQueries", "NativelikeMongoDBQueries\3. NativelikeMongoDBQueries.csproj", "{6105378F-17A6-4F7E-BBD2-EF506544FEB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. LinqLikeQueries", "LinqLikeQueries\4. LinqLikeQueries.csproj", "{D1614D50-EC36-42AC-A436-0D635D2547CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7978C110-6E78-4D28-82E1-C9291C5F4DCA}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6066E0EC-FAE3-438A-A55D-A2D7039F37E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6066E0EC-FAE3-438A-A55D-A2D7039F37E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6066E0EC-FAE3-438A-A55D-A2D7039F37E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6066E0EC-FAE3-438A-A55D-A2D7039F37E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC6ABB8-1D08-478F-BC76-A1A0DC8EC9D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC6ABB8-1D08-478F-BC76-A1A0DC8EC9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC6ABB8-1D08-478F-BC76-A1A0DC8EC9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC6ABB8-1D08-478F-BC76-A1A0DC8EC9D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C30EE60-3900-4A5D-86D6-631522B97AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C30EE60-3900-4A5D-86D6-631522B97AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C30EE60-3900-4A5D-86D6-631522B97AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C30EE60-3900-4A5D-86D6-631522B97AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD25F861-2FFF-4B73-A995-FF1AF798648F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD25F861-2FFF-4B73-A995-FF1AF798648F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD25F861-2FFF-4B73-A995-FF1AF798648F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD25F861-2FFF-4B73-A995-FF1AF798648F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6105378F-17A6-4F7E-BBD2-EF506544FEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6105378F-17A6-4F7E-BBD2-EF506544FEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6105378F-17A6-4F7E-BBD2-EF506544FEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6105378F-17A6-4F7E-BBD2-EF506544FEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1614D50-EC36-42AC-A436-0D635D2547CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1614D50-EC36-42AC-A436-0D635D2547CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1614D50-EC36-42AC-A436-0D635D2547CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1614D50-EC36-42AC-A436-0D635D2547CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

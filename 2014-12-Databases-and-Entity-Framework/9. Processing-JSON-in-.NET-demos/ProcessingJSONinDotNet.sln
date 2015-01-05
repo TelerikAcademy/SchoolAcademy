@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. BuiltInJsonSerializers", "BuiltInJsonSerializers\1. BuiltInJsonSerializers.csproj", "{E978BFC0-CF8B-421D-903F-95762969E56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoModels", "DemoModels\DemoModels.csproj", "{7311BF41-A4E9-4B14-8764-A199EE64C5B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. JavaScriptSerializerFeatures", "JavaScriptSerializerFeatures\2. JavaScriptSerializerFeatures.csproj", "{993F9CB8-6379-4746-9777-C803E19003ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{715AC291-AB86-44FA-B58A-0A4BD75CD70B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. WorkingWithJSON.NET", "WorkingWithJSON.NET\3. WorkingWithJSON.NET.csproj", "{43576CE0-C18E-42DB-AB5B-222E242E07E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. ConfiguringJSON.NET", "ConfiguringJSON.NET\4. ConfiguringJSON.NET.csproj", "{793F034F-0646-4EA5-B78E-22F9DA66B653}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{3ED9E905-1C22-4868-9E86-51A4853E6956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. ControllingTheParsing", "ControllingTheParsing\5. ControllingTheParsing.csproj", "{66BD2B3B-7EE5-4B34-9012-6FC2B170E9E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. LinqToJson", "LinqToJson\6. LinqToJson.csproj", "{5676767A-E214-4AE8-95F5-9120822FE81C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. XMLtoJSON", "XMLtoJSON\7. XMLtoJSON.csproj", "{BD684AFF-88B7-44F9-B331-90B9ADC1AB03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E057A120-1837-4689-83F0-6926CB4D81C2}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E978BFC0-CF8B-421D-903F-95762969E56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E978BFC0-CF8B-421D-903F-95762969E56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E978BFC0-CF8B-421D-903F-95762969E56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E978BFC0-CF8B-421D-903F-95762969E56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7311BF41-A4E9-4B14-8764-A199EE64C5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7311BF41-A4E9-4B14-8764-A199EE64C5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7311BF41-A4E9-4B14-8764-A199EE64C5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7311BF41-A4E9-4B14-8764-A199EE64C5B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993F9CB8-6379-4746-9777-C803E19003ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993F9CB8-6379-4746-9777-C803E19003ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993F9CB8-6379-4746-9777-C803E19003ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993F9CB8-6379-4746-9777-C803E19003ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715AC291-AB86-44FA-B58A-0A4BD75CD70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715AC291-AB86-44FA-B58A-0A4BD75CD70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715AC291-AB86-44FA-B58A-0A4BD75CD70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715AC291-AB86-44FA-B58A-0A4BD75CD70B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43576CE0-C18E-42DB-AB5B-222E242E07E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43576CE0-C18E-42DB-AB5B-222E242E07E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43576CE0-C18E-42DB-AB5B-222E242E07E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43576CE0-C18E-42DB-AB5B-222E242E07E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793F034F-0646-4EA5-B78E-22F9DA66B653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793F034F-0646-4EA5-B78E-22F9DA66B653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793F034F-0646-4EA5-B78E-22F9DA66B653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793F034F-0646-4EA5-B78E-22F9DA66B653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BD2B3B-7EE5-4B34-9012-6FC2B170E9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BD2B3B-7EE5-4B34-9012-6FC2B170E9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BD2B3B-7EE5-4B34-9012-6FC2B170E9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BD2B3B-7EE5-4B34-9012-6FC2B170E9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5676767A-E214-4AE8-95F5-9120822FE81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5676767A-E214-4AE8-95F5-9120822FE81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5676767A-E214-4AE8-95F5-9120822FE81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5676767A-E214-4AE8-95F5-9120822FE81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD684AFF-88B7-44F9-B331-90B9ADC1AB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD684AFF-88B7-44F9-B331-90B9ADC1AB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD684AFF-88B7-44F9-B331-90B9ADC1AB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD684AFF-88B7-44F9-B331-90B9ADC1AB03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7311BF41-A4E9-4B14-8764-A199EE64C5B0} = {3ED9E905-1C22-4868-9E86-51A4853E6956}
+		{715AC291-AB86-44FA-B58A-0A4BD75CD70B} = {3ED9E905-1C22-4868-9E86-51A4853E6956}
+	EndGlobalSection
+EndGlobal

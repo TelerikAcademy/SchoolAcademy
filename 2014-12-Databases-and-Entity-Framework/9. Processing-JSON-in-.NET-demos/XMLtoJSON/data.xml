@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<users last-user-id="15">
+  <user id="1">
+    <username>User #1</username>
+    <password>slojna-0-parola</password>
+  </user>
+  <user id="2">
+    <username>User #2</username>
+    <password>slojna-1-parola</password>
+  </user>
+  <user id="3">
+    <username>User #3</username>
+    <password>slojna-2-parola</password>
+  </user>
+  <user id="4">
+    <username>User #4</username>
+    <password>slojna-3-parola</password>
+  </user>
+  <user id="5">
+    <username>User #5</username>
+    <password>slojna-4-parola</password>
+  </user>
+  <user id="6">
+    <username>User #6</username>
+    <password>slojna-5-parola</password>
+  </user>
+  <user id="7">
+    <username>User #7</username>
+    <password>slojna-6-parola</password>
+  </user>
+  <user id="8">
+    <username>User #8</username>
+    <password>slojna-7-parola</password>
+  </user>
+  <user id="9">
+    <username>User #9</username>
+    <password>slojna-8-parola</password>
+  </user>
+  <user id="10">
+    <username>User #10</username>
+    <password>slojna-9-parola</password>
+  </user>
+  <user id="11">
+    <username>User #11</username>
+    <password>slojna-10-parola</password>
+  </user>
+  <user id="12">
+    <username>User #12</username>
+    <password>slojna-11-parola</password>
+  </user>
+  <user id="13">
+    <username>User #13</username>
+    <password>slojna-12-parola</password>
+  </user>
+  <user id="14">
+    <username>User #14</username>
+    <password>slojna-13-parola</password>
+  </user>
+  <user id="15">
+    <username>User #15</username>
+    <password>slojna-14-parola</password>
+  </user>
+</users>
