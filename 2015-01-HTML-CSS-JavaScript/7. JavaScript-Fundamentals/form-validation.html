@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<title>Form Validation with JavaScript - Example</title>
+	<script language="JavaScript">
+		function checkForm() {
+			var errorMessages = "";
+			var valid = true;
+			if (document.mainForm.firstName.value == "") {
+				document.getElementById("firstNameError").style.display = "inline";
+				errorMessages += "Please type in your first name!<br/>";
+				valid = false;
+			} else {
+				document.getElementById("firstNameError").style.display = "none";
+			}
+			
+			if (document.mainForm.lastName.value == "") {
+				document.getElementById("lastNameError").style.display = "inline";
+				errorMessages += "Please type in your last name!<br/>";
+				valid = false;
+			} else {
+				document.getElementById("lastNameError").style.display = "none";
+			}
+			if (valid) {
+				document.getElementById("errorMessages").style.display = "none";
+			} else {			
+				document.getElementById("errorMessages").style.display = "inline";
+				document.getElementById("errorMessages").innerHTML = errorMessages;
+			}			
+			return valid;
+		}
+	</script>
+</head>
+
+<body>
+	<form name="mainForm" action="" method="post" onsubmit="return checkForm()">
+		First name: <input type="text" name="firstName" />
+		<span id="firstNameError" style="color:red; display:none">* invalid!</span>
+		<br />
+		Last name: <input type="text" name="lastName" />
+		<span id="lastNameError" style="color:red; display:none">* invalid!</span>
+		<br />
+		<div id="errorMessages" style="color:red; display:none"></div>
+		<input type="submit" value="Check Form and Submit">
+  </form>
+</body>
+
+</html>
