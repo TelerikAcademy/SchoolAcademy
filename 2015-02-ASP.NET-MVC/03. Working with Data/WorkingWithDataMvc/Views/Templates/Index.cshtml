@@ -1,0 +1,14 @@
+﻿@model WorkingWithDataMvc.Models.IndexViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.DisplayForModel()
+
+@Html.EditorFor(m => m.Date, new { PreviousYearCount = 30, NextYearCount = 20 })
+
+@Html.DisplayFor(m => m.AnotherDate)
+
+@Html.DisplayFor(m => m.AnotherDate, "CustomDate")

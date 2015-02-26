@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@if (TempData["Success"] != null)
+{
+    <p>
+        @TempData["Success"]
+    </p>
+}
+
+<h2>
+    Bind parameter
+</h2>
+
+@using (Html.BeginForm("Parameter", "ModelBinding", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @*@Html.TextBox("first", null, new { type = "number" })*@
+    <div>
+        first: 
+        <input type="number" name="first" />
+    </div>
+    <div>
+        second: 
+        <input type="text" name="second" />
+    </div>
+    <div>
+        third:
+        <input type="checkbox" name="third" value="true" />
+    </div>
+    <div>
+        <input type="submit" />
+    </div>
+}
+
+<h2>
+    Bind object
+</h2>
+
+@Html.Partial("_ObjectBinding")
+
+<h2>
+    Bind nested object
+</h2>
+
+
+@Html.Partial("_NestedObject")
+
+<h2>
+    Collection of primitive types
+</h2>
+
+@Html.Partial("_CollectionOfPrimitiveTypes")
+
+<h2>
+    Collection of objects
+</h2>
+
+@Html.Partial("_CollectionOfObjects")
+
+<h2>
+    Collection of files
+</h2>
+
+@Html.Partial("_CollectionOfFiles")
