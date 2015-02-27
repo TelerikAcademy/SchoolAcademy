@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StamatShop.Web", "StamatShop.Web\StamatShop.Web.csproj", "{8DBC9272-74F9-4644-B34D-3874D4D108B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StamatShop.Models", "StamatShop.Models\StamatShop.Models.csproj", "{794F7E1E-12A8-4AF0-B7A6-D19178E2E25F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StamatShop.Data", "StamatShop.Data\StamatShop.Data.csproj", "{625A0256-375C-461D-A80D-106188CC5C51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DBC9272-74F9-4644-B34D-3874D4D108B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBC9272-74F9-4644-B34D-3874D4D108B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBC9272-74F9-4644-B34D-3874D4D108B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBC9272-74F9-4644-B34D-3874D4D108B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{794F7E1E-12A8-4AF0-B7A6-D19178E2E25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{794F7E1E-12A8-4AF0-B7A6-D19178E2E25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{794F7E1E-12A8-4AF0-B7A6-D19178E2E25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{794F7E1E-12A8-4AF0-B7A6-D19178E2E25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625A0256-375C-461D-A80D-106188CC5C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625A0256-375C-461D-A80D-106188CC5C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625A0256-375C-461D-A80D-106188CC5C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625A0256-375C-461D-A80D-106188CC5C51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

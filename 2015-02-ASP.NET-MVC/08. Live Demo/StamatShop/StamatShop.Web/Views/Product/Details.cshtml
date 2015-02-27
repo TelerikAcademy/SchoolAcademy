@@ -1,0 +1,9 @@
+﻿@model StamatShop.Web.ViewModels.ProductViewModel
+
+<div>
+    <h2>@Model.Name</h2>
+    <p>@Model.Category.Name</p>
+    <p>@Model.Description</p>
+    <p>@Model.Price</p>
+    @Html.ActionLink("Edit", "Edit", new { id = @Model.Id })
+</div>
