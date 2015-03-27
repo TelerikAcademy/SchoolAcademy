@@ -5,6 +5,8 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+using WorkingWithLocalData.SharedUI;
+
 namespace WorkingWithLocalData.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 

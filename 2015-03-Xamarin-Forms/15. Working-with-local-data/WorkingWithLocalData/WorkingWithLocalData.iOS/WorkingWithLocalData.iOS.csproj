@@ -91,6 +91,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="SQLite_iOS.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +100,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\WorkingWithLocalData.SharedUI\WorkingWithLocalData.SharedUI.csproj">
+      <Project>{5f594e53-046c-4b2e-ba8b-cbe2800c830b}</Project>
+      <Name>WorkingWithLocalData.SharedUI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WorkingWithLocalData\WorkingWithLocalData.Core.csproj">
       <Name>WorkingWithLocalData.Core</Name>
       <Project>{34D4F66E-B2E2-4E86-9B1D-489246F2D8DB}</Project>
