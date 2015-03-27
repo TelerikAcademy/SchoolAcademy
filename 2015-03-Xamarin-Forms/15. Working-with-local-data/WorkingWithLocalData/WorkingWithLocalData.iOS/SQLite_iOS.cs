@@ -1,19 +1,29 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
 
 using Foundation;
 using UIKit;
 using WorkingWithLocalData.Interfaces;
+using Xamarin.Forms;
 
+using SQLite.Net;
+using SQLite.Net.Platform.XamarinIOS;
+
+[assembly: Dependency(typeof(WorkingWithLocalData.iOS.SQLite_iOS))]
 namespace WorkingWithLocalData.iOS
 {
-    public class SQLite_iOS: ISQLite
+    public class SQLite_iOS : ISQLite
     {
-        public SQLite.Net.SQLiteConnection GetConnection()
+        public SQLiteConnection GetConnection()
         {
-            throw new NotImplementedException();
+            var sqliteFilename = "SQLite.db3";
+            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string libraryPath = Path.Combine(documentsPath, "..", "Library");
+
+            var path = Path.Combine(libraryPath, sqliteFilename);
+
+            var connection = new SQLiteConnection(new SQLitePlatformIOS(), path);
+            return connection;
         }
     }
 }
