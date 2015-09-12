@@ -1,15 +1,23 @@
 # Java Fundamentals Part 1
 
-##  Telerik School Academy Openning
+##  Description
+
+This meeting covers the fundamentals of creating programs with Java. We will introduce the tools needed for development with Java, how to create simple programs and will make the first steps to more complex applications.
+
+For this meeting you will need no previous experience or skills in programming.
+
+##  Program
+
+###  Telerik School Academy Openning
 
 *   Introducing the initiative
 *   Certification
 
-##  IT Test
+###  IT Test
 
 *   IT test for preparation for the **National Olympiad of Intomational Technologies**
 
-##  Introduction to Programming
+###  Introduction to Programming
 
 *   What is Programming?
 *   What is Java?
@@ -20,7 +28,7 @@
   *   Android Studio
   *   IntelliJ IDEA
 
-##  Data types and variables
+###  Data types and variables
 
 *   Integer values
   *   `int`, `long`, `short`, etc...
@@ -32,7 +40,7 @@
   * A sequence of characters
   * Getting the Nth character
 
-##  Operators and expressions
+###  Operators and expressions
 
 *   Logical operators
   *   `||`, `&&`, `^`, `!`
@@ -45,12 +53,12 @@
   *   The `Scanner` class
 *   Writing to the command line
 
-##  Loops
+###  Loops
 *   `for` loops
 *   `while` and `do-while` loops
 *   `goto` expressions
 
-##  Arrays
+###  Arrays
 
 * Creating arrays
 * Iterating arrays
