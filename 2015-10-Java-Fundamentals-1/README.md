@@ -1,6 +1,15 @@
 # Java Fundamentals Part 1
 
-## Introduction to Programming
+##  Telerik School Academy Openning
+
+*   Introducing the initiative
+*   Certification
+
+##  IT Test
+
+*   IT test for preparation for the **National Olympiad of Intomational Technologies**
+
+##  Introduction to Programming
 
 *   What is Programming?
 *   What is Java?
@@ -11,19 +20,39 @@
   *   Android Studio
   *   IntelliJ IDEA
 
-## Primitive Types and Variables
+##  Data types and variables
 
+*   Integer values
+  *   `int`, `long`, `short`, etc...
+*   Floating-point values
+  *   `double` and `float`
+*   Char values
+  *   `char`
+*   String values
+  * A sequence of characters
+  * Getting the Nth character
 
-## Operators and Expressions
+##  Operators and expressions
 
+*   Logical operators
+  *   `||`, `&&`, `^`, `!`
+*   Compare operators
+  *   `>`, `>=`, `<`, `<=`, `==`, `!=`
+*   Bitwise operators
+  *   `|`, `&`, `~`
+*   Console IO
+  *   Reading from the command line
+  *   The `Scanner` class
+*   Writing to the command line
 
-## Console Input and Output
+##  Loops
+*   `for` loops
+*   `while` and `do-while` loops
+*   `goto` expressions
 
+##  Arrays
 
-## Conditional Statements
-
-
-## Loops
-
-
-## Arrays
+* Creating arrays
+* Iterating arrays
+* One-dimensional
+* Multi-dimentional arrays
