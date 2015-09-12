@@ -2,6 +2,14 @@
 
 ## Introduction to Programming
 
+*   What is Programming?
+*   What is Java?
+*   First Java program
+*   Tools needed for Java development
+  *   Eclipse
+  *   Netbeans
+  *   Android Studio
+  *   IntelliJ IDEA
 
 ## Primitive Types and Variables
 
