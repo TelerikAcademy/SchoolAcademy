@@ -54,6 +54,7 @@ For this meeting you will need no previous experience or skills in programming.
 *   Writing to the command line
 
 ###  Loops
+
 *   `for` loops
 *   `while` and `do-while` loops
 *   `goto` expressions
