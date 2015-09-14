@@ -53,6 +53,18 @@ For this meeting you will need no previous experience or skills in programming.
   *   The `Scanner` class
 *   Writing to the command line
 
+###   Console IO
+
+*   Reading from the command line
+*   The `Scanner` class
+*   Writing to the command line
+
+###   Conditional statements
+
+* `if` and `if-else` statements
+* Nested `if-else-if` statements
+* `switch-case` statements
+
 ###  Loops
 
 *   `for` loops

@@ -14,6 +14,16 @@
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
 
+*   Integer values
+  *   `int`, `long`, `short`, etc...
+*   Floating-point values
+  *   `double` and `float`
+*   Char values
+  *   `char`
+*   String values
+  * A sequence of characters
+  * Getting the Nth character
+
 
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-title'} -->

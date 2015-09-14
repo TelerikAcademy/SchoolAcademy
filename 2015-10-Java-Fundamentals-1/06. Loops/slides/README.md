@@ -14,6 +14,10 @@
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
 
+*   `for` loops
+*   `while` and `do-while` loops
+*   `goto` expressions
+
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-title'} -->
 #

@@ -13,18 +13,20 @@
 <!-- section start -->
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
-*	What is Computer Programming?
-*	Your First C# Program
-*	What is .NET Framework?
-*	What is Visual Studio?
-*	What is MSDN Library?
-
+*   What is Programming?
+*   What is Java?
+*   First Java program
+*   Tools needed for Java development
+  *   Eclipse
+  *   Netbeans
+  *   Android Studio
+  *   IntelliJ IDEA
 
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-title'} -->
-# 
-## 
+#
+##
 
 <!-- section start -->
 <!-- attr: {id: ''} -->
-# 
+#

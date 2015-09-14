@@ -14,6 +14,10 @@
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
 
+*   Reading from the command line
+*   The `Scanner` class
+*   Writing to the command line
+
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-title'} -->
 #

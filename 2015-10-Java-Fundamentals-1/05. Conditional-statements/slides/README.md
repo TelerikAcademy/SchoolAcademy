@@ -14,6 +14,10 @@
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
 
+* `if` and `if-else` statements
+* Nested `if-else-if` statements
+* `switch-case` statements
+
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-title'} -->
 #

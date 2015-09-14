@@ -14,6 +14,14 @@
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
 
+*   Logical operators
+  *   `||`, `&&`, `^`, `!`
+*   Compararison operators
+  *   `>`, `>=`, `<`, `<=`, `==`, `!=`
+*   Bitwise operators
+  *   `|`, `&`, `~`
+
+
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-title'} -->
 #
