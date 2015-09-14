@@ -44,7 +44,7 @@ For this meeting you will need no previous experience or skills in programming.
 
 *   Logical operators
   *   `||`, `&&`, `^`, `!`
-*   Compare operators
+*   Comparison operators
   *   `>`, `>=`, `<`, `<=`, `==`, `!=`
 *   Bitwise operators
   *   `|`, `&`, `~`
