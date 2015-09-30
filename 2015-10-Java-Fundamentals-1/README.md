@@ -37,8 +37,9 @@ For this meeting you will need no previous experience or skills in programming.
 *   Char values
   *   `char`
 *   String values
-  * A sequence of characters
-  * Getting the Nth character
+  *   A sequence of characters
+  *   Getting the Nth character
+*   Numbers Classes
 
 ###  Operators and expressions
 
@@ -77,3 +78,9 @@ For this meeting you will need no previous experience or skills in programming.
 * Iterating arrays
 * One-dimensional
 * Multi-dimentional arrays
+
+*   Methods
+    *   Declaring methods
+    *   Methods with parameters
+    *   Overloading methods
+    *   Return a value from methods
