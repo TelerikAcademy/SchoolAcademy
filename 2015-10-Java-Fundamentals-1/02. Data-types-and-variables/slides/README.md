@@ -15,8 +15,8 @@
 # Table of Contents
 
 *   Integer values
-*   Floating-point values
     *   `int`, `long`, `short`, etc...
+*   Floating-point values
     *   `double` and `float`
 *   Char values
     *   `char`
@@ -65,7 +65,7 @@ int count = 5;
 #   Data Type Characteristics
 
 *   A data type has:
-    *   **Name** (C++ keyword)
+    *   **Name** (Java keyword)
     *   **Size** (how much memory is used)
     *   **Default value**
 *   Example - Integer numbers in Java
@@ -82,62 +82,67 @@ int count = 5;
 <!-- attr: { hasScriptWrapper: true, id: 'integer-data-types'} -->
 #   Integer Number Types
 
-*   Integer Number types:
-*   Represent whole numbers
-*   May be signed or unsigned
-*   Have range of values, depending on the size of memory used
+* Integer Number types:
+  * Represent whole numbers
+  * May be signed or unsigned
+  * Have range of values, depending on the size of memory used
 
-<!-- attr: {style: 'font-size:38px'} -->
+<!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em' } -->
 #   Memory for Integer Number Types
 
 | Name                     |  Size   | Range                |
 | ------------------------ | ------- | -------------------- |
-| `byte`                   | 1 byte  | -2^7 to 2^7-1        |
-| `short`                  | 2 bytes | -2^15 to 2^15-1      |
-| `int`                    | 4 bytes | -2^31 to 2^31-1      |
-| `unsigned int` (Java 8)  | 4 bytes | 0 to 2^32-1          |
-| `long`                   | 8 bytes | -2^63 to 2^63-1      |
-| `unsigned long` (Java 8) | 4 bytes | 0 to 2^64-1          |
-| BigInteger               | Many    | As much as neccesary |
+| `byte`                   | 1 byte  | -2<sup>7</sup> to 2<sup>7</sup>-1 |
+| `short`                  | 2 bytes | -2<sup>15</sup> to 2<sup>15</sup>-1 |
+| `int`                    | 4 bytes | -2<sup>31</sup> to 2<sup>31</sup>-1 |
+| `long`                   | 8 bytes | -2<sup>63</sup> to 2<sup>63</sup>-1 |
+|
 
-#   Integer types - Explained
+* In Java SE 8 and later, you can use `int` and `long` data types to represent an unsigned integer data type
 
-*   `int` - the most common integer type
-*   `byte` - for very small integers
-*   `short` (or just `short`)
-    *   **Smaller** type than `int`
-*   `long` (or just `long`)
-    *   **Bigger** type than `int`
-    
+<!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em' } -->
+# Integer types - Explained
+* `int` - the most common integer type
+  * from -2 147 483 648 to 2 147 483 647
+* `byte` - for very small integers
+  * from -128 to 127
+* `short` - **`s`maller** type than `int`
+  * from -32,768 to 32,767
+* `long` - **`l`arger** type than `int`
+  * -9 223 372 036 854 775 808 to 9 223 372 036 854 775 807
+* `BigInteger`
+  * For large numbers
+  * Has no limit to size
+  
 <!-- attr: {hasScriptWrapper: true} -->
+# Integer Types - Char
+* TODO - redo whole slide
 
-#   Integer Types - Char
-
-*   C++ works with **two char types**
-    *   One for storing **characters**
-*   Writing simply `char` invokes the **character type**
-*   **To store numbers**
-    *   Should write down `signed` or `unsigned`
-    *   Tell the compiler we need char for numbers
-*   **Note**: don’t store numbers in char, unless you have a very good reason
+* C++ works with **two char types**
+  * One for storing **characters**
+* Writing simply `char` invokes the **character type**
+* **To store numbers**
+  * Should write down `signed` or `unsigned`
+  * Tell the compiler we need char for numbers
+* _Note_: don’t store numbers in char, unless you have a very good reason
 
 <!-- attr: {class: 'slide-section'} -->
-#   Using Integer types
-##    Live Demo
+# Using Integer types
+##  Live Demo
 
 <!-- attr: { id: 'bool-data-type'} -->
-#   Boolean type (`bool`)
+# Boolean type (`boolean`)
 
-*   C++ has a **Boolean type**
-    *   `bool` – a value which is either `true` or `false`
-    *   Always takes up 1 byte
-        *   1 bit would be enough, but memory is addressed per bytes, not per bit
-    *   Takes `true`, `false`, or **numeric values**
-        *   **Any non-zero numeric value** is interpreted as `true`
-        *   **0 (zero)** is interpreted as `false`
+* Java has a **Boolean type**
+  * `boolean` – a value which is either `true` or `false`
+  * Always takes up 1 byte
+    * 1 bit would be enough, but memory is addressed per bytes, not per bit
+  * Takes `true`, `false`, or **numeric values**
+    * **Any non-zero numeric value** is interpreted as `true`
+    * **0 (zero)** is interpreted as `false`
 
 <!-- attr: {class: 'slide-section'} -->
-#   Using `bool`
+#   Using `boolean`
 ##    Live Demo
 
 <!-- attr: {id: 'floating-point-data-types'} -->
@@ -149,26 +154,26 @@ int count = 5;
     *   Range of values, depending on memory used
     *   Accuracy, depending on memory used
 
-<!-- attr: {style: "font-size:45px"} -->
+<!-- attr: { style:"font-size:0.85em", hasScriptWrapper:true } -->
 #   Floating-point Data Types - Memory
 
 | Name          |  Size   | Precision  | Range                         |
 | ------------- | ------- | ---------- | ----------------------------- |
-| `float`       | 4 bytes | ~7 digits  | ±1.5 × 10−45 to ±3.4 × 1038   |
-| `double`      | 8 bytes | ~15 digits | ±5.0 × 10−324 to ±1.7 × 10308 |
-| `long double` | 8 bytes | ~15 digits | ±5.0 × 10−324 to ±1.7 × 10308 |
+| `float`       | 4 bytes | ~7 digits  | ±1.5 × 10<sup>−45</sup> to</br> ±3.4 × 10<sup>38</sup>   |
+| `double`      | 8 bytes | ~15 digits | ±5.0 × 10<sup>−324</sup> to</br> ±1.7 × 10<sup>308</sup> |
+| `BigDecimal` | 8 bytes | ~15 digits | ±5.0 × 10<sup>−324</sup> to</br> ±1.7 × 10<sup>308</sup> |
 
 <!-- attr: {hasScriptWrapper: true} -->
 #   Floating-point Data Types - Explained
 
 *   `float` – fast, lower-precision
 *   `double` – slower, higher precision
-*   `long double`
+*   `BigDecimal`
     *   High precision on some systems, not widely used
 *   No guarantee on exact size (as with integers)
     *   The only sure thing is:
     ```cpp
-      sizeof(float)<=sizeof(double)<=sizeof(long double)
+      sizeof(float)<=sizeof(double)<=sizeof(BigDecimal)
     ```
 
 <!-- attr: {class: 'slide-section', id: 'floating-point-demo'} -->
@@ -254,33 +259,31 @@ int 2Pac;
 ```
 
 <!-- attr: {class: 'slide-section'} -->
-#   Valid C++ Identifiers
-##    Live Demo
+# Valid C++ Identifiers
+##  Live Demo
 
 
 <!-- section start -->
 
 <!-- attr: {class: "slide-section", id: 'variable-scope'} -->
-#   Variable Scope
-##    Where are variables accessible?
+# Variable Scope
+##  Where are variables accessible?
 
-#   Variable Scope
-
-*   **Scope** of a variable
-    *   **Lines in code**, where the identifier is valid
-    *   i.e. "where the variable is still alive"
-*   Two kinds of scope in C++
-    *   **Global** (almost):
-        *   The variable is **visible and usable** by **all functions** in the program
-    *   **Local**:
-        *   The variable is **visible and usable** **only in the current block**
-            *   i.e. in the inner-most { … }
+# Variable Scope
+* **Scope** of a variable
+  * **Lines in code**, where the identifier is valid
+  * i.e. "where the variable is still alive"
+* Two kinds of scope in C++
+  * **Global** (almost):
+    * The variable is **visible and usable** by **all functions** in the program
+  * **Local**:
+    * The variable is **visible and usable** **only in the current block**
+        * i.e. in the inner-most { … }
 
 <!-- attr: {hasScriptWrapper: true} -->
-#   Variable Scope - Examples
-
-*   Making a local variable
-    *   Declare it in a block
+# Variable Scope - Examples
+* Making a local variable
+    * Declare it in a block
 
 ```cpp
 int main() {
@@ -311,10 +314,10 @@ int main() {
 ##    Ways to Initialize, Default values
 
 <!-- attr: {hasScriptWrapper: true} -->
-#   Initializing Variables
+# Initializing Variables
 
-*   C++ supports **two ways of initializing**
-    *   Through the **assignment operator**
+* C++ supports **two ways of initializing**
+  * Through the **assignment operator**
 
 ```cpp
 int a = 5;
