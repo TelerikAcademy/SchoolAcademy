@@ -11,23 +11,19 @@
 </div>
 
 <!-- section start -->
-<!-- attr: {id: 'table-of-contents'} -->
+<!-- attr: { id:'table-of-contents', style:'font-size:0.9em'} -->
 # Table of Contents
-
-*   Integer values
-    *   `int`, `long`, `short`, etc...
-*   Floating-point values
-    *   `double` and `float`
-*   Char values
-    *   `char`
-*   String values
-    *   A sequence of characters
-*   Numbers classes
-    *   TODO
-*   `BigInteger` and `BigDecimal`
-*   `char`
-*   `String`
-    *   Simple operations with string
+* Integer values
+  * `int`, `long`, `short`, etc...
+* Floating-point values
+  * `double` and `float`
+* Char
+* String
+  * A sequence of characters
+  * Simple operations with string
+* Numbers classes
+  * Boxing in Java
+* `BigInteger` and `BigDecimal`
 
 <!-- section start -->
 
@@ -39,7 +35,7 @@
 #   How Computing Works?
 
 *   Computers are machines that process data
-    *   Data is stored in the computer memory in **variables**
+    *   **Data** is stored in the computer memory in **variables**
     *   Variables have **name**, **data type** and **value**
 *   Example of variable definition and assignment in Java
 
@@ -47,41 +43,36 @@
 int count = 5;
 ```
 
-*   Data type
-<!-- .element: class="balloon fragment" style="top: 50%; left:4%" -->
-*   Variable <!-- .element: class="balloon fragment" style="top: 63%; left:12%" -->
-*   Optional value <!-- .element: class="balloon fragment" style="top: 50%; left:30%" -->
+*   Data type <!-- .element: class="balloon fragment" style="top:50%; left:4%" -->
+*   Variable name <!-- .element: class="balloon fragment" style="top:63%; left:12%" -->
+*   Optional value <!-- .element: class="balloon fragment" style="top:50%; left:30%" -->
 
 #   What is a Data Type?
-
-*   A **data type**
-    *   is a domain of values of similar characteristics
-    *   defines the type of information stored in the computer memory (in a variable)
-*   Examples:
-    *   Positive integer numbers: `1`, `2`, `3`, ...
-    *   Alphabetical characters: `a`, `b`, `c`, ..., `A`, `B`, `C`, ...
-    *   Days of week: `Monday`, `Tuesday`, ...
+* A **data type**
+  * is a domain of values of similar characteristics
+  * defines the type of information stored in the computer memory (in a variable)
+* Examples:
+  * Positive integer numbers: `1`, `2`, `3`, ...
+  * Alphabetical characters: `a`, `b`, `c`, ..., `A`, `B`, `C`, ...
+  * Days of week: `Monday`, `Tuesday`, ...
 
 #   Data Type Characteristics
-
-*   A data type has:
-    *   **Name** (Java keyword)
-    *   **Size** (how much memory is used)
-    *   **Default value**
-*   Example - Integer numbers in Java
-    *   **Name**: `int`
-    *   **Size**: `32 bits` (4 bytes)
-    *   **Default value**: 0
+* A data type has:
+  * **Name** (Java keyword)
+  * **Size** (how much memory is used)
+  * **Default value**
+* Example - Integer numbers in Java
+  * **Name**: `int`
+  * **Size**: `32 bits` (4 bytes)
+  * **Default value**: 0
 
 <!-- section start -->
-
 <!-- attr: {class: 'slide-section', id: 'primitive-data-types'} -->
 #   Primitive Data Types
 ##    Representing Integer and Floating-point numbers, and Symbolic values
 
 <!-- attr: { hasScriptWrapper: true, id: 'integer-data-types'} -->
 #   Integer Number Types
-
 * Integer Number types:
   * Represent whole numbers
   * May be signed or unsigned
@@ -89,7 +80,6 @@ int count = 5;
 
 <!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em' } -->
 #   Memory for Integer Number Types
-
 | Name                     |  Size   | Range                |
 | ------------------------ | ------- | -------------------- |
 | `byte`                   | 1 byte  | -2<sup>7</sup> to 2<sup>7</sup>-1 |
@@ -113,41 +103,13 @@ int count = 5;
 * `BigInteger`
   * For large numbers
   * Has no limit to size
-  
-<!-- attr: {hasScriptWrapper: true} -->
-# Integer Types - Char
-* TODO - redo whole slide
 
-* C++ works with **two char types**
-  * One for storing **characters**
-* Writing simply `char` invokes the **character type**
-* **To store numbers**
-  * Should write down `signed` or `unsigned`
-  * Tell the compiler we need char for numbers
-* _Note_: don’t store numbers in char, unless you have a very good reason
-
-<!-- attr: {class: 'slide-section'} -->
-# Using Integer types
-##  Live Demo
-
-<!-- attr: { id: 'bool-data-type'} -->
-# Boolean type (`boolean`)
-
-* Java has a **Boolean type**
-  * `boolean` – a value which is either `true` or `false`
-  * Always takes up 1 byte
-    * 1 bit would be enough, but memory is addressed per bytes, not per bit
-  * Takes `true`, `false`, or **numeric values**
-    * **Any non-zero numeric value** is interpreted as `true`
-    * **0 (zero)** is interpreted as `false`
-
-<!-- attr: {class: 'slide-section'} -->
-#   Using `boolean`
-##    Live Demo
+<!-- attr: { class:'slide-section table-of-contents', showInPresentation:true } -->
+<!-- # Using Integer types -->
+##  [Demo]()
 
 <!-- attr: {id: 'floating-point-data-types'} -->
 #   Floating-point Data Types
-
 *   Floating-point numbers:
     *   Represent real numbers with approximations
         *   2.3, 0.7, -Infinity, -1452342.2313, etc...
@@ -155,31 +117,77 @@ int count = 5;
     *   Accuracy, depending on memory used
 
 <!-- attr: { style:"font-size:0.85em", hasScriptWrapper:true } -->
-#   Floating-point Data Types - Memory
-
-| Name          |  Size   | Precision  | Range                         |
-| ------------- | ------- | ---------- | ----------------------------- |
-| `float`       | 4 bytes | ~7 digits  | ±1.5 × 10<sup>−45</sup> to</br> ±3.4 × 10<sup>38</sup>   |
-| `double`      | 8 bytes | ~15 digits | ±5.0 × 10<sup>−324</sup> to</br> ±1.7 × 10<sup>308</sup> |
+# Floating-point Data Types
+| Name         |  Size   | Precision  | Range                         |
+| ------------ | ------- | ---------- | ----------------------------- |
+| `float`      | 4 bytes | ~7 digits  | ±1.5 × 10<sup>−45</sup> to</br> ±3.4 × 10<sup>38</sup>   |
+| `double`     | 8 bytes | ~15 digits | ±5.0 × 10<sup>−324</sup> to</br> ±1.7 × 10<sup>308</sup> |
 | `BigDecimal` | 8 bytes | ~15 digits | ±5.0 × 10<sup>−324</sup> to</br> ±1.7 × 10<sup>308</sup> |
 
-<!-- attr: {hasScriptWrapper: true} -->
-#   Floating-point Data Types - Explained
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # Floating-point Data Types -->
+* `float`
+  * Single-precision 32-bit IEEE 754 floating point
+  * Default value `0.0f`
+* `double`
+  * Double-precision 64-bit IEEE 754 floating point
+  * Default value `0.0d`
 
-*   `float` – fast, lower-precision
-*   `double` – slower, higher precision
-*   `BigDecimal`
-    *   High precision on some systems, not widely used
-*   No guarantee on exact size (as with integers)
-    *   The only sure thing is:
-    ```cpp
-      sizeof(float)<=sizeof(double)<=sizeof(BigDecimal)
-    ```
+```java
+float fNum = 2.345f;
+double dNum = 1.2346;
+```
 
-<!-- attr: {class: 'slide-section', id: 'floating-point-demo'} -->
-#   Using Floating-Point Types
-##    Live Demo
+<!-- attr: { showInPresentation:true } -->
+<!-- # Floating-point Data Types -->
+* The floating-point arithmetic sometime works incorrectly
 
+```java
+float fNum = 0.667f;
+double dNum = 1.333;
+System.out.println(fNum + dNum); // 1.9999999957084655
+```
+
+* Never use `float` or `double` for precise values, such as currency
+  * In Java use the `BigDecimal` class for financial calculations
+
+```java
+import java.math.BigDecimal
+...
+BigDecimal aBigDec = new BigDecimal("0.667");
+BigDecimal bBigDec = new BigDecimal("1.333");
+System.out.println(aBigDec.add(bBigDec)); // 2.000
+```
+
+<!-- attr: { id:'floating-point-demo', class:'slide-section table-of-contents', showInPresentation:true } -->
+<!-- # Using Floating-Point Types -->
+##  [Demo]()
+
+<!-- attr: { id: 'bool-data-type'} -->
+# Boolean type (`boolean`)
+
+* The `boolean` data type
+  * Has only two possible values: `true` and `false`
+  * Default value of 'false'
+* Use this data type for `true`/`false` conditions
+* This data type represents one bit of information
+  * but its "size" isn't precisely defined
+  
+```java
+boolean isTrue = true;
+boolean areEqual = 2 == 3;
+```
+
+<!-- attr: { class:'slide-section table-of-contents', showInPresentation:true } -->
+<!-- # Using `boolean` -->
+##  [Demo]()
+
+# Char
+* The `char` data type is a single 16-bit Unicode character
+  * Minimum value of '`\u0000`' (or 0)
+  * Maximum value of '`\uffff`' (or 65,535 inclusive)
+  * Default value of '`\u0000`'
+  
 <!-- section start -->
 
 <!-- attr: {class: 'slide-section', id: 'declaring-and-using-variables'} -->
@@ -206,7 +214,6 @@ int height = 200;
 ```
 
 #   Identifiers
-
 *   Variable names are called **identifiers**
 *   All "words" in a language are identifiers
     *   Data types
@@ -218,7 +225,6 @@ int height = 200;
 
 <!-- attr: { id:'identifiers-limitations', style: 'font-size: 45px'} -->
 #   Identifiers in C++
-
 *   C++ identifiers
     *   One or more **letters**, **digits** or **underscores**
     *   **Start with a letter** or **underscore**
@@ -362,6 +368,15 @@ cout << a;
 <!-- attr: {class: 'slide-section'} -->
 #   Initializing Variables - Defaults
 ##    Live Demo
+
+<!-- start section -->
+<!-- attr: {} -->
+# Number classes
+* `BigInteger`
+* `BigDecimal` - [link](https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html)
+  * Immutable, arbitrary-precision signed decimal numbers
+  * Consists of `unscaled` value and a 32-bit integer `scale`
+
 
 <!-- section start -->
 
