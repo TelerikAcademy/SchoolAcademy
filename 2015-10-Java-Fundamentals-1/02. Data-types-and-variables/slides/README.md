@@ -234,7 +234,8 @@ char omega = '\u03A9'; \\ Ω
 * double -> `Double`
 
 ```java
-Integer intNum = Integer.valueOf(10);
+Integer intNum = 10;
+intNum = Integer.valueOf(10);
 intNum = new Integer(10);
 
 Byte byteNum = Byte.valueOf("10");
