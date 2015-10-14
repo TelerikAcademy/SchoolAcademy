@@ -11,13 +11,26 @@
 </div>
 
 <!-- section start -->
-<!-- attr: { id:'table-of-contents', style:'font-size:0.9em'} -->
+<!-- attr: { id:'table-of-contents', class:'table-of-contents', style:'font-size:0.9em'} -->
 # Table of Contents
-* Integer values
-  * `int`, `long`, `short`, etc...
-* Floating-point values
-  * `double` and `float`
-* Char
+* How computing works
+  * Variables, Data types
+* Primitive data types
+  * Integer values
+    * `int`, `long`, `short`, etc...
+  * Floating-point values
+    * `double` and `float`
+  * Boolean
+  * Char
+* Declaring variables
+  * Identifiers
+
+<!-- attr: { class:'table-of-contents', showInPresentation:true } -->
+<!-- # Table of Contents -->
+* [Literals](#literals-in-java)
+  * Integer
+  * Floating point
+  * Boolean and Char
 * String
   * A sequence of characters
   * Simple operations with string
@@ -138,7 +151,7 @@ float fNum = 2.345f;
 double dNum = 1.2346;
 ```
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size:0.85em' } -->
 <!-- # Floating-point Data Types -->
 * The floating-point arithmetic sometime works incorrectly
 
@@ -175,7 +188,7 @@ System.out.println(aBigDec.add(bBigDec)); // 2.000
   
 ```java
 boolean isTrue = true;
-boolean areEqual = 2 == 3;
+boolean areEqual = (2 == 3); // false
 ```
 
 <!-- attr: { class:'slide-section table-of-contents', showInPresentation:true } -->
@@ -188,22 +201,105 @@ boolean areEqual = 2 == 3;
   * Maximum value of '`\uffff`' (or 65,535 inclusive)
   * Default value of '`\u0000`'
   
-<!-- section start -->
+```java
+char ch = 'a';
+char omega = '\u03A9'; \\ Ω
+```
 
+<!-- attr: { class:'slide-section table-of-contents', showInPresentation:true } -->
+<!-- # Using `char` -->
+##  [Demo]()
+
+<!-- section start -->
+<!-- attr: { id:'', class:'slide-section', showInPresentation:true } -->
+<!-- # Classes
+## Relational and Nullable types -->
+
+<!-- attr: { hasScriptWrapper:true, style:'font-size:0.95em' } -->
+# Number classes
+* Usually use the primitive types in code
+* In the Java platform there are classes for each of the primitive data types
+  * They "wrap" the primitive in an object
+  * The compiler **boxes the primitive** or **unboxes the object** when needed
+* As objects they can have value `null`
+
+<img class="slide-image" src="imgs/objects-number-hierarchy.png" style="height:30%; left:20%; bottom:2%" />
+  
+<!-- attr: { showInPresentation:true } -->
+<!-- # Number classes -->
+* byte -> `Byte`
+* int -> `Integer`
+* long -> `Long`
+* float -> `Float`
+* double -> `Double`
+
+```java
+Integer intNum = Integer.valueOf(10);
+intNum = new Integer(10);
+
+Byte byteNum = Byte.valueOf("10");
+Float fNum = Float.valueOf(1.234f);
+Double dNum = Double.valueOf(1.234);
+```
+
+<!-- attr: { style:'font-size:0.85em' } -->
+# BigInteger and BigDecimal
+* `BigInteger` - [documentation](http://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html)
+  * Immutable, arbitrary-precision signed integer numbers
+
+```java
+import java.math.BigInteger;
+...
+BigInteger bigInt;
+bigInt = BigInteger.valueOf(10);
+bigInt = new BigInteger("10");
+```
+ 
+* `BigDecimal` - [documentation](https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html)
+  * Immutable, arbitrary-precision signed decimal numbers
+  * Consists of `unscaled` value and a 32-bit integer `scale`
+
+```java
+import java.math.BigDecimal;
+...
+BigDecimal bigDec;
+bigDec = BigDecimal.valueOf(1.2345);
+bigDec = new BigDecimal("1.234");
+```
+
+
+
+# String Data Type
+* The string data type:
+  * Represents a sequence of characters
+  * Is declared by the `String` keyword
+  * Has a default value `null` (no value)
+* Strings are enclosed in quotes:
+
+```java
+string text = "Hello, I'm Java";
+```
+* Strings can be concatenated
+  * Using the `+` operator
+
+```java
+string text = "John" + " " + "Doe"; // "John Doe"
+```
+
+<!-- section start -->
 <!-- attr: {class: 'slide-section', id: 'declaring-and-using-variables'} -->
-#   Declaring and Using Variables
-##    Storing data
+# Declaring and Using Variables
+##  Storing data
 
 <!-- attr: {hasScriptWrapper: true} -->
 #    Declaring Variables
-
 *   When declaring a variable we:
-    *   Specify its type
-    *   Specify its name (called identifier)
-    *   May give it an initial value
-*   The syntax to declare a variable in C++ is the following:
+    *   Specify its `type`
+    *   Specify its `name` (called identifier)
+    *   May give it an `initial value`
+*   The syntax to declare a variable in Java is the following:
 
-```
+```java
 <data_type> <identifier> [= <initialization>];
 ```
 
@@ -219,31 +315,30 @@ int height = 200;
     *   Data types
     *   Operators
     *   Functions
-*   Identifiers in C++ are case-sensitive
+*   Identifiers in Java are case-sensitive
     *   `THis != THIS != this`
         *   (the last being a reserved keyword)
 
-<!-- attr: { id:'identifiers-limitations', style: 'font-size: 45px'} -->
-#   Identifiers in C++
-*   C++ identifiers
-    *   One or more **letters**, **digits** or **underscores**
-    *   **Start with a letter** or **underscore**
-        *   Avoid starting underscores & double underscores
-        *   May be compiler-reserved
-    *   Can’t be a **standard reserved keyword**
-    *   Can’t be a **name of operator representations**
-    *   Can’t be a **reserved compiler keyword**
-        *   Some compilers reserve their own keywords
-*   **Bad C++ identifiers are detected compile-time**
-    *   No need to remember all rules
-    *   Compiler will warn you about errors
+<!-- attr: { id:'identifiers-limitations', style:'font-size:0.9em' } -->
+#   Identifiers in Java
+*   Java identifiers
+    * One or more **letters**, **digits** or **underscores**
+    * **Start with a letter** or **underscore**
+      * Avoid starting underscores or double underscores
+      * May be compiler-reserved
+    * Can’t be a **standard reserved keyword**
+    * Can’t be a **name of operator representations**
+    * Can’t be a **reserved compiler keyword**
+      * Some compilers reserve their own keywords
+* **Bad identifiers are detected compile-time**
+    * No need to remember all rules
+    * Compiler will warn you about errors
 
-<!-- attr: {hasScriptWrapper: true} -->
-#   Identifiers - Examples
-
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:"font-size:0.95em" } -->
+<!-- # Identifiers in Java ->
 *   The following identifiers are **correct**:
 
-```cpp
+```java
 int New = 2;
 int _2Pac;
 
@@ -252,11 +347,9 @@ int n = 100;
 int numberOfClients = 100;
 int numberOfPrivateClientOfTheFirm = 100;
 ```
-<!-- .element: style="font-size: 1.5rem" -->
-
 *   The following identifiers are **incorrect**:
 
-```cpp
+```java
 // new is a keyword
 int new;
 
@@ -264,14 +357,12 @@ int new;
 int 2Pac;
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-# Valid C++ Identifiers
-##  Live Demo
-
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Valid Java Identifiers -->
+##  [Demo]()
 
 <!-- section start -->
-
-<!-- attr: {class: "slide-section", id: 'variable-scope'} -->
+<!-- attr: {class: "slide-section", id: 'variable-scope', style:'font-size:0.9em' } -->
 # Variable Scope
 ##  Where are variables accessible?
 
@@ -279,107 +370,158 @@ int 2Pac;
 * **Scope** of a variable
   * **Lines in code**, where the identifier is valid
   * i.e. "where the variable is still alive"
-* Two kinds of scope in C++
-  * **Global** (almost):
-    * The variable is **visible and usable** by **all functions** in the program
-  * **Local**:
-    * The variable is **visible and usable** **only in the current block**
-        * i.e. in the inner-most { … }
+* Variables in Java live inside their `{ }` scope
 
-<!-- attr: {hasScriptWrapper: true} -->
-# Variable Scope - Examples
-* Making a local variable
-    * Declare it in a block
-
-```cpp
-int main() {
-	int a = 5; //local variable
-	return 0;
+```java
+int sum = 0;
+for (int i = 0; i < 10; i++) {
+    System.out.println(i);
+    sum += i;
+    int temp = 2*i;
 }
+
+System.out.println(sum); // sum will be printed here
+System.out.println(i); // Error: i is out of scope here
+System.out.println(temp); //Error: temp is out of scope here
 ```
 
-*   Making a global variable
-    *   Declare it outside any function or class
-
-```cpp
-int a = 5; //global variable
-int main() {
-  a++;
-  return 0;
-}
-```
-
-<!-- attr: {class: 'slide-section'} -->
-#   Variable Scope
-##    Live Demo
+<!-- attr: { class:'slide-section table-of-contents', showInPresentation:true } -->
+<!-- # Variable Scope -->
+##  [Demo]()
 
 <!-- section start -->
+<!-- attr: { class:'slide-section', id:'literals-in-java', showInPresentation:true } -->
+<!-- # Literals
+## Representations of values -->
 
-<!-- attr: {class: 'slide-section', id: 'variable-initialization'} -->
-#   Initializing Variables
-##    Ways to Initialize, Default values
+<!-- attr: { hasScriptWrapper:true } -->
+# Literals in Java
+* Literals are **representations of values** in the source code
+* There are six types of literals
+  * Boolean
+  * Integer
+  * Real
+  * Character
+  * String
+  * The `null` literal
 
-<!-- attr: {hasScriptWrapper: true} -->
-# Initializing Variables
-
-* C++ supports **two ways of initializing**
-  * Through the **assignment operator**
-
-```cpp
-int a = 5;
+<!-- attr: { style:'font-size:0.95em' } -->
+# Boolean and Integer Literals
+* The boolean literals are:
+  * `true` and `false`
+* The integer literals:
+  * Are used for variables of type `int` and `long`
+  * Consist of digits
+  * May have a sign (`+`, `-`)
+  * May be in a hexadecimal format
+  * May be in binary form
+  
+```java
+int dec = 5; // decimal value 5
+int hex = 0xFE; // hexadecimal value FE -> 254
+int bin = 0b11001; // binary value 11001 -> 25
+int bigNum = 1_250_000; // decimal value 1250000
+long fourBytes = 0b11010010_01101001_10010100_10010010; // -764832622
 ```
 
-    *   Through **calling the type constructor**
-```cpp
-int a(5);
+<!-- attr: { style:'font-size:0.95em' } -->
+# Integer Literals
+* Examples of integer literals
+  * The '`0x`' and '`0X`' prefixes mean a hexadecimal value
+    * e.g. `0xA8F1`
+  * The '`l`' and '`L`' suffixes mean a long or ulong type
+    * e.g. `9876543L`
+
+```java
+// The following causes an error "integer number too large"
+long num = 9_999_999_999;
+
+// The following is correct
+long num = 9_999_999_999L;
 ```
-*   Both ways are equivalent in the case of primitives
+_Note_: the letter '`l`' is easily confused with the digit '`1`' so it’s better to use '`L`'!!!
 
-<!-- attr: {class: 'slide-section'} -->
-#   Initializing Variables
-##  Live Demo
+# Real Literals
+* The real literals:
+  * Are used for values of type `float`, `double`
+  * May consist of digits, a `sign` and "`.`"
+  * May be in exponential notation: `6.02e+23`
+* The "`f`" and "`F`" suffixes mean `float`
+* The "`d`" and "`D`" suffixes mean `double`
+* The default interpretation is `double`
 
-#   Initializing Variables – Defaults
+<!-- attr: { showInPresentation:true } -->
+# Real Literals
+* Example of incorrect float literal:
 
-*   What happens to uninitialized variables?
+```java
+// The following causes an error
+// because 12.5 is double by default
+float realNumber = 12.5;
+```
+* A correct way to assign floating-point value (using also the exponential format):
 
-```cpp
-int a;
-cout << a;
+```java
+// The following is the correct way of assigning the value:
+float realNumber = 12.5f;
+
+// This is the same value in exponential format:
+realNumber = 1.25e+1f;
 ```
 
-*   C++ allows **operating on uninitialized** variables
-    *   Actually variables get initialized sometimes
-    *   Even if not initialized, variables get values
-        *   Whatever was in that part of memory
-        *   Where the variable is placed
+<!-- attr: { hasScriptWrapper:true } -->
+# Character Literals
+* The character literals:
+  * Are used for values of the `char` type
+  * Consist of two single quotes surrounding the character value: '`<value>`'
+* The value may be:
+  * Symbol
+  * The code of the symbol
+  * Escaping sequence
 
-#   Initializing Variables - Defaults (cont.)
+# Escaping Sequences
+* Escaping sequences are:
+  * Means of presenting a symbol that is usually interpreted otherwise (like `'`)
+  * Means of presenting system symbols
+    * Like the new line symbol
+* Common escaping sequences are:
+  * `\'` for single quote
+  * `\"` for double quote
+  * `\\` for backslash
+  * `\n` for new line
+  * `\uXXXX` for denoting any other Unicode symbol
 
-*   Initialization **depends on the variable scope**
-    *   If the variable is **global**
-        *   Initialized to default type value
-        *   E.g. for integers 0
-    *   If the variable is **local**
-        *   Undefined in standard
-        *   Usually garbage values from memory
-        *   Whatever values in memory marked free
+<!-- attr: { showInPresentation:true } -->
+<!-- # Character Literals -->
+* Examples of different character literals:
 
-<!-- attr: {class: 'slide-section'} -->
-#   Initializing Variables - Defaults
-##    Live Demo
+```java
+char symbol = 'a'; // An ordinary symbol
+symbol = '\u006F'; // Unicode symbol code in a
+                   // hexadecimal format (letter 'o')
+symbol = '\u8449'; // 葉 (Leaf in Traditional Chinese)
+symbol = '\''; // Assigning the single quote symbol
+symbol = '\\'; // Assigning the backslash symbol
+symbol = '\n'; // Assigning new line symbol
+symbol = '\t'; // Assigning TAB symbol
+symbol = "a";  // Incorrect: use single quotes
+```
 
-<!-- start section -->
-<!-- attr: {} -->
-# Number classes
-* `BigInteger`
-* `BigDecimal` - [link](https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html)
-  * Immutable, arbitrary-precision signed decimal numbers
-  * Consists of `unscaled` value and a 32-bit integer `scale`
+<!-- attr: { hasScriptWrapper:true } -->
+# String Literals
+* String literals:
+  * Are used for values of the `String` type
+  * Consist of two double quotes surrounding the value: **"**`<value>`**"**
+  * May have escaping sequence character
+* The value is a sequence of character literals
 
+```java
+String text = "I am a sting literal";
+String str = "Hello,\nI\'m Java.";
+```
 
 <!-- section start -->
-
 <!-- attr: {class: 'slide-questions', id:"questions"} -->
-#   Data Types and Variables
-##    Questions
+<!-- # Data Types and Variables -->
+##  Questions
+[link to Telerik Academy forum](http://telerikacademy.com/Forum/Home)
