@@ -469,12 +469,14 @@ double surface = Math.PI * r * r;
 double perimeter = 2 * Math.PI * r;
 ```
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # Expressions -->
 * `Expressions` have:
   * Type (integer, real, boolean, ...)
   * Value
 * _Examples_:
+
+<div style="height:10%"></div>
 
 ```java
 int a = 2 + 3; // a = 5
@@ -482,14 +484,11 @@ int b = (a+3) * (a-4) + (2*a + 7) / 4;  // b = 12
 bool greater = (a > b) || ((a == 0) && (b == 0));
 ```
 
-<div class="fragmet">
-  <div class="balloon" style="left:10%; top:10%">Expression of type int. Calculated at compile time</div>
-  <div class="balloon" style="left:10%; top:10%">Expression of type int. Calculated at runtime</div>
-  <div class="balloon" style="left:10%; top:10%">Expression of type bool. Calculated at runtime</div>
+<div class="fragment">
+  <div class="balloon" style="width:300px; left:10%; top:48%">Expression of type `int` Calculated at compile time</div>
+  <div class="balloon" style="width:270px; left:50%; top:52%">Expression of type `int` Calculated at runtime</div>
+  <div class="balloon" style="width:270px; left:30%; top:72%">Expression of type `bool` Calculated at runtime</div>
 </div>
-
-<!-- attr: { showInPresentation:true } -->
-<!-- # Expressions -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Expressions -->
