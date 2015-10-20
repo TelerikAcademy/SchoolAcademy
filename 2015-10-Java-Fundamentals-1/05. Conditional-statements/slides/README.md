@@ -244,29 +244,49 @@ switch (day) {
 }
 ```
 
-#   How `switch-case` Works?
-
+# How `switch-case` Works?
 1.  The expression is evaluated
 2.  When one of the constants specified in a case label is equal to the expression
-    *   The statement that corresponds to that case is executed
+  * The statement that corresponds to that case is executed
 3.  If no case is equal to the expression
-    *   If there is default case, it is executed
-    *   Otherwise the control is transferred to the end point of the switch statement 
+  * If there is `default` case, it is executed
+  * Otherwise the control is transferred to the end point of the switch statement 
 
-<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- #   The `switch-case` Statement -->
-##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/5.%20switch-case-statement.cpp)
+##  [Demo]()
 
-#   Good Practices using `switch-case`
+<!-- attr: { style:'font-size:0.95em' } -->
+# Good Practices using `switch-case`
+* There must be a separate case for every normal situation
+* Put the normal case first
+  * Put the most frequently executed cases first and the least frequently executed last
+* Order cases alphabetically or numerically
+* In default use case that cannot be reached under normal circumstances
+* In Java there is a `fall through` rule if no `break`
 
-*   There must be a separate case for every normal situation
-*   Put the normal case first
-    *   Put the most frequently executed cases first and the least frequently executed last
-*     Order cases alphabetically or numerically
-*   In default use case that cannot be reached under normal circumstances
+# Fall through rule
+* Print remaining months from the year
+
+```java
+switch (month) {
+    case 1:  System.out.println("January");
+    case 2:  System.out.println("February");
+    case 3:  System.out.println("March");
+    case 4:  System.out.println("April");
+    case 5:  System.out.println("May");
+    case 6:  System.out.println("June");
+    case 7:  System.out.println("July");
+    case 8:  System.out.println("August");
+    case 9:  System.out.println("September");
+    case 10: System.out.println("October");
+    case 11: System.out.println("November");
+    case 12: System.out.println("December");
+    default: break;
+}
+```
 
 <!-- section start -->
-
-<!-- attr: {class: 'slide-questions', id:"questions"} -->
-#   Conditional Statements
-##    Questions
+<!-- attr: { class:'slide-section', id:"questions" } -->
+# Conditional Statements
+##  Questions
