@@ -2,61 +2,61 @@
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
 
-#   Introduction to Programming
-##    With Java
+# Introduction to Programming
+## With Java
 <div class="signature">
-    <p class="signature-course">Java Fundamentals</p>
+    <p class="signature-course">Java Fundamentals - Part 1</p>
     <p class="signature-initiative">Telerik School Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
 <!-- section start -->
 <!-- attr: {id: 'table-of-contents'} -->
-#   Table of Contents
-
-*   What is Programming?
-*   What is Java?
-*   First Java program
-*   Tools needed for Java development
-    *   Eclipse
-    *   Netbeans
-    *   Android Studio
-    *   IntelliJ IDEA
+# Table of Contents
+* What is Programming?
+* What is Java?
+* First Java program
+* Tools needed for Java development
+  * Eclipse
+  * Netbeans
+  * Android Studio
+  * IntelliJ IDEA
 
 <!-- section start -->
 
 <!-- attr: {id: 'what-is-programming', class: 'slide-section'} -->
-#   What is programming?
-##    And creating cool applications
+# What is programming?
+##  And creating cool applications
 
 
-#   What is programming?
+# What is programming?
 
 > Computer programming: creating a sequence of instructions to enable the computer to do something
 
 > -- Definition by Google
 
 <!-- attr: {hasScriptWrapper: true} -->
-#   Programming Phases
+# Programming Phases
 
-1.    Define a task/problem
-    *   Specification <!-- .element: class="fragment balloon" style="top: 15%; left:65%" -->
-2.    Plan your solution
-    *   Design  <!-- .element: class="fragment balloon" style="top: 23%; left:65%" -->
-3.    Write code
-    *   Implementation <!-- .element: class="fragment balloon" style="top:31%; left:65%" -->
-4.    Fix program errors (bugs)
-    *   Testing & Debugging <!-- .element: class="fragment balloon" style="top:39%; left:65%" -->
-5.    Make your customer happy
-    *   Deployment <!-- .element: class="fragment balloon" style="top: 47%; left:65%" -->
+1.  Define a task/problem
+  * Specification <!-- .element: class="fragment balloon" style="top: 15%; left:65%" -->
+2.  Plan your solution
+  * Design  <!-- .element: class="fragment balloon" style="top: 23%; left:65%" -->
+3.  Write code
+  * Implementation <!-- .element: class="fragment balloon" style="top:31%; left:65%" -->
+4.  Fix program errors (bugs)
+  * Testing & Debugging <!-- .element: class="fragment balloon" style="top:39%; left:65%" -->
+5.  Make your customer happy
+  * Deployment <!-- .element: class="fragment balloon" style="top: 47%; left:65%" -->
 
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section', id: "first-java-program"} -->
+<!-- attr: { id:"first-java-program", class:'slide-section' } -->
 #   Your First Java Program
 ##    Starting slow
 
+<!-- attr: { style:'font-size:0.9em'} -->
 #   Your First Java Program
 
 *   Simple Java Program:
@@ -96,5 +96,6 @@ public class HelloWorld {
     *   http://docs.oracle.com/javase/8/docs/api/
 <!-- section start -->
 
+<!-- attr: { class:'slide-section' }
 # Introduction to Programming with Java
 ##  Questions

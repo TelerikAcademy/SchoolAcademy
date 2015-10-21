@@ -5,7 +5,7 @@
 # Operators and Expressions
 ##  Bitwise, comparison, arithmetic, etc...  
 <div class="signature">
-    <p class="signature-course">Java Fundamentals - Part 1</p>
+    <p class="signature-course">Java Fundamentals</p>
     <p class="signature-initiative">Telerik School Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -340,8 +340,8 @@ System.out.println(a > b)); // false
 ```
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
-<!-- #   Comparison Operators -->
-##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/04.%20Operatos-and-expressions/demos/5.%20comparisson-operators.cpp)
+<!-- # Comparison Operators -->
+##  [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/04.%20Operatos-and-expressions/demos/5.%20comparisson-operators.cpp)
 
 <!-- section start -->
 
