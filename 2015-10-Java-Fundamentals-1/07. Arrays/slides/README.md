@@ -268,19 +268,102 @@ for (String capital : capitals) {
 ##  [Demo]()
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section' } -->
-# Resizable Arrays
-##  `ListArray`
+<!-- attr: { id:'', class:'slide-section', showInPresentation:true } -->
+<!-- # Resizable Arrays
+##  `ArrayList` -->
+
+<!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em' } -->
+# `ArrayList`
+- `ArrayList<T>` – array that can resize dynamically
+  - When adding or removing elements
+  - `T` is the type that the list will hold
+    - Has to be a reference type (`class`)
+    - E.g. `ArrayList<Integer>` will hold integers
+    - `ArrayList<Object>` will hold objects
+- Basic methods and properties
+  - `add(T element)` – adds new element to the end
+  - `get(index)` - get the element at that index
+  - `remove(index)` – removes the element at that index 
+  - `remove(element)` – removes the element 
+  - `size()` – returns the current size of the list
+
+# `ArrayList` Example 
+
+```java
+ArrayList<Integer> intList = new ArrayList();
+for (int i = 0; i < 5; i++) {
+   intList.add(i);
+}
+```
+- Is the same as
+
+```java
+int[] intArray = new int[5];
+for( int i = 0; i < 5; i++) {
+   intArray[i] = i;
+}
+```
+- The main difference
+  - When using lists we don't have to know the exact number of elements
+
+<!-- attr: { style:'font-size:0.85em' } -->
+# `ArrayLists` vs. `Arrays`
+- Lets have an array with capacity of 5 elements
+
+```java
+int[] intArray = new int[5];
+```
+- If we want to add a sixth element (we have already added 5) we have to manually resize
+
+```java
+int[] copyArray = intArray;
+int[] intArray = new int[6];
+for (int i = 0; i < 5; i++) {
+   intArray[i] = copyArray[i];
+}
+intArray[5] = newValue;
+```
+- With `ArrayList<T>` we simply call
+
+```java
+list.add(newValue);
+```
+
+<!-- attr: { class:'slide-section table-of-contents', showInPresentation:true } -->
+<!-- # ArrayList -->
+##  [Demo]()
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section' } -->
-# 
-##  
+<!-- attr: { id:'', class:'slide-section', showInPresentation:true } -->
+<!-- # Copying Arrays
+##  The `Arrays` class -->
+
+<!-- attr: { style:'font-size:0.8em' } -->
+# Copying Arrays
+- Sometimes we must `copy` the values from one array to another one
+- If we do it the intuitive way we would copy not only the values but the reference to the array
+- Changing some of the values in one array will affect the other
+
+```java
+int[] copyArray = array;
+```
+- The way to avoid this is using `clone()`
+
+```java
+int[] copyArray = array.clone();
+```
+- This way only the values will be copied but not the reference
+
+<!-- attr: { class:'slide-section table-of-contents', showInPresentation:true } -->
+<!-- # Copying Arrays -->
+##  [Demo]()
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section' } -->
-# 
-##  
+<!-- attr: { id:'', class:'slide-section', showInPresentation:true } -->
+<!-- # Copying Arrays
+##  The `Arrays` class -->
+
+
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
