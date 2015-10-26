@@ -406,7 +406,7 @@ System.out.println(temp); //Error: temp is out of scope here
   * String
   * The `null` literal
 
-<!-- attr: { style:'font-size:0.95em' } -->
+<!-- attr: { style:'font-size:0.90em' } -->
 # Boolean and Integer Literals
 * The boolean literals are:
   * `true` and `false`
