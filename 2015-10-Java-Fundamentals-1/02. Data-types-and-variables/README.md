@@ -1,0 +1,2 @@
+# 01. Data types and Variables
+### [View Presentation online](https://rawgit.com/TelerikAcademy/SchoolAcademy/master/2015-10-Java-Fundamentals-1/02.%20Data-types-and-variables/slides/index.html#/title)
