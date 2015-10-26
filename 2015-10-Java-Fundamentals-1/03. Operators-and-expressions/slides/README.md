@@ -51,7 +51,7 @@
 | Category             | Operators                         |
 | -------------------- | --------------------------------- |
 | Arithmetic           | `+ - *  /  %  ++  --`               |
-| Logical              | `&&  II  ^  !  `                    |
+| Logical              | `&&` II `^  !  `                    |
 | Binary               | `& ^ ~ << >>` I                     |
 | Comparison           | `== != < > <= >=`                   |
 | Assignment           | `= += -= *= /= %=` <br/>`&= ^= <<= >>=` I`=` |
@@ -85,7 +85,7 @@
 |            | `^`                               |
 |            | I                                 |
 |            | `&&`                              |
-|            | `II`                              |
+|            | II                              |
 |            | `?:`                              |
 | Lowest     | `= *= /= %= += -=` <br/> `<<= >>= &= ^= `I`=` |
 
@@ -164,9 +164,9 @@ int x = 0;
 System.out.println(5 / x); // throws exception
 ```
 
-<!-- attr: {class: 'slide-section', showInPresentation: true} -->
-<!-- #   Arithmetic Operators -->
-##    [Demo](http://)
+<!-- attr: {class: 'slide-section demo', showInPresentation: true} -->
+<!-- # Arithmetic Operators -->
+##  [Demo](http://)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
@@ -296,12 +296,12 @@ System.out.println((5>7) ^ (a==b)); // false
 ```java
 int a = 3;                    // 00000000 00000011
 int b = 5;                    // 00000000 00000101
-System.out.println(a | b));      // 00000000 00000111
-System.out.println(a & b));      // 00000000 00000001
-System.out.println(a ^ b));      // 00000000 00000110
-System.out.println(~a & b));     // 00000000 00000100
-System.out.println(a << 1));     // 00000000 00000110
-System.out.println(a >> 1));     // 00000000 00000001
+System.out.println(a | b);      // 00000000 00000111
+System.out.println(a & b);      // 00000000 00000001
+System.out.println(a ^ b);      // 00000000 00000110
+System.out.println(~a & b);     // 00000000 00000100
+System.out.println(a << 1);     // 00000000 00000110
+System.out.println(a >> 1);     // 00000000 00000001
 ```
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
@@ -335,12 +335,12 @@ System.out.println(a >> 1));     // 00000000 00000001
 ```java
 int a = 5;
 int b = 4;
-System.out.println(a >= b)); // true
-System.out.println(a != b)); // true
-System.out.println(a == b)); // false
-System.out.println(a == a)); // true
-System.out.println(a != ++b)); // false
-System.out.println(a > b)); // false
+System.out.println(a >= b); // true
+System.out.println(a != b); // true
+System.out.println(a == b); // false
+System.out.println(a == a); // true
+System.out.println(a != ++b); // false
+System.out.println(a > b); // false
 ```
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
@@ -360,12 +360,12 @@ System.out.println(a > b)); // false
 ```java
 int x = 6;
 int y = 4;
-System.out.println(y *= 2)); // 8
+System.out.println(y *= 2); // 8
 int z = y = 3; // y=3 and z=3
 System.out.println(z); // 3
-System.out.println(x |= 1)); // 7
-System.out.println(x += 3)); // 10
-System.out.println(x /= 2)); // 5
+System.out.println(x |= 1); // 7
+System.out.println(x += 3); // 10
+System.out.println(x /= 2); // 5
 ```
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Assignment Operators -->
