@@ -1,1 +1,1 @@
-require("openurl").open("http://localhost:1001/index.html");
+require("openurl").open("http://localhost:10001/index.html");

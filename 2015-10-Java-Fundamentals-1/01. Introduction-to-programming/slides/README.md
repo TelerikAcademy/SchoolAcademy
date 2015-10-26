@@ -61,22 +61,34 @@
 
 *   Simple Java Program:
 
-```java
-import java.util.*;
+    ```java
+    import java.util.*;
 
-public class HelloWorld {
+    public class HelloWorldStartUp {
 
-	public static void main(String[] args) {
-		System.out.println("Hello, World!");
-	}
-}
+    	public static void main(String[] args) {
+    		System.out.println("Hello, World!");
+    	}
+    }
 
-```
+    ```
 
-*   Importing packages (libraries)
-*   A class, that is needed in every Java Program
-*   The entry point of the application (the main method)
-*   System.out print to the standart output
+    *   Importing packages (libraries)
+    *   A class, that is needed in every Java Program
+    *   The entry point of the application (the main method)
+    *   `System.out print` to the standart output
+
+#   What is **Java**?
+
+*   Programming language
+    *   A syntax that allow to give instructions to the computer
+*   Java features:
+    *   One of the first "popular" OOP languages
+    *   Extremely powerful
+    *   Easy to learn
+    *   Easy to read and understand
+    *   Object-oriented
+    *   Can be used for almost all kind of applications
 
 <!-- section start -->
 
@@ -88,12 +100,32 @@ public class HelloWorld {
 
 *   Knowledge of a programming language
     *   Java, C#, JavaScript, C++, Python, etc...
-*   Task to Solve
+*   Task to solve
 *   Development environment, compilers, SDKs
     *   Eclipse, IntelliJ, Netbeans, Visual Studio,
 *   Set of useful standard classes
+    *   `java.utils.*`
+    *   `java.io.*`
 *   Documentation
     *   http://docs.oracle.com/javase/8/docs/api/
+
+<!-- section start -->
+
+<!-- attr: {style: 'font-size: 45px'} -->
+#   How to setup for Android development?
+
+*   You will need:
+    *   Java Runtime Environment
+        *   You probably already have that
+        *   Download from [link]( http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+    *   Java Development Kit (JDK)
+        *   Download from [link]( http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+        *   You may need to add to `$PATH`
+    *   IDE to write Java:
+        *   IntelliJ is good
+        *   ViM is good
+        *   Eclipse is the best
+
 <!-- section start -->
 
 <!-- attr: { class:'slide-section' }

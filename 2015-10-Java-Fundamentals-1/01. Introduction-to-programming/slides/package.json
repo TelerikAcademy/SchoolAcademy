@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node ./node_modules/http-server/bin/http-server -p 1001 & node open.js"
+    "start": "node ./node_modules/http-server/bin/http-server -p 10001"
   },
   "repository": {
     "type": "git",
