@@ -522,7 +522,7 @@ String str = "Hello,\nI\'m Java.";
 ```
 
 <!-- section start -->
-<!-- attr: {class: 'slide-questions', id:"questions", showInPresentation:true } -->
+<!-- attr: {class: 'slide-section', id:"questions", showInPresentation:true } -->
 <!-- # Data Types and Variables -->
 ##  Questions
 [link to Telerik Academy forum](http://telerikacademy.com/Forum/Home)
