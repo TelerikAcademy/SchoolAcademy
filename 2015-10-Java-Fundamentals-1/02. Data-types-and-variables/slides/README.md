@@ -168,7 +168,7 @@ System.out.println(fNum + dNum); // 1.9999999957084655
 import java.math.BigDecimal
 ...
 BigDecimal aBigDec = new BigDecimal("0.667");
-BigDecimal bBigDec = new BigDecimal("1.333");
+BigDecimal bBigDec = BigDecimal.valueOf(1.333);
 System.out.println(aBigDec.add(bBigDec)); // 2.000
 ```
 
