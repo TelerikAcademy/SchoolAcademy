@@ -267,7 +267,7 @@ for (initialization; test; update) {
     *   Usually used to declare a counter variable
 
 ```java
-for (int number = 0; ...; ...){    
+for (int number = 0; ...; ...) {
   // Can use number here
 }
 // Cannot use number here
@@ -283,7 +283,7 @@ for (int number = 0; ...; ...){
     *   Used as a loop condition
 
 ```java
-for (... ; number < 10; ...){    
+for (... ; number < 10; ...) {
   // Can use number here
 }
 // Cannot use number here
@@ -296,7 +296,7 @@ for (... ; number < 10; ...){
     *   Usually used to update the counter
 
 ```java
-for (...; number < 10; ...){    
+for (...; number < 10; ...){
   // Can use number heretar
 }
 // Cannot use number here
