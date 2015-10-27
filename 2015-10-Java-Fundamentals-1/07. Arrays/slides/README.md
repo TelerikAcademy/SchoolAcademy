@@ -335,8 +335,8 @@ list.add(newValue);
 
 <!-- section start -->
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true } -->
-<!-- # Copying Arrays
-##  The `Arrays` class -->
+<!-- # The `Arrays` class
+##  Copying and Sorting arrays -->
 
 <!-- attr: { style:'font-size:0.8em' } -->
 # Copying Arrays
@@ -358,10 +358,66 @@ int[] copyArray = array.clone();
 <!-- # Copying Arrays -->
 ##  [Demo]()
 
+# Sorting Arrays
+- Using the `Arrays.sort()` method
+
+```java
+// initializing unsorted int array
+int iArr[] = {2, 1, 9, 6, 4};
+
+// let us print all the elements available in list
+for (int number : iArr) {
+    System.out.println("Number = " + number);
+}
+
+// sorting array
+Arrays.sort(iArr);
+
+System.out.println("The sorted int array is:");
+for (int number : iArr) {
+    System.out.println("Number = " + number);
+}
+```
+
+<!-- attr: { class:'slide-section table-of-contents', showInPresentation:true } -->
+<!-- # Sorting Arrays -->
+##  [Demo]()
+
 <!-- section start -->
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true } -->
-<!-- # Copying Arrays
-##  The `Arrays` class -->
+<!-- # Multidimensional Arrays
+##  Matrices and Jagged arrays -->
+
+<!-- attr: { hasScriptWrapper:true } -->
+# Matrices 
+- **Multidimensional arrays** have more than one dimension (2, 3, …)
+  - The most important multidimensional arrays are the 2-dimensional
+    - Known as **matrices** or **tables**
+- Example of matrix of integers with 2 rows and 4 columns:
+
+# Matrices - Example
+```cs
+int[][] matrix = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 10, 11, 12},
+        {13, 14, 15, 16}};
+
+for (int i = 0; i < matrix.length; i++) {
+    int[] ints = matrix[i];
+    System.out.print("| ");
+    for (int j = 0; j < ints.length; j++) {
+        int anInt = ints[j];
+        System.out.print(String.format("%s | ", anInt));
+    }
+    System.out.println();
+}
+```
+
+
+# Jagged arrays
+
+
 
 
 
