@@ -5,7 +5,7 @@
 ##    Become master jedi of control flow
 <div class="signature">
     <p class="signature-course">Java Fundamentals - Part 1</p>
-    <p class="signature-initiative">Telerik Algo Academy</p>
+    <p class="signature-initiative">Telerik School Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
