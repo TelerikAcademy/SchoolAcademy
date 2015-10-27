@@ -26,7 +26,7 @@
 *   Nested loops
 
 <!-- section start -->
-<!-- attr: {id: 'what-is-a-loop', class: 'slide-title'} -->
+<!-- attr: {id: 'what-is-a-loop', class: 'slide-section'} -->
 #   What is a Loop?
 ##    Repeat code
 
@@ -40,6 +40,7 @@
 
 <!-- section start -->
 
+<!-- attr: {class: 'slide-section'} -->
 #   Using `while` Loop
 ##    Repeating a Statement While Given Condition Holds
 
@@ -56,12 +57,14 @@ while (condition) {
     *   Returns a boolean result of `true` or `false`
     *   Also called loop condition
 
+<!-- attr: {hasScriptWrapper: true} -->
 #   While Loop – How It Works?
 
 *   The block schema of a while loop:
 
-<img src="imgs/example-while-block-schema.png" />
-
+<div style="text-align: center">
+  <img src="imgs/example-while-block-schema.png" style="border:none; background:none;" height=450 />
+</div>
 
 #   While Loop – Example
 
@@ -75,6 +78,7 @@ while (counter < 10) {
 }
 ```
 
+<!-- attr: { class: 'slide-section'} -->
 #   The `while` Loop
 ##  Examples
 
@@ -97,6 +101,7 @@ while (number < n) {
 System.out.println(" = " + sum);
 ```
 
+<!-- attr: { class: 'slide-section'} -->
 #   Calculating Sum 1..N
 ##  [Demo](http://)
 
@@ -123,11 +128,13 @@ while (prime && (divider <= maxDivider)) {
 System.out.println(number + "is " + (prime?"":" not") + " prime");
 ```
 
+<!-- attr: { class: 'slide-section'} -->
 #   Checking Whether a Number Is Prime
 ##  [Demo](http://)
 
+<!-- attr: { class: 'slide-section'} -->
 #   Loop operators
-#   `break`, `continue`, `goto`
+##   `break`, `continue`, `goto`
 
 #   Using break Operator
 
@@ -149,11 +156,13 @@ while (true) {
 System.out.println("n! = " + result);
 ```
 
+<!-- attr: { class: 'slide-section'} -->
 #   Calculating Factorial
 ##  [Demo](http://)
 
 <!-- section start -->
 
+<!-- attr: { class: 'slide-section'} -->
 #   The `do-while` Loop
 ##  Almost the same as `while`
 
@@ -172,12 +181,16 @@ do {
     *   While the boolean loop condition holds
 *   The loop is executed at least once
 
+<!-- attr: { hasScriptWrapper: true} -->
 #   do-while Loop - How does it works?
 
 *   The block schema of a do-while loop:
 
-<img src="imgs/example-do-while-block-schema.png" />
+<div style="text-align: center">
+  <img src="imgs/example-do-while-block-schema.png" style="border:none; background: none;"/>
+</div>
 
+<!-- attr: { class: 'slide-section'} -->
 #   The `do-while` loop
 ##  Examples
 
@@ -198,6 +211,7 @@ do {
 System.out.println("n! = " + factorial);
 ```
 
+<!-- attr: { class: 'slide-section'} -->
 #   Calculating N! with do-while
 ##  [Demo](http://)
 
@@ -219,15 +233,16 @@ do {
 System.out.println("product[n..m] = " + product);
 ```
 
+<!-- attr: { class: 'slide-section'} -->
 #   Product of the Numbers in the Interval [n..m]
 ##  [Demo](http://)
 
 
 <!-- section start -->
 
+<!-- attr: { class: 'slide-section'} -->
 #   The `for` loop
 ##  Repeating a fixed number of times
-
 
 #   The `for` loop
 
@@ -282,11 +297,12 @@ for (... ; number < 10; ...){
 
 ```java
 for (...; number < 10; ...){    
-  // Can use number here
+  // Can use number heretar
 }
 // Cannot use number here
 ```
 
+<!-- attr: { class: 'slide-section'} -->
 #   The `for` Loop
 ##  Examples
 
@@ -329,6 +345,7 @@ i=8, sum=15
 ...
 ```
 
+<!-- attr: { class: 'slide-section'} -->
 #   The `for` loop
 ##  [Demo](http://)
 
@@ -365,5 +382,36 @@ for (int i = 1; i <= n; i += 2) {
 System.out.println("sum = " + sum);
 ```
 
+<!-- attr: { class: 'slide-section'} -->
 #   Using continue Operator
 ##  [Demo](http://)
+
+<!-- section start  -->
+
+<!-- attr: {class: 'slide-section'} -->
+#   The `for-in` loop
+##  Iterating collection
+
+#   The `for-in` loop
+
+*   The `for-in` loop is used to iterate collections
+    *   Collections are arrays, lists, etc..
+    *   Everything that inherits `Iteratable`
+    *   _Example:_
+
+```java
+String[] names = {"Doncho", "Niki", "Evlogi", "Ivo", "Cuki"};
+for(String name: names){
+  System.out.println(name);
+}
+```
+
+<!-- attr: { class: 'slide-section'} -->
+#   The `for-in` loop
+##  [Demo](http://)
+
+<!-- section start -->
+
+<!-- attr: { class: 'slide-questions'} -->
+# Loops
+## Questions
