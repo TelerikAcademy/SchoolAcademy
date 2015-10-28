@@ -49,9 +49,9 @@ String[] myStringArray;
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Creating Arrays
-Use the operator new
-Specify array length
-Example creating (allocating) array of 5 integers:
+- Use the operator new
+- Specify array length
+- Example creating (allocating) array of 5 integers:
 
 ```java
 myIntArray = new int[5];
