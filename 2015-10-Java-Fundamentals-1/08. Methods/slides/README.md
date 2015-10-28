@@ -27,9 +27,9 @@
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section'} -->
-#   Using Methods
-##  Methods 101
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Using Methods
+##  Methods 101 -->
 
 #   Using Methods
 
@@ -39,7 +39,8 @@
 *   Methods allow programmers to construct large programs from simple pieces
 *   Methods are also known as **functions**, **procedures**, and **subroutines**
 
-#   Why to use Methods?
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Why to use Methods? -->
 
 *   More manageable programming
     *   Split large problems into small pieces
@@ -51,9 +52,9 @@
 *   Code reusability
     *   Using existing methods several times
 
-<!-- attr: {class: 'slide-section'} -->
-#   Declaring and Creating Methods
-##  How and Why
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Declaring and Creating Methods
+##  How and Why -->
 
 #   Declaring and Creating Methods
 
@@ -70,7 +71,8 @@ static void printLogo() {
     *   This will be discussed during OOP in details
 *   The keyword `void` means that the method does not return any result
 
-#   Declaring and Creating Methods
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Declaring and Creating Methods
 
 *   A basic method to print text:
 
@@ -79,13 +81,14 @@ static void printLogo() {
     System.out.println("Telerik Academy");
     System.out.println("http://academy.telerik.com");
 }
-```
+``` -->
 
 *   Each method has a body
     *   It contains the programming code
     *   Surrounded by `{` and `}`
 
-#   Declaring and Creating Methods
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Declaring and Creating Methods -->
 
 *   Methods are **always** declared **inside a class**
     *   `main()` is also a method like all others
@@ -105,9 +108,9 @@ class MethodsDemo {
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section'} -->
-#   Invoking Methods
-##   i.e. use them
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Invoking Methods
+##   i.e. use them -->
 
 #   Invoking Methods
 
@@ -127,17 +130,17 @@ Telerik Academy
 http://academy.telerik.com
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Declaring and Invoking Methods
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Declaring and Invoking Methods -->
 ##  [Demo](http://)
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section'} -->
-#   Methods with Parameters
-##  Passing parameters and return values
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Methods with Parameters
+##  Passing parameters and return values -->
 
-#   Method Parameters
+#   Method with Parameters
 
 *   To pass information to a method, you can use parameters (also known as arguments)
     *   You can pass **zero or several** input values
@@ -146,8 +149,8 @@ http://academy.telerik.com
     *   Parameters are assigned to particular values when the method is called
     *   Parameters can change the method behavior depending on the passed values
 
-<!-- attr: {style: 'font-size:40px'} -->
-#   Method with Parameters
+<!-- attr: {style: 'font-size:40px', showInPresentation: true} -->
+<!-- #   Method with Parameters -->
 
 *   _Example:_ Method for printing the sign of a number:
 
@@ -199,7 +202,8 @@ printMax(100, 200);
 printMax(oldQuantity * 1.5, quantity * 2);
 ```
 
-#   Calling Methods with Parameters
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Invoking Methods with Parameters -->
 
 *   Expressions must be of the same type as method’s parameters (or compatible)
     *   If the method requires a float expression, you can pass int instead
@@ -208,11 +212,12 @@ printMax(oldQuantity * 1.5, quantity * 2);
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section'} -->
-#   Using Methods With Parameters
-##  Examples
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Using Methods With Parameters
+##  Examples -->
 
-#   Methods Parameters – Example
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Methods Parameters – Example -->
 
 *   _Example:_ Method that prints the sign of a number
 
@@ -230,7 +235,8 @@ static void printSign(int number) {
 }
 ```
 
-#   Method parameters - Examples
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Method parameters - Examples -->
 
 *   _Example:_ Method that prints the max number
 
@@ -243,11 +249,12 @@ static void printMax(float number1, float number2) {
   System.out.println("Maximal number: %f", max);
 }
 ```
-<!-- attr: {class: 'slide-section'} -->
-#   Methods with Parameters
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Methods with Parameters -->
 ##  [Demo](http://)
 
-#   Methods with Parameters - Examples
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Methods with Parameters - Examples -->
 
 *   Display the period between two months in a user-friendly way
 
@@ -272,11 +279,12 @@ static void SayPeriod(int startMonth, int endMonth) {
 }
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Period Between Months - Example
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Period Between Months - Example -->
 ##  [Demo](http://)
 
-#   Printing Triangle – Example
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Printing Triangle – Example -->
 
 *   _Example:_ Creating a program for printing triangles as shown below:
     *   n = 5
@@ -292,7 +300,8 @@ static void SayPeriod(int startMonth, int endMonth) {
 1
 ```
 
-#   Printing Triangle - The Code
+<!-- attr: {showInPresentation: true, showInPresentation: true} -->
+<!-- #   Printing Triangle - The Code -->
 *   The code:
 
 ```java
@@ -315,15 +324,15 @@ static void printLine(int start, int end)
 }
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Printing triangles
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Printing triangles -->
 ##  [Demo](http://)
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section'} -->
-#   Returning Values From Methods
-##  Do its work, then return result
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Returning Values From Methods
+##  Do its work, then return result -->
 
 #   Returning Values From Methods
 
@@ -346,8 +355,8 @@ static void printLine(int start, int end)
     int age = Integer.parseInt(reader.readLine());
     ```
 
-<!-- attr: {style: 'font-size:40px'} -->
-#   Methods Returning a Value
+<!-- attr: {style: 'font-size:40px', showInPresentation: true} -->
+<!-- #   Methods Returning a Value -->
 
 *   Instead of void, specify the type of data to return
 
@@ -385,7 +394,8 @@ static int multiply(int firstNum, int secondNum) {
 #   Returning Values From Methods
 ##  Examples
 
-#   Temperature Conversion – Example
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Temperature Conversion – Example -->
 
 *   Convert temperature from Fahrenheit to Celsius:
 
@@ -396,11 +406,12 @@ static double fahrenheitToCelsius(double degrees) {
 }
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Temperature Conversion
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Temperature Conversion -->
 ##  [Demo](http://)
 
-#   Positive Numbers – Example
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Positive Numbers – Example -->
 
 *   Check if all numbers in a sequence are positive:
 
@@ -415,11 +426,12 @@ static bool arePositive(int[] sequence) {
 }
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Positive numbers
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Positive numbers -->
 ##  [Demo](http://)
 
-#   Data Validation – Example
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Data Validation – Example -->
 
 *   Validating input data
 
@@ -436,14 +448,15 @@ static bool validateMinutes(int minutes) {
 static bool validateHours(int hours) { ... }
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Valiation
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Valiation -->
 ##  [Demo](http://)
 
 <!-- section start -->
 
-#   Method Overloading
-##  Multiple Methods with the Same Name
+<!-- attr: {showInPresentation: true} -->
+<!-- #   Method Overloading
+##  Multiple Methods with the Same Name -->
 
 *   What means "to overload a method name"?
     *   Use the same method name for multiple methods with different signature (parameters)
@@ -455,8 +468,8 @@ System.out.println("John Doe"); //used with string
 System.out.println(true); //used with Boolean
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Built-in method overloading
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Built-in method overloading -->
 ##  [Demo](http://)
 
 <!-- attr: {style: 'font-size: 40px'} -->
@@ -482,13 +495,13 @@ getRandom(10);
 //  returns number among 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Method Overloading
-##  [Demo](http://)
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Method Overloading
+##  [Demo](http://) -->
 
-<!-- attr: {class: 'slide-section'} -->
-#   Varying Number of Method Parameters
-##  Passing parameters separated with comma
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Varying Number of Method Parameters
+##  Passing parameters separated with comma -->
 
 #   Varying Method Parameters
 
@@ -510,10 +523,10 @@ int max = getMax(1, 2, 3, 4);
 int max2 = getMax(numbersArray);
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Varying Number of Method Parameters
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Varying Number of Method Parameters -->
 ##  [Demo](http://)
 
-<!-- attr: { class: 'slide-questions'} -->
-# Methods in Java
+<!-- attr: { class: 'slide-questions', showInPresentation: true} -->
+<!-- # Methods in Java -->
 ## Questions
