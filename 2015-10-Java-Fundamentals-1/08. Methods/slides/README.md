@@ -27,6 +27,7 @@
 
 <!-- section start -->
 
+<!-- attr: {class: 'slide-section'} -->
 #   Using Methods
 ##  Methods 101
 
@@ -50,6 +51,7 @@
 *   Code reusability
     *   Using existing methods several times
 
+<!-- attr: {class: 'slide-section'} -->
 #   Declaring and Creating Methods
 ##  How and Why
 
@@ -103,6 +105,7 @@ class MethodsDemo {
 
 <!-- section start -->
 
+<!-- attr: {class: 'slide-section'} -->
 #   Invoking Methods
 ##   i.e. use them
 
@@ -124,11 +127,13 @@ Telerik Academy
 http://academy.telerik.com
 ```
 
+<!-- attr: {class: 'slide-section'} -->
 #   Declaring and Invoking Methods
 ##  [Demo](http://)
 
 <!-- section start -->
 
+<!-- attr: {class: 'slide-section'} -->
 #   Methods with Parameters
 ##  Passing parameters and return values
 
@@ -141,7 +146,8 @@ http://academy.telerik.com
     *   Parameters are assigned to particular values when the method is called
     *   Parameters can change the method behavior depending on the passed values
 
-#   Defining and Using Method Parameters
+<!-- attr: {style: 'font-size:40px'} -->
+#   Method with Parameters
 
 *   _Example:_ Method for printing the sign of a number:
 
@@ -202,6 +208,312 @@ printMax(oldQuantity * 1.5, quantity * 2);
 
 <!-- section start -->
 
+<!-- attr: {class: 'slide-section'} -->
+#   Using Methods With Parameters
+##  Examples
+
+#   Methods Parameters – Example
+
+*   _Example:_ Method that prints the sign of a number
+
+```java
+static void printSign(int number) {
+  if (number > 0) {
+    System.out.println("The number %d is positive.", number);
+  }
+  else if (number < 0) {
+    System.out.println("The number %d is negative.", number);
+  }
+  else {
+    System.out.println("The number %d is zero.", number);
+  }
+}
+```
+
+#   Method parameters - Examples
+
+*   _Example:_ Method that prints the max number
+
+```java
+static void printMax(float number1, float number2) {
+  float max = number1;
+  if (number2 > number1) {
+    max = number2;
+  }
+  System.out.println("Maximal number: %f", max);
+}
+```
+<!-- attr: {class: 'slide-section'} -->
+#   Methods with Parameters
+##  [Demo](http://)
+
+#   Methods with Parameters - Examples
+
+*   Display the period between two months in a user-friendly way
+
+```java
+static void SayMonth(int month) {
+  string[] monthNames = new string[] {
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"};
+  System.out.print(monthNames[month-1]);
+}
+static void SayPeriod(int startMonth, int endMonth) {
+  int period = endMonth - startMonth;
+  if (period < 0) {
+    period = period + 12;
+  }
+  System.out.print("There are %d + months from ", period);
+  SayMonth(startMonth);
+  System.out.print(" to ");
+  SayMonth(endMonth);
+}
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Period Between Months - Example
+##  [Demo](http://)
+
+#   Printing Triangle – Example
+
+*   _Example:_ Creating a program for printing triangles as shown below:
+    *   n = 5
+```java
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+```
+
+#   Printing Triangle - The Code
+*   The code:
+
+```java
+static void printTriangle(int n) {
+    for (int line = 1; line <= n; line++) {
+        PrintLine(1, line);
+    }
+    for (int line = n-1; line >= 1; line--) {
+        PrintLine(1, line);
+    }
+}
+
+static void printLine(int start, int end)
+{
+    for (int i = start; i <= end; i++)
+    {
+        System.out.printf(" %d", i);
+    }
+    System.out.println();
+}
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Printing triangles
+##  [Demo](http://)
+
+<!-- section start -->
+
+<!-- attr: {class: 'slide-section'} -->
+#   Returning Values From Methods
+##  Do its work, then return result
+
+#   Returning Values From Methods
+
+*   A method can return a value to its invoker
+*   The Returned value:
+    *   Can be assigned to a variable:
+
+    ```java
+    String message = scanner.next();
+    ```
+
+    *   Can be used in expressions:
+
+    ```java
+    float price = getPrice() * quantity * 1.20;
+    ```
+
+    *   Can be passed to another method:
+    ```java
+    int age = Integer.parseInt(reader.readLine());
+    ```
+
+<!-- attr: {style: 'font-size:40px'} -->
+#   Methods Returning a Value
+
+*   Instead of void, specify the type of data to return
+
+static int multiply(int firstNum, int secondNum) {
+    return firstNum * secondNum;
+}
+
+*   Methods can return any type of data (`int`, `string`, `array`, etc.)
+*   `void` methods do not return anything
+*   The combination of **method's name** and **parameters** is called **method signature**
+*   Use the `return` keyword to return a result
+
+#   The return Statement
+
+*   The return statement:
+    *   Immediately terminates method’s execution
+    *   Returns specified expression to the caller
+*   Example:
+
+    ```java
+    return -1;
+    ```
+
+*   To terminate void method, use just:
+
+    ```java
+    return
+    ```
+
+*   Return can be used several times in a method body
+
+<!-- section start -->
+
+<!-- attr: {class: 'slide-section'} -->
+#   Returning Values From Methods
+##  Examples
+
+#   Temperature Conversion – Example
+
+*   Convert temperature from Fahrenheit to Celsius:
+
+```java
+static double fahrenheitToCelsius(double degrees) {
+  double celsius = (degrees - 32) * 5 / 9;
+  return celsius;
+}
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Temperature Conversion
+##  [Demo](http://)
+
+#   Positive Numbers – Example
+
+*   Check if all numbers in a sequence are positive:
+
+```java
+static bool arePositive(int[] sequence) {
+    for (int number : sequence) {
+        if (number <= 0) {
+            return false;
+        }
+    }
+    return true;
+}
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Positive numbers
+##  [Demo](http://)
+
+#   Data Validation – Example
+
+*   Validating input data
+
+```java
+statuc bool validateTime(int hours, int minutes, int seconds){
+  return validateHours(hours) && validateMinutes(minutes) && validateSeconds(seconds);
+}
+
+static bool validateMinutes(int minutes) {
+  bool result = (minutes>=0) && (minutes<=59);
+  return result;
+}
+
+static bool validateHours(int hours) { ... }
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Valiation
+##  [Demo](http://)
+
+<!-- section start -->
+
+#   Method Overloading
+##  Multiple Methods with the Same Name
+
+*   What means "to overload a method name"?
+    *   Use the same method name for multiple methods with different signature (parameters)
+*   _Example:__ with build-in methods
+
+```java
+System.out.println(5); //used with int
+System.out.println("John Doe"); //used with string
+System.out.println(true); //used with Boolean
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Built-in method overloading
+##  [Demo](http://)
+
+<!-- attr: {style: 'font-size: 40px'} -->
+#   Defining Method Overloading
+
+*   Just define multiple methods with the **same name**, but different **number**, **order** and/or **type** of parameters
+
+*   _Example:_
+
+```java
+static int getRandom(int max){
+}
+static int getRandom(int min, int max){
+}
+```
+
+*   Usage:
+
+```java
+getRandom(5, 10);
+//  returns a number among 5, 6, 7, 8, 9, 10
+getRandom(10);
+//  returns number among 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Method Overloading
+##  [Demo](http://)
+
+<!-- attr: {class: 'slide-section'} -->
+#   Varying Number of Method Parameters
+##  Passing parameters separated with comma
+
+#   Varying Method Parameters
+
+*   Java has the so caled `varargs`
+    *   i.e. an array of values can be passed using commas
+
+*   _Example:_ Find the maximum among elements:
+
+```java
+static int getMax(int... numbers){
+  int max = Integer.MIN_VALUE;
+  for(int number:numbers)
+    if ( max < number)
+      max = number;
+  return max;
+}
+//...
+int max = getMax(1, 2, 3, 4);
+int max2 = getMax(numbersArray);
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Varying Number of Method Parameters
+##  [Demo](http://)
+
 <!-- attr: { class: 'slide-questions'} -->
-# Loops
+# Methods in Java
 ## Questions
