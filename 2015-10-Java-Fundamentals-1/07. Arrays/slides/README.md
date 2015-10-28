@@ -395,8 +395,90 @@ for (int number : iArr) {
     - Known as **matrices** or **tables**
 - Example of matrix of integers with 2 rows and 4 columns:
 
-# Matrices - Example
-```cs
+<img class="slide-image" src="imgs/table.png" style="width:40%; top:60%; left:25%" />
+
+<!-- attr: { style:'font-size:0.9em' } -->
+# Declaring and Creating Multidimensional Arrays
+- Declaring multidimensional arrays:
+
+```java
+int[][] intMatrix;
+float[][] floatMatrix;
+String[][][] strCube;
+
+```
+- Creating a multidimensional array
+- Use new keyword
+- Must specify the size of each dimension
+
+```java
+int[][] intMatrix = new int[3][4];
+float[][] floatMatrix = new float[8][2];
+String[][][] stringCube = new String[5][5][5];
+
+```
+
+<!-- attr: { style:'font-size:0.9em' } -->
+# Initializing Multidimensional Arrays with Values
+- Creating and initializing with values multidimensional array:
+
+```java
+int[][] matrix = 
+{
+    {1, 2, 3, 4}, // row 0 values
+    {5, 6, 7, 8}, // row 1 values
+}; // The matrix size is 2 x 4 (2 rows, 4 cols)
+
+```
+- Matrices are represented by a list of rows
+  - Rows consist of list of values
+- The first dimension comes first, the second comes next (inside the first)
+
+<!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em' } -->
+# Accessing The Elements of Multidimensional Arrays
+- Accessing N-dimensional array element:
+
+```java
+nDimensionalArray[index<sub>1</sub>][ … ][index<sub>n</sub>]
+```
+- Getting element value example:
+
+```java
+int[][] array = {{1, 2}, {3, 4}};
+int element11 = array[1][1]; // element11 = 4
+```
+- Setting element value example:
+
+```java
+int[][] array = new int[3][4];
+for (int row = 0; row < array.length; row++)
+  for (int col = 0; col < array[row].length; col++)
+    array[row][col] = row + col;
+```
+
+# Reading a Matrix
+- Reading a matrix from the console
+
+```java
+Scanner scanner = new Scanner(System.in);
+int rows = scanner.nextInt();
+int cols = scanner.nextInt();
+int[][] matrix = new int[rows][columns];
+for (int row = 0; row < rows; row++)
+{
+  for (int column = 0; column < cols; column++)
+  {
+    System.out.println(MessageFormat.format(
+        "matrix[{0}][{1}] = ", row, column));
+    matrix[row][column] = scanner.nextInt();
+  }
+}
+```
+
+# Printing a Matrix
+- Printing a matrix to the console
+
+```java
 int[][] matrix = {
         {1, 2, 3, 4},
         {5, 6, 7, 8},
@@ -414,12 +496,73 @@ for (int i = 0; i < matrix.length; i++) {
 }
 ```
 
-
+<!-- attr: { hasScriptWrapper:true } -->
 # Jagged arrays
+- Jagged arrays are like multidimensional arrays
+  - But each dimension has different size
+  - A jagged array is array of arrays
+  - Each of the arrays has different length
+- How to create jagged array?
+
+<div style="width:60%">
+```java
+int[][] jagged = new int[3][];
+jagged[0] = new int[3];
+jagged[1] = new int[2];
+jagged[2] = new int[5];
+```
+</div>
+<img class="slide-image" src="imgs/jagged.png" style="width:30%; top:50%; left:60%" />
+
+# Initialization of Jagged Arrays
+- When creating jagged arrays
+  - Initially the array is created of `null` arrays
+  - Need to initialize each of them
+
+```java
+int[][] jagged = new int[n][];
+for (int i = 0; i < n; i++) {
+   jagged[i] = new int[i];
+}
+```
+
+<!-- attr: { hasScriptWrapper:true } -->
+# Example of Jagged Arrays
+- Check a set of numbers and group them by their remainder when dividing to 3 (0, 1 and 2)
+- Example: `0, 1, 4, 113, 55, 3, 1, 2, 66, 557, 124, 2`
+- First we need to count the numbers
+  - Done with a iteration
+- Make jagged array with appropriate sizes
+- Each number is added into its jagged array
+
+<img class="slide-image" src="imgs/jagged-example.png" style="width:25%; top:40%; left:80%" />
 
 
+<!-- attr: { hasScriptWrapper:true } -->
+# Example of Jagged Arrays
 
+```java
+int[] numbers = {0,1,4,113,55,3,1,2,66,557,124,2};
+int[] sizes = new int[3];
+int[] offsets = new int[3];
+foreach (var number in numbers)
+{
+   int remainder = number % 3;
+   sizes[remainder]++;
+}
+int[][] numbersByRemainder = new int[3][] { 
+  new int[sizes[0]], new int[sizes[1]],
+  new int[sizes[2]] };
+foreach (var number in numbers)
+{
+   int remainder = number % 3; 
+   int index = offsets[remainder];
+   numbersByRemainder[remainder][index] = number;
+   offsets[remainder]++;
+}
+```
 
+<img class="slide-image" src="imgs/jagged-example.png" style="width:40%; top:40%; left:71%" />
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
