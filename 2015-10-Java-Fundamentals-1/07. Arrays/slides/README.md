@@ -49,9 +49,9 @@ String[] myStringArray;
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Creating Arrays
-- Use the operator new
+- Use the operator `new`
 - Specify array length
-- Example creating (allocating) array of 5 integers:
+  - Example creating (allocating) array of 5 integers:
 
 ```java
 myIntArray = new int[5];
@@ -133,7 +133,7 @@ int[] reversed = new int[length];
         
 // Initialize the reversed array
 for (int index = 0; index < length; index++) {
-    reversed[length-index-1] = array[index];
+    reversed[length - 1 - index] = array[index];
 }
 ```
 
@@ -149,7 +149,7 @@ for (int index = 0; index < length; index++) {
 Scanner scanner = new Scanner(System.in);
 int n = scanner.nextInt();
 ```
-- Next, create the array of given size and read its elements in a for loop
+- Next, create the array of given size and read its elements in a `for` loop
 
 
 ```java
@@ -169,7 +169,7 @@ for (int i = 0; i < n; i++) {
 ```java
 boolean isSymmetric = true;
 for (int i=0; i < array.length / 2; i++) {
-    if (array[i] != array[n - i - 1]) {
+    if (array[i] != array[n - 1 - i]) {
         isSymmetric = false;
     }
 }
@@ -180,9 +180,9 @@ for (int i=0; i < array.length / 2; i++) {
 ## [Demo]()
 
 # Printing Arrays on the Console
-Process all elements of the array
-Print each element to the console
-Separate elements with white space or a new line
+- Process all elements of the array
+- Print each element to the console
+- Separate elements with white space or a new line
 
 ```java
 String[] array = { "one", "two", "three" };
@@ -202,12 +202,12 @@ for (int index = 0; index < array.length; index++) {
 <!-- section start -->
 <!-- attr: { id:'', class:'slide-section' } -->
 # Iterating arrays
-##  Processing Array Elements Using for and foreach
+##  Processing Array Elements Using `for` and `foreach`
 
-# Processing Arrays: for Statement
+# Processing Arrays: `for` Statement
 - Use `for` loop to process an array when
   - Need to keep track of the index
-  - Processing is not strictly sequential from the first to the last element
+  - Processing is strictly sequential from the first to the last element
 - In the loop body use the element at the loop index (`array[index]`)
 
 ```java
@@ -223,8 +223,8 @@ for (int index = 0; index < array.length; index++) {
 ```java
 int[] array = { 1, 2, 3, 4, 5 };
 System.out.println("Reversed: ");
-for (int i = array.length-1; i >= 0; i--) {
-    System.out.println(array[i] + " ");
+for (int i = array.length - 1; i >= 0; i--) {
+    System.out.print(array[i] + " ");
 } // Result: 5 4 3 2 1
 ```
 - Initialize all array elements with their corresponding index number:
@@ -287,8 +287,8 @@ for (String capital : capitals) {
   - `remove(element)` – removes the element 
   - `size()` – returns the current size of the list
 
-# `ArrayList` Example 
-
+<!-- attr: { hasScriptWrapper:true } -->
+# `ArrayList<T>` Example
 ```java
 ArrayList<Integer> intList = new ArrayList();
 for (int i = 0; i < 5; i++) {
@@ -438,9 +438,7 @@ int[][] matrix =
 # Accessing The Elements of Multidimensional Arrays
 - Accessing N-dimensional array element:
 
-```java
-nDimensionalArray[index<sub>1</sub>][ … ][index<sub>n</sub>]
-```
+`nDimensionalArray[index`<sub>`1`</sub>`][ … ][index`<sub>`n`</sub>`]`
 - Getting element value example:
 
 ```java
