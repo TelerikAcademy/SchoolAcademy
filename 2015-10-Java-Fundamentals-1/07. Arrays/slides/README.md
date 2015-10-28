@@ -34,7 +34,7 @@
 
 # Declaring Arrays
 - Declaration defines the type of the elements
-- Square brackets [] mean "array"
+- Square brackets `[]` mean "array"
 - Examples:
 - Declaring array of integers:
 
