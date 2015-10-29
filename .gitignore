@@ -197,3 +197,6 @@ FakesAssemblies/
 
 # WebStorm folder
 .idea/
+
+# Java class
+*.class
