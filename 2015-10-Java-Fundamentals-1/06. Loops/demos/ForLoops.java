@@ -13,11 +13,11 @@ public class ForLoops {
         for (int i = 1; i <= n; i++) {
             factorial = factorial.multiply(BigInteger.valueOf(i));
         }
-        WriteLine("{0}! = {1}", n, factorial);
+        writeLine("{0}! = {1}", n, factorial);
         System.out.println();
 
         for (int i = 1, sum = 1; i <= 128; i = i * 2, sum += i) {
-            WriteLine("i = {0}, sum = {1}", i, sum);
+            writeLine("i = {0}, sum = {1}", i, sum);
         }
         System.out.println();
     }
@@ -26,7 +26,7 @@ public class ForLoops {
         System.out.print(obj);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

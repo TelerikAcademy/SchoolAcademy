@@ -17,7 +17,7 @@ public class Sum1toN {
             sum += number;
             Write("+{0}", number);
         }
-        WriteLine(" = {0}", sum);
+        writeLine(" = {0}", sum);
     }
 
     public static void Write(Object obj) {
@@ -29,11 +29,11 @@ public class Sum1toN {
         System.out.print(form.format(obj));
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

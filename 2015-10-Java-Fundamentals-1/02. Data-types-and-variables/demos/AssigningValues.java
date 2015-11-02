@@ -22,16 +22,16 @@ public class AssigningValues {
         String greeting = "Hello World!";
         String message = greeting;
 
-        WriteLine("{0}\n{1}\n{2}\n{3}\n{4}\n{5}",
+        writeLine("{0}\n{1}\n{2}\n{3}\n{4}\n{5}",
                 firstValue, secondValue, thirdValue,
                 heightInMeters, greeting, message);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

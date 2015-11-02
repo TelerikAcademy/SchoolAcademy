@@ -8,7 +8,7 @@ public class FallThrouRule {
         Scanner scanner = new Scanner(System.in);
         int month = scanner.nextInt();
 
-        WriteLine("Remaining months to the end of the year are:");
+        writeLine("Remaining months to the end of the year are:");
         switch (month) {
             case 1:  System.out.println("January");
             case 2:  System.out.println("February");
@@ -30,7 +30,7 @@ public class FallThrouRule {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

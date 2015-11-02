@@ -11,7 +11,7 @@ public class IteratingOverArrays {
         }
 
         // Print the array
-        WriteLine("Original array: ");
+        writeLine("Original array: ");
         for (int number : array) {
             Write(number + " ");
         }
@@ -24,7 +24,7 @@ public class IteratingOverArrays {
         }
 
         // Print the array
-        WriteLine("Modified array: ");
+        writeLine("Modified array: ");
         for (int number : array) {
             Write(number + " ");
         }
@@ -36,11 +36,11 @@ public class IteratingOverArrays {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

@@ -13,14 +13,14 @@ public class FactorialDoWhile {
             n--;
         } while (n > 0);
 
-        WriteLine("n! = " + factorial);
+        writeLine("n! = " + factorial);
     }
 
     public static void Write(Object obj) {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

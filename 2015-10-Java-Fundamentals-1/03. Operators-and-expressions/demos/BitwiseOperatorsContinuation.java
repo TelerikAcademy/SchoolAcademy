@@ -12,17 +12,17 @@ public class BitwiseOperatorsContinuation {
         result = result >> position;
 
         if (result == 1) {
-            WriteLine(true);
+            writeLine(true);
         }
         else if (result == 0) {
-            WriteLine(false);
+            writeLine(false);
         }
         else {
-            WriteLine("Your program does not work!");
+            writeLine("Your program does not work!");
         }
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

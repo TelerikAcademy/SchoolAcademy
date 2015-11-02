@@ -24,7 +24,7 @@ public class CheckSymmetry {
             }
         }
 
-        WriteLine("Symmetric? --> {0}", isSymmetric);
+        writeLine("Symmetric? --> {0}", isSymmetric);
     }
 
     public static void Write(Object obj) {
@@ -36,7 +36,7 @@ public class CheckSymmetry {
         System.out.print(form.format(obj));
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

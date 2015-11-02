@@ -19,10 +19,10 @@ public class ProductNtoM {
             }
             while(num <= m);
 
-            WriteLine("product[n..m] = " + product);
+            writeLine("product[n..m] = " + product);
         }
         else {
-            WriteLine("Error: n should be smaller than m.");
+            writeLine("Error: n should be smaller than m.");
         }
     }
 
@@ -30,7 +30,7 @@ public class ProductNtoM {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

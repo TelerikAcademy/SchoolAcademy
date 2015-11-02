@@ -35,7 +35,7 @@ public class PrimesInRange {
             System.out.println();
         }
         else {
-            WriteLine("Invalid range!");
+            writeLine("Invalid range!");
         }
     }
 
@@ -48,7 +48,7 @@ public class PrimesInRange {
         System.out.print(form.format(obj));
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

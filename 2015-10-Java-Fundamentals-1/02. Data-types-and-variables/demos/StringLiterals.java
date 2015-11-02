@@ -5,18 +5,18 @@ public class StringLiterals {
 // Here is a string literal using escape sequences
         String quotation = "\"Hello, Jude\", he said.";
         String path = "C:\\WINNT\\Darts\\Darts.exe";
-        WriteLine(quotation);
-        WriteLine(path);
+        writeLine(quotation);
+        writeLine(path);
 
-        WriteLine("This is a multi-line text,\n" +
+        writeLine("This is a multi-line text,\n" +
             "represented as string.");
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

@@ -5,7 +5,7 @@ public class ExchangeBits {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        WriteLine(PadLeft(Integer.toBinaryString(number), 32, '0'));
+        writeLine(PadLeft(Integer.toBinaryString(number), 32, '0'));
 
         int mask = 1 << 3;
         int thirdBit = (number & mask) >> 3;
@@ -14,7 +14,7 @@ public class ExchangeBits {
         int twentyFourthBit = (number & mask) >> 24;
 
         if (thirdBit == twentyFourthBit) {
-            WriteLine(number);
+            writeLine(number);
             return;
         }
 
@@ -40,10 +40,10 @@ public class ExchangeBits {
             number = number | mask;
         }
 
-        WriteLine(PadLeft(Integer.toBinaryString(number), 32, '0'));
+        writeLine(PadLeft(Integer.toBinaryString(number), 32, '0'));
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 

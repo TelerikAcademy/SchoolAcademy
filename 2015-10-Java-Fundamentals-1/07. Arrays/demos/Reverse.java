@@ -17,11 +17,11 @@ public class Reverse {
 
         // Print the reversed array elements
         for (int index = 0; index < length; index++) {
-            WriteLine(reversed[index]);
+            writeLine(reversed[index]);
         }
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

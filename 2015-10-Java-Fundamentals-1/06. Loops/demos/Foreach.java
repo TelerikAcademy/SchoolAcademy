@@ -8,11 +8,11 @@ public class Foreach {
         };
 
         for (String day : days) {
-            WriteLine(day);
+            writeLine(day);
         }
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

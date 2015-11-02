@@ -13,20 +13,20 @@ public class MultipleLabels {
             case "dog":
             case "cat":
             case "cow":
-                WriteLine("MAMMAL");
+                writeLine("MAMMAL");
                 break;
             case "crocodile":
             case "tortoise":
             case "snake":
-                WriteLine("REPTILE");
+                writeLine("REPTILE");
                 break;
             case "hawk":
             case "sparrow":
             case "dove":
-                WriteLine("BIRD");
+                writeLine("BIRD");
                 break;
             default:
-                WriteLine("I don't know this animal!");
+                writeLine("I don't know this animal!");
                 break;
         }
     }
@@ -35,7 +35,7 @@ public class MultipleLabels {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

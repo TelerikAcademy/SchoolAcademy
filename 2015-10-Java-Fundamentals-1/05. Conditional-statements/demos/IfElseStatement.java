@@ -8,10 +8,10 @@ public class IfElseStatement {
         int number = scanner.nextInt();
 
         if (number % 2 == 0) {
-            WriteLine("This number is even.");
+            writeLine("This number is even.");
         }
         else {
-            WriteLine("This number is odd.");
+            writeLine("This number is odd.");
         }
     }
 
@@ -19,7 +19,7 @@ public class IfElseStatement {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

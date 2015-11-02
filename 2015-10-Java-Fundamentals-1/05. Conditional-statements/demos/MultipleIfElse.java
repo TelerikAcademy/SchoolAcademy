@@ -9,22 +9,22 @@ public class MultipleIfElse {
         char ch = scanner.next().charAt(0);
 
         if (ch == 'A' || ch == 'a') {
-            WriteLine("Vowel [ei]");
+            writeLine("Vowel [ei]");
         }
         else if (ch == 'E' || ch == 'e') {
-            WriteLine("Vowel [i:]");
+            writeLine("Vowel [i:]");
         }
         else if (ch == 'I' || ch == 'i') {
-            WriteLine("Vowel [ai]");
+            writeLine("Vowel [ai]");
         }
         else if (ch == 'O' || ch == 'o') {
-            WriteLine("Vowel [ou]");
+            writeLine("Vowel [ou]");
         }
         else if (ch == 'U' || ch == 'u') {
-            WriteLine("Vowel [ju:]");
+            writeLine("Vowel [ju:]");
         }
         else {
-            WriteLine("Consonant");
+            writeLine("Consonant");
         }
     }
 
@@ -32,7 +32,7 @@ public class MultipleIfElse {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

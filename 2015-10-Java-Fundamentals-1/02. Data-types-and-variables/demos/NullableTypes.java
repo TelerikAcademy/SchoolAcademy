@@ -3,38 +3,38 @@ import java.text.MessageFormat;
 public class NullableTypes {
     public static void main(String[] args) {
 
-        WriteLine("----------------------------------------");
+        writeLine("----------------------------------------");
 
         Integer someInteger = null;
         //int someInteger = null;
-        WriteLine(
+        writeLine(
                 "This is the integer with Null value -> " + someInteger);
         someInteger = 5;
-        WriteLine(
+        writeLine(
                 "This is the integer with value 5 -> " + someInteger);
 
 
-        WriteLine("----------------------------------------");
+        writeLine("----------------------------------------");
 
         Double someDouble;
         //double someDouble;
         someDouble = null;
-        WriteLine(
+        writeLine(
                 "This is the double with Null value -> " + someDouble);
         someDouble = 2.5;
-        WriteLine(
+        writeLine(
                 "This is the double with value 2.5 -> " + someDouble);
 
         Integer value = null;
-        WriteLine(value.intValue());
-        // Console.WriteLine(value.Value); // This will cause an exception
+        writeLine(value.intValue());
+        // Console.writeLine(value.Value); // This will cause an exception
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

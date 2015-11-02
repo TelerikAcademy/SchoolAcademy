@@ -9,14 +9,14 @@ public class SwitchStatement {
         int day = scanner.nextInt();
         switch (day)
         {
-            case 1: WriteLine("Monday"); break;
-            case 2: WriteLine("Tuesday"); break;
-            case 3: WriteLine("Wednesday"); break;
-            case 4: WriteLine("Thursday"); break;
-            case 5: WriteLine("Friday"); break;
-            case 6: WriteLine("Saturday");break;
-            case 7: WriteLine("Sunday"); break;
-            default: WriteLine("Invalid day!"); break;
+            case 1: writeLine("Monday"); break;
+            case 2: writeLine("Tuesday"); break;
+            case 3: writeLine("Wednesday"); break;
+            case 4: writeLine("Thursday"); break;
+            case 5: writeLine("Friday"); break;
+            case 6: writeLine("Saturday");break;
+            case 7: writeLine("Sunday"); break;
+            default: writeLine("Invalid day!"); break;
         }
     }
 
@@ -24,7 +24,7 @@ public class SwitchStatement {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

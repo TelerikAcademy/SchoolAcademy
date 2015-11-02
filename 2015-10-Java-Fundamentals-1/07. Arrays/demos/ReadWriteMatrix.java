@@ -24,7 +24,7 @@ public class ReadWriteMatrix {
         System.out.println();
 
         // Print the matrix on the console
-        WriteLine("The matrix is as follows:");
+        writeLine("The matrix is as follows:");
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
                 Write("{0} ", matrix[row][col]);
@@ -38,7 +38,7 @@ public class ReadWriteMatrix {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 

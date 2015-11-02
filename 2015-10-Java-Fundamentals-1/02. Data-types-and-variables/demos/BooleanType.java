@@ -4,13 +4,13 @@ public class BooleanType {
         int b = 2;
 
         boolean greaterAB = (a > b);
-        WriteLine(greaterAB);  // false
+        writeLine(greaterAB);  // false
 
         boolean equalA1 = (a == 1);
-        WriteLine(equalA1);    // true
+        writeLine(equalA1);    // true
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

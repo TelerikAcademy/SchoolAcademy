@@ -15,14 +15,14 @@ public class PowerNM {
             result = result.multiply(BigInteger.valueOf(n));
         }
 
-        WriteLine("n^m = {0}", result);
+        writeLine("n^m = {0}", result);
     }
 
     public static void Write(Object obj) {
         System.out.print(obj);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

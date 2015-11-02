@@ -24,14 +24,14 @@ public class FactorialBreak {
             factorial = factorial.multiply(BigInteger.valueOf(n));
             n--;
         }
-        WriteLine(" = {0}", factorial);
+        writeLine(" = {0}", factorial);
     }
 
     public static void Write(Object obj) {
         System.out.print(obj);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

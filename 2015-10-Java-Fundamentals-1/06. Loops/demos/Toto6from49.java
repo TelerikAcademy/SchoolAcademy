@@ -10,7 +10,7 @@ public class Toto6from49 {
                         for (int i5 = i4 + 1; i5 <= 48; i5++) {
                             for (int i6 = i5 + 1; i6 <= 49; i6++) {
                                 {
-                                    WriteLine("{0} {1} {2} {3} {4} {5}", i1, i2, i3, i4, i5, i6);
+                                    writeLine("{0} {1} {2} {3} {4} {5}", i1, i2, i3, i4, i5, i6);
                                     // Try to comment the above row to speed up the program
                                     counter++;
                                 }
@@ -21,10 +21,10 @@ public class Toto6from49 {
             }
         }
 
-        WriteLine("{0} combinations", counter);
+        writeLine("{0} combinations", counter);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }

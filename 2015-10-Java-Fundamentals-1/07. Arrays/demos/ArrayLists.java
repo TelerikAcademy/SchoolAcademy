@@ -10,23 +10,23 @@ public class ArrayLists {
             listOfStrings.add(str);
         }
 
-        WriteLine("Using \"foreach\" loop to traverse the List");
-        WriteLine("------------------------------------------------------------");
+        writeLine("Using \"foreach\" loop to traverse the List");
+        writeLine("------------------------------------------------------------");
         for (String str : listOfStrings) {
-            WriteLine(str);
+            writeLine(str);
         }
 
-        WriteLine("------------------------------------------------------------");
-        WriteLine("Using \"for\" loop to traverse the List");
-        WriteLine("------------------------------------------------------------");
+        writeLine("------------------------------------------------------------");
+        writeLine("Using \"for\" loop to traverse the List");
+        writeLine("------------------------------------------------------------");
         for (int i = 0; i < listOfStrings.size(); i++) {
-            WriteLine(listOfStrings.get(i));
+            writeLine(listOfStrings.get(i));
         }
 
         System.out.println();
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

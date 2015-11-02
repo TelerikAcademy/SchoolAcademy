@@ -7,10 +7,10 @@ public class DaysOfWeek {
             "Thursday", "Friday", "Saturday", "Sunday"
         };
 
-        WriteLine(daysOfWeek.length);
+        writeLine(daysOfWeek.length);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 }

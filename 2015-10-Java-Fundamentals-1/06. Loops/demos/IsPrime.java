@@ -16,18 +16,18 @@ public class IsPrime {
             divider++;
         }
 
-        WriteLine("Prime? {0}", prime);
+        writeLine("Prime? {0}", prime);
     }
 
     public static void Write(Object obj) {
         System.out.print(obj);
     }
 
-    public static void WriteLine(Object obj) {
+    public static void writeLine(Object obj) {
         System.out.println(obj);
     }
 
-    public static void WriteLine(String format, Object... obj) {
+    public static void writeLine(String format, Object... obj) {
         MessageFormat form = new MessageFormat(format);
         System.out.println(form.format(obj));
     }
