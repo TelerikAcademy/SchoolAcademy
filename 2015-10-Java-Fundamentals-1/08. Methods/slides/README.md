@@ -17,7 +17,8 @@
 # Table of Contents
 
 *   Using Methods
-    *   What is a Method? Why to Use Methods?
+    *   What is a Method? 
+    *   Why to Use Methods?
     *   Declaring and Creating Methods
     *   Calling Methods
 *   Methods with Parameters

@@ -1,41 +1,29 @@
-import java.text.MessageFormat;
-
 public class NullableTypes {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    System.out.println("----------------------------------------");
 
-        writeLine("----------------------------------------");
+    Integer someInteger = null;
+    //int someInteger = null;
+    System.out.printf("This is the integer with Null value -> %d%n",
+                      someInteger);
+    someInteger = 5;
+    System.out.printf("This is the integer with value 5 -> %d%n",
+                      someInteger);
 
-        Integer someInteger = null;
-        //int someInteger = null;
-        writeLine(
-                "This is the integer with Null value -> " + someInteger);
-        someInteger = 5;
-        writeLine(
-                "This is the integer with value 5 -> " + someInteger);
+    System.out.println("----------------------------------------");
 
+    Double someDouble;
+    //double someDouble;
+    someDouble = null;
+    System.out.printf("This is the double with Null value -> %f%n", 
+                      someDouble);
 
-        writeLine("----------------------------------------");
+    someDouble = 2.5;
+    System.out.printf("This is the double with value 2.5 -> %f%n",
+                      someDouble);
 
-        Double someDouble;
-        //double someDouble;
-        someDouble = null;
-        writeLine(
-                "This is the double with Null value -> " + someDouble);
-        someDouble = 2.5;
-        writeLine(
-                "This is the double with value 2.5 -> " + someDouble);
-
-        Integer value = null;
-        writeLine(value.intValue());
-        // Console.writeLine(value.Value); // This will cause an exception
-    }
-
-    public static void writeLine(Object obj) {
-        System.out.println(obj);
-    }
-
-    public static void writeLine(String format, Object... obj) {
-        MessageFormat form = new MessageFormat(format);
-        System.out.println(form.format(obj));
-    }
+    //this will throw an NullPointerException
+    Integer value = null;
+    System.out.println(value.intValue());
+  }
 }

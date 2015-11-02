@@ -1,16 +1,16 @@
 public class BooleanType {
-    public static void main(String[] args) {
-        int a = 1;
-        int b = 2;
+  public static void main(String[] args) {
+    int n1 = 1;
+    int n2 = 2;
+    
+    boolean greater = (n1 > n2);
+    writeLine(greater);  // false
 
-        boolean greaterAB = (a > b);
-        writeLine(greaterAB);  // false
+    boolean equalN1To1 = (n1 == 1);
+    writeLine(equalN1To1);    // true
+  }
 
-        boolean equalA1 = (a == 1);
-        writeLine(equalA1);    // true
-    }
-
-    public static void writeLine(Object obj) {
-        System.out.println(obj);
-    }
+  public static void writeLine(Object obj) {
+    System.out.println(obj);
+  }
 }
