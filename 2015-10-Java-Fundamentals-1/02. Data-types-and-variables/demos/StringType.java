@@ -1,17 +1,10 @@
-import java.text.MessageFormat;
-
 public class StringType {
-    public static void main(String[] args) {
-        String firstName = "Ivan";
-        String lastName = "Ivanov";
-        writeLine("Hello, {0}!\n", firstName);
+  public static void main(String[] args) {
+    String firstName = "Ivan";
+    String lastName = "Ivanov";
+    System.out.printf("Hello, %s!%n", firstName);
 
-        String fullName = firstName + " " + lastName;
-        writeLine("Your full name is {0}.", fullName);
-    }
-
-    public static void writeLine(String format, Object... obj) {
-        MessageFormat form = new MessageFormat(format);
-        System.out.println(form.format(obj));
-    }
+    String fullName = firstName + " " + lastName;
+    System.out.printf("Your full name is %s.%n", fullName);
+  }
 }
