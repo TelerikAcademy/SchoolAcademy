@@ -1,33 +1,21 @@
 import java.math.BigInteger;
-import java.text.MessageFormat;
 
 public class ForLoops {
-    public static void main(String[] args) {
-        for (int num = 0; num < 10; num++) {
-            Write(num + " ");
-        }
-        System.out.println();
-
-        int n = 5;
-        BigInteger factorial = BigInteger.ONE;
-        for (int i = 1; i <= n; i++) {
-            factorial = factorial.multiply(BigInteger.valueOf(i));
-        }
-        writeLine("{0}! = {1}", n, factorial);
-        System.out.println();
-
-        for (int i = 1, sum = 1; i <= 128; i = i * 2, sum += i) {
-            writeLine("i = {0}, sum = {1}", i, sum);
-        }
-        System.out.println();
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; ++i) {
+      System.out.printf("%d ", i);
     }
+    System.out.println();
 
-    public static void Write(Object obj) {
-        System.out.print(obj);
+    int number = 5;
+    BigInteger factorial = BigInteger.ONE;
+    for (int i = 1; i <= number; i++) {
+      factorial = factorial.multiply(BigInteger.valueOf(i));
     }
+    System.out.printf("%d! = %s%n", number, factorial);
 
-    public static void writeLine(String format, Object... obj) {
-        MessageFormat form = new MessageFormat(format);
-        System.out.println(form.format(obj));
+    for (int i = 1, sum = 1; i <= 128; i = i * 2, sum += i) {
+      System.out.printf("i = %d, sum = %d%n", i, sum);
     }
+  }
 }

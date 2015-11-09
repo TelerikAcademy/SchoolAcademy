@@ -1,30 +1,21 @@
-import java.text.MessageFormat;
 import java.util.Scanner;
 
 public class ContinueSumOdd {
-    public static void main(String[] args) {
-        Write("n = ");
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+  public static void main(String[] args) {
+    System.out.print("n = ");
+    Scanner scanner = new Scanner(System.in);
+    int count = scanner.nextInt();
 
-        int sum = 0;
+    int sum = 0;
 
-        for (int i = 1; i <= n; i += 2) {
-            if ((i % 7) == 0) {
-                continue;
-            }
+    for (int i = 1; i <= count; i += 2) {
+      if ((i % 7) == 0) {
+        continue;
+      }
 
-            sum += i;
-        }
-        writeLine("sum = {0}", sum);
+      sum += i;
     }
 
-    public static void Write(Object obj) {
-        System.out.print(obj);
-    }
-
-    public static void writeLine(String format, Object... obj) {
-        MessageFormat form = new MessageFormat(format);
-        System.out.println(form.format(obj));
-    }
+    System.out.printf("sum = %d%n", sum);
+  }
 }
