@@ -295,33 +295,124 @@ class TestMethods {
 }
 ```
 
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # Methods -->
+## [Demo]()
+
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
 # Getters and Setters
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # Getters and Setters -->
+## [Demo]()
 
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Constructors -->
 
-<!-- attr: { style:'font-size:0.9em' } -->
-# Constructors
-* Constructors are invoked to **create objects** with the `new` operator
-* Constructors are like methods, but they use the **name of the class** and have **no return type**
+# What is a Constructor?
+* `Constructors` are special methods
+  * Invoked at the time of `creating a new instance` of an object
+  * Used to initialize the fields of the instance
+* Constructors has the same name as the class
+  * Have no return type
+  * Can have parameters
+  * Can be `private`, `protected`, `public`
+
+<!-- attr: { style:'font-size:0.95em' } -->
+# Defining Constructors
+* Class `Point` with parameterless constructor:
 
 ```java
-class Bicycle {
-  ...
-  public Bicycle(int startCadence,int startSpeed, int startGear) {
-    this.gear = startGear;
-    this.cadence = startCadence;
-    this.speed = startSpeed;
-  }
+public class Point {
+   private int xCoord;
+   private int yCoord;
+
+   // Simple parameterless constructor
+   public Point() { 
+      this.xCoord = 0;
+      this.yCoord = 0;
+   }
+   // More code …
+} 
+```
+* Invoking
+
+```java
+Point myPoint = new Point();
+```
+
+<!-- attr: { hasScriptWrapper:true, style:'font-size:0.95em' } -->
+# Defining Constructors
+
+```java
+public class Person {
+    private string name;
+    private int age;
+
+    // Parameterless constructor
+    public Person() {
+        this.name = null;
+        this.age = 0;
+    }
+
+    // Constructor with parameters
+    public Person(string name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    // More code …
+} 
+
+```
+<div class="fragment balloon" style="width:210px; top:60%; left:63%">As rule constructors should initialize all own class fields.</div>
+
+<!-- attr: { style:'font-size:0.95em' } -->
+# Constructors and Initialization
+* Pay attention when using inline initialization!
+
+```java
+public class AlarmClock {
+   private int hours = 9; // Inline initialization
+   private int minutes = 0; // Inline initialization
+
+   // Parameterless constructor (intentionally left empty)
+   public AlarmClock() { }
+
+   // Constructor with parameters
+   public AlarmClock(int hours, int minutes) {
+      this.hours = hours;      // Invoked after the inline 
+      this.minutes = minutes;  // initialization!
+   }
+   // More code …
 }
 ```
-```java
-Bicycle myBike = new Bicycle(30, 0, 8);
+
+# Chaining Constructors Calls
+* Reusing constructors (chaining)
+
+```cs
+public class Point {
+    private int xCoord;
+    private int yCoord;
+	
+    public Point() { 
+        this(0, 0); // Reuse the constructor
+    }
+
+    public Point(int xCoord, int yCoord) {
+        this.xCoord = xCoord;
+        this.yCoord = yCoord;
+    }
+    // More code …
+} 
 ```
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # Constructors -->
+## [Demo]()
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
