@@ -303,6 +303,18 @@ class TestMethods {
 <!-- attr: { class:'slide-section' } -->
 # Getters and Setters
 
+# The Role of Getters and Setters
+* `Getters and Setters` expose object's data to the world
+  * Control how the data is manipulated
+    * Ensure the internal object state is correct
+    * E.g. price should always be kept positive
+* `Getters and Setters` can be:
+  * Read-only
+  * Write-only (examples)
+  * Read and write
+* Simplify the writing of code
+
+
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Getters and Setters -->
 ## [Demo]()
