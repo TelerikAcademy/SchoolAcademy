@@ -106,14 +106,222 @@ public class Cat extends Animal {
   * Events, inner types, etc.
 
 <!-- section start -->
-<!-- attr: { class:'slide-section' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Fields
+##  Defining and Using Data Fields -->
+
+<!-- attr: { hasScriptWrapper:true } -->
 # Fields
+* `Fields` are member variables in a class
+* Field declarations are composed of three components, in order:
+  1. Zero or more modifiers, such as `public` or `private`
+  2. The field's type - `int`, `String`,...
+  3. The field's name - `name`, `age`,...
+
+<!-- attr: { hasScriptWrapper:true } -->
+# Fields
+* Fields hold the internal object state
+  * Can be `static` or per instance
+  * Can be `private` / `public` / `protected` / …
+
+```java
+class Dog {
+   private String name;
+   private String breed;
+   private int age;
+   protected Color color;
+}
+```
+<div class="fragment balloon" style="width:190px; top:52%; left:43%">Field declarations</div>
+
+<!-- attr: { style:'font-size:0.95em' } -->
+# Static Fields
+* Variables that are common to all objects
+* Fields with `static` modifier are called **static fields** or **class variables**
+* Every instance of the class shares a class variable
+
+```java
+public class Bicycle {
+    public static int numberOfBicycles = 0;    
+}
+```
+* Usage
+
+```java
+  Bicycle.numberOfBicycles
+
+```
+
+
+# Constant Fields
+* Constants are values that cannot be reassigned
+  * Results in a compile-time error
+* Use the `static` modifier, in combination with the `final` modifier
+  * The `final` modifier indicates that the value of this field cannot change
+
+```java
+class Math {
+    public static final double PI = 3.141592653589793;    
+}
+```
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # Fields -->
+## [Demo]()
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Access Modifiers
+## Public, Private, Protected -->
+
+# Access Modifiers
+* Class members can have access modifiers
+* Restrict the access to them from outer sources
+* Class members can be:
+  * `public` – accessible from **any** class
+  * `protected` – accessible within its **own package** and by a **subclass** in another package
+  * _`no modifier`_ - **package-private** (default)
+  * `private` – accessible **only** from the class itself
+
+# Access Modifiers
+* Supports the OOP principle "`encapsulation`"
+  * It is common to make **fields** `private`
+    * This means that they can only be directly accessed from the class
+  * We still need access to these values
+    * This can be done indirectly by adding public methods that **get**/**set** the field values
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Access Modifiers -->
+
+<img class="slide-image" src="imgs/access-modifiers.png" style="width:100%" />
+<img class="slide-image" src="imgs/classes-access.png" style="width:30%; top:50%" />
+<img class="slide-image" src="imgs/visibility.png" style="width:30%; top:50%; left:35%" />
+
+# The '`this`' Keyword
+* The keyword `this` inside a method points to the current instance of the class
+* _Example_:
+
+```java
+class Dog {
+   private String name;
+  
+   public String getName() {
+      return this.name;
+      // The same like "return name;"
+   }
+}
+```
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # Access Modifiers -->
+## [Demo]()
 
 
 <!-- section start -->
-<!-- attr: { class:'slide-section' } -->
-# Access Modifiers
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Methods
+## Defining, Overloading and Invoking Methods -->
 
+<!-- attr: { style:'font-size:0.95em' } -->
+# Methods
+* Method declarations have six components:
+  1. Modifiers - `public`, `private` and others
+  2. The **return** type - the data type of the value returned
+    * `void` if the method does not return a value
+  3. The method name
+  4. The parameter list in parenthesis
+    * A comma-delimited list of input parameters
+      * Preceded by their data types
+    * Enclosed by parentheses `()`
+  5. An exception list - to be discussed later
+  6. The method body
+    * Enclosed between braces - the method's code
+
+# Methods
+* `Methods` are class members that execute some action (some code, some algorithm)
+  * Could be `static` / per instance
+  * Could be `public` / `private` / `protected` / …
+
+```java
+public class Point {
+  private int xCoord;
+  private int yCoord;
+
+  public double calcDistance(Point p) {
+    return Math.sqrt(
+      (p.xCoord - this.xCoord) * (p.xCoord - this.xCoord)
+      + (p.yCoord - this.yCoord) * (p.yCoord - this.yCoord));
+  }
+}
+```
+
+# Overloading Methods
+* Java can distinguish between methods with different method signatures
+  * This is called **method overloading**
+* Methods within a class can have the same name if they have **different parameter** lists
+* Methods are differentiated by the **number** and the **type** of the **arguments** passed
+  * You **cannot declare** more than one method with the **same name** and the **same number** and **type** of arguments
+
+
+# Overloading Methods
+```java
+public class DataArtist {
+    ...
+    public void draw(String s) {
+        ...
+    }
+    public void draw(int i) {
+        ...
+    }
+    public void draw(double f) {
+        ...
+    }
+    public void draw(int i, double f) {
+        ...
+    }
+}
+```
+
+# Using Methods
+* Invoking instance methods is done through the object (class instance):
+
+```java
+class TestMethods {
+  static void main(String[] args) {
+    Point p1 = new Point(2, 3);
+    Point p2 = new Point(3, 4);
+    System.out.println(p1.calcDistance(p2));
+  }
+}
+```
+
+<!-- section start -->
+<!-- attr: { class:'slide-section' } -->
+# Getters and Setters
+
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Constructors -->
+
+<!-- attr: { style:'font-size:0.9em' } -->
+# Constructors
+* Constructors are invoked to **create objects** with the `new` operator
+* Constructors are like methods, but they use the **name of the class** and have **no return type**
+
+```java
+class Bicycle {
+  ...
+  public Bicycle(int startCadence,int startSpeed, int startGear) {
+    this.gear = startGear;
+    this.cadence = startCadence;
+    this.speed = startSpeed;
+  }
+}
+```
+```java
+Bicycle myBike = new Bicycle(30, 0, 8);
+```
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
@@ -122,23 +330,17 @@ public class Cat extends Animal {
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Constructors
-
-
-<!-- section start -->
-<!-- attr: { class:'slide-section' } -->
-# Methods
-
-
-<!-- section start -->
-<!-- attr: { class:'slide-section' } -->
-# Properties
-
-
-<!-- section start -->
-<!-- attr: { class:'slide-section' } -->
 # Keeping the Object State
 
+<!-- section start -->
+<!-- attr: { style:'font-size:0.95em' } -->
+# Summary
+* Classes define specific structure for objects
+  * Objects are particular instances of a class
+* Classes define fields, methods, constructors and other members
+  * Access modifiers limit the access to class members
+* Constructors are invoked when creating new class instances and initialize the object's internal state
+* Getters and setters expose the class data in safe, controlled way
 
 <!-- section start -->
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
