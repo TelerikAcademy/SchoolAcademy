@@ -12,12 +12,13 @@
 <!-- section start -->
 # Table of Contents
 * Defining Simple Classes
-* Fields
+* Static Members
 * Access Modifiers
-* Using Classes and Objects
-* Constructors
+* Fields
 * Methods
-* Properties
+* Getters and Setters
+* Constructors
+* Using Classes and Objects
 * Keeping the Object State
 
 
@@ -105,7 +106,113 @@ public class Cat extends Animal {
   * Methods (static or not)
   * Events, inner types, etc.
 
+
 <!-- section start -->
+
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Static Members
+## Static vs. Instance Members -->
+
+# Static Members
+* Static members are associated with a type rather than with an instance
+  * Defined with the modifier `static`
+* Static can be used for
+  * Fields
+  * Properties
+  * Methods
+  * Initializer
+  * Events
+
+<!-- attr: { showInPresentation:true, style:'' } -->
+# Static vs. Non-Static
+* `Static`: 
+  * Associated with a type, not with an instance
+  * Initialized just before the type is used for the first time
+* `Non-Static`: 
+  * Associated with an instance
+  * Initialized when the constructor is called
+
+<!-- attr: { showInPresentation:true, style:'font-size:0.95em' } -->
+<!-- # Static Members -->
+
+```java
+class SqrtPrecalculated {
+   public static final int MAX_VALUE = 10000;
+
+  // Static field
+  private static double[] sqrtValues;
+
+  // Static initializer
+  static {
+    sqrtValues = new double[MAX_VALUE + 1];
+    for (int i = 0; i < sqrtValues.length; i++) {
+      sqrtValues[i] = Math.sqrt(i);
+    }
+  }
+
+  // Static method
+  public static double GetSqrt(int value) {
+    return sqrtValues[value];
+  }
+}
+```
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # Static Members -->
+## [Demo]()
+
+
+<!-- section start -->
+
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Access Modifiers
+## Public, Private, Protected -->
+
+# Access Modifiers
+* Class members can have access modifiers
+* Restrict the access to them from outer sources
+* Class members can be:
+  * `public` – accessible from **any** class
+  * `protected` – accessible within its **own package** and by a **subclass** in another package
+  * _`no modifier`_ - **package-private** (default)
+  * `private` – accessible **only** from the class itself
+
+# Access Modifiers
+* Supports the OOP principle "`encapsulation`"
+  * It is common to make **fields** `private`
+    * This means that they can only be directly accessed from the class
+  * We still need access to these values
+    * This can be done indirectly by adding public methods that **get**/**set** the field values
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Access Modifiers -->
+
+<img class="slide-image" src="imgs/access-modifiers.png" style="width:100%" />
+<img class="slide-image" src="imgs/classes-access.png" style="width:30%; top:50%" />
+<img class="slide-image" src="imgs/visibility.png" style="width:30%; top:50%; left:35%" />
+
+# The '`this`' Keyword
+* The keyword `this` inside a method points to the current instance of the class
+* _Example_:
+
+```java
+class Dog {
+   private String name;
+  
+   public String getName() {
+      return this.name;
+      // The same like "return name;"
+   }
+}
+```
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # Access Modifiers -->
+## [Demo]()
+
+
+<!-- section start -->
+
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Fields
 ##  Defining and Using Data Fields -->
@@ -169,55 +276,9 @@ class Math {
 <!-- # Fields -->
 ## [Demo]()
 
-<!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true } -->
-<!-- # Access Modifiers
-## Public, Private, Protected -->
-
-# Access Modifiers
-* Class members can have access modifiers
-* Restrict the access to them from outer sources
-* Class members can be:
-  * `public` – accessible from **any** class
-  * `protected` – accessible within its **own package** and by a **subclass** in another package
-  * _`no modifier`_ - **package-private** (default)
-  * `private` – accessible **only** from the class itself
-
-# Access Modifiers
-* Supports the OOP principle "`encapsulation`"
-  * It is common to make **fields** `private`
-    * This means that they can only be directly accessed from the class
-  * We still need access to these values
-    * This can be done indirectly by adding public methods that **get**/**set** the field values
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Access Modifiers -->
-
-<img class="slide-image" src="imgs/access-modifiers.png" style="width:100%" />
-<img class="slide-image" src="imgs/classes-access.png" style="width:30%; top:50%" />
-<img class="slide-image" src="imgs/visibility.png" style="width:30%; top:50%; left:35%" />
-
-# The '`this`' Keyword
-* The keyword `this` inside a method points to the current instance of the class
-* _Example_:
-
-```java
-class Dog {
-   private String name;
-  
-   public String getName() {
-      return this.name;
-      // The same like "return name;"
-   }
-}
-```
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Access Modifiers -->
-## [Demo]()
-
 
 <!-- section start -->
+
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Methods
 ## Defining, Overloading and Invoking Methods -->
@@ -304,16 +365,57 @@ class TestMethods {
 # Getters and Setters
 
 # The Role of Getters and Setters
-* `Getters and Setters` expose object's data to the world
+* **Getters** and **Setters** expose object's data
   * Control how the data is manipulated
     * Ensure the internal object state is correct
     * E.g. price should always be kept positive
-* `Getters and Setters` can be:
-  * Read-only
-  * Write-only (examples)
-  * Read and write
-* Simplify the writing of code
+* **Getters** and **Setters** should have:
+  * Access modifier - `public`, `protected`, `private`
+  * Return type - `int`, `String`, etc.
+  * Unique name
+  * Can contain code processing data in specific way, e.g. apply **validation**
 
+<!-- attr: { style:'font-size:0.9em' } -->
+# Defining Getter and Setter
+```java
+public class Point {
+  private int x;
+  private int y;
+
+  public int getX() {
+    return this.x;
+  }
+
+  public void setX(int value) {
+    this.x = value;
+  }
+
+  public int getY() {
+    return this.y;
+  }
+
+  public void setY(int value) {
+    this.y = value;
+  }
+}
+```
+
+# Dynamic Getter
+* Getters are not obligatory bound to a class field 
+  * Can be calculated dynamically
+
+```java
+public class Rectangle {
+  private double width;
+  private double height;
+  
+  // More code …
+  
+  public double getArea() {
+      return width * height;
+  }
+}
+```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Getters and Setters -->
@@ -427,13 +529,117 @@ public class Point {
 ## [Demo]()
 
 <!-- section start -->
-<!-- attr: { class:'slide-section' } -->
-# Using Classes and Objects
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Using Classes and Objects -->
 
+# How to Use Classes?
+1. Create an `instance`
+  * Initialize its properties / fields
+2. Manipulate the instance
+  * Read / modify its properties
+  * Invoke methods
+  * Handle events
+3. Release the occupied resources
+  * Performed automatically in most cases
+
+# Task: Dog Meeting
+* Our task is as follows:
+  * Create 3 dogs
+    * The first should be named "Sharo"
+    * The second – "Rex"
+    * The third – left without name
+  * Put all dogs in an array
+  * Iterate through the array elements and ask each dog to bark
+
+<!-- attr: { style:'font-size:0.8em' } -->
+# Dog Meeting
+```
+public class Dog {
+  private String name;
+
+  public Dog() {
+    this("no name");
+  }
+
+  public Dog(String name) {
+    this.name = name;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String bark() {
+    return this.getName() + ": Bau-bau!";
+  }
+}
+```
+
+# Dog Meeting
+```java
+public static void main(String[] args) {
+  int n = 3;
+  Dog[] dogs = new Dog[n];
+
+  for (int i = 0; i < dogs.length; i++) {
+    System.out.print(
+      String.format("Enter dog #%d name: ", i + 1));
+    dogs[i] = new Dog(scanner.nextLine());
+  }
+
+  for (Dog dog : dogs) {
+    System.out.println(dog.bark());
+  }
+}
+```
+
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # Using Classes and Objects -->
+## [Demo]()
 
 <!-- section start -->
-<!-- attr: { class:'slide-section' } -->
-# Keeping the Object State
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Keeping the Object State -->
+
+# Keep the Object State Correct
+* Constructors and getters/setters can **keep the object's state correct**
+  * This is known as **encapsulation** in OOP
+  * Can force **validation** when creating / modifying the object's internal state
+  * Constructors define which properties are **mandatory** and which are **optional**
+  * Setters should validate the new value before saving it in the object field
+  * Invalid values should cause an exception
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- # Keep the Object State -->
+
+```java
+public class Person {
+  private String name;
+
+  public Person(String name) {
+    this.setName(name);
+  }
+
+  public void setName(String value) {
+    if (value == null || value.isEmpty()) {
+      throw new IllegalArgumentException("Invalid name!");
+    } 
+    this.name = value;
+  }
+
+  public String getName() {
+    return this.name;
+  }
+}
+```
+<div class="fragments balloon" style="width:280px; top:22%; left:52%">We have only one constructor, so we cannot create person without specifying a name.</div>
+<div class="fragments balloon" style="width:210px; top:60%; left:40%">Incorrect name cannot be assigned</div>
+
 
 <!-- section start -->
 <!-- attr: { style:'font-size:0.95em' } -->
