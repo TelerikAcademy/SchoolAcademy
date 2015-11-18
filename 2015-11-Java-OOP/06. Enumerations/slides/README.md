@@ -11,6 +11,14 @@
 
 
 <!-- section start -->
+# Table of Contetnts
+* Enumerations in Java
+  * Defining Enumerations
+* Using Enumerations
+* The Power of Java Enumerations
+
+
+<!-- section start -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Enumerations in Java
@@ -111,10 +119,10 @@ public class EnumTest {
 <!-- section start -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
-<!-- # The Power of Java Enums -->
+<!-- # The Power of Java Enumerations -->
 
 <!-- attr: { style:'font-size:0.85em' } -->
-# The Power of Java Enums
+# The Power of Java Enumerations
 * Much more **powerful** than in other languages
 * The enum class body can include **methods**, **constructors** and other **fields**
 * All `enums` implicitly extend `java.lang.Enum`
@@ -127,7 +135,7 @@ for (Day d : Day.values()) {
 ```
 
 <!-- attr: { showInPresentation:true, style:'font-size:0.85em' } -->
-<!-- # The Power of Java Enums -->
+<!-- # The Power of Java Enumerations -->
 ```java
 public enum Planet {
     MERCURY (3.303e+23, 2.4397e6),
@@ -154,7 +162,7 @@ public enum Planet {
 ```
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.85em' } -->
-<!-- # The Power of Java Enums -->
+<!-- # The Power of Java Enumerations -->
 ```
     ...
     double surfaceGravity() {
