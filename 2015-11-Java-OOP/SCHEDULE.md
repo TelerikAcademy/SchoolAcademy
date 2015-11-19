@@ -1,6 +1,6 @@
 #   Presentations Schedule
 
-##  Day 1 - 25 (Wed) October 2015
+##  Day 1 - 25 (Wed) November 2015
 
 | Time  | Title                       | Trainer  |
 | ----- | --------------------------- | -------- |
@@ -10,7 +10,7 @@
 | 14:00 | Creating and Using Objects  | Evlogi   |
 | 15:30 | Defining Classes            | Evlogi   |
 
-##  Day 2 - 26 (Thu) October 2015
+##  Day 2 - 26 (Thu) November 2015
 
 | Time  | Title                       | Trainer |
 | ----- | --------------------------- | ------- |
@@ -21,7 +21,7 @@
 | 14:00 | Interfaces                  | Evlogi  |
 | 15:00 | Polymorphism                | Evlogi  |
 
-##  Day 3 - 27 (Fri) October 2015
+##  Day 3 - 27 (Fri) November 2015
 
 | Time  | Title                       | Trainer |
 | ----- | --------------------------- | ------- |
