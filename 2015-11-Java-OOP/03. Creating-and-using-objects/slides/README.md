@@ -12,7 +12,10 @@
 <!-- section start -->
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
-
+* Classes and Objects
+  * What are Objects?
+  * What are Classes?
+* Packages
 
 <!-- section start -->
 

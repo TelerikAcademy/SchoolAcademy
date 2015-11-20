@@ -80,11 +80,25 @@
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Inheritance in Java -->
 
+<!-- attr: { hasScriptWrapper:true } -->
 # Inheritance in Java
 * Every class has one and only one direct **superclass** (single inheritance)
   * Every class is implicitly a subclass of `Object`
 * A class can implement several interfaces
+
+```java
+ArrayList<E> extends AbstractList<E>
+  implements List<E>, RandomAccess, Cloneable, Serializable
+```
 * An interface can implement several interfaces
+
+```java
+List<E> extends Collectoin<E>
+```
+
+<!-- attr: { hasScriptWrapper:true } -->
+# Java Platform Class Hierarchy
+<img class="slide-image" src="imgs/classes-object.png" style="top:50%; left:20%" />
 
 
 <!-- section start -->
