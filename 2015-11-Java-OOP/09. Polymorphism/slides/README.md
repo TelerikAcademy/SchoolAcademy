@@ -12,7 +12,8 @@
 <!-- attr: { class:'slide-sectoin', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
 * Polymorphism
-* Cohesion and Coupling
+* Real world example
+<!-- * Cohesion and Coupling -->
 
 
 <!-- section start -->
@@ -47,7 +48,6 @@
 <!-- # Polymorphism -->
 
 <img class="slide-image" src="imgs/polymorphism.png" style="width:80%; top:20%; left:10%" />
-
 <div class="fragment">
   <div class="balloon" style="width:150px; top:20%; left:20%">Abstract class</div>
   <div class="balloon" style="width:170px; top:33%; left:68%">Abstract action</div>
@@ -90,7 +90,53 @@ public class Circle extends Figure {
 
 
 <!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Class Hierarchies
+## Real World Example -->
+
+<!-- attr: { hasScriptWrapper:true } -->
+# Real World Example: Calculator
+* Creating an application like the Windows Calculator
+  * Typical scenario for applying the object-oriented approach
+
+<img class="slide-image" src="imgs/calculator.png" style="width:50%; top:40%; left:35%" />
+
+<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- # Real World Example: Calculator -->
+* The calculator consists of controls:
+  * Buttons, panels, text boxes, menus, check boxes, radio buttons, etc.
+* Class `Control` – the root of our OO hierarchy
+  * All controls can be painted on the screen
+    * Should implement an interface `IPaintable` with a method `paint()`
+  * Common properties: location, size, text, face color, font, background color, etc.
+
+<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- # Real World Example: Calculator -->
+* Some controls could contain other (nested) controls inside (e. g. panels and toolbars)
+  * We should have class `Container` that extends `Control` holding a collection of child controls
+* The `Calculator` itself is a `Form`
+  * `Form` is a special kind of `Container`
+  * Contains also border, title (`text` derived from `Control`), icon and system buttons 
+* How the `Calculator` paints itself?
+  * Invokes `paint() `for all child controls inside it
+
+<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- # Real World Example: Calculator -->
+* How a `Container` paints itself?
+  * Invokes `paint()` for all controls inside it
+  * Each control knows how to visualize itself
+* What is the common between buttons, check boxes and radio buttons?
+  * Can be pressed
+  * Can be selected
+* We can define class `AbstractButton` and all buttons can derive from it
+
+<!-- attr: { hasScriptWrapper:true, style:'' } -->
+# Calculator Classes 
+
+<img class="slide-image" src="imgs/calculator-classes.png" style="width:90%; top:12%; left:0%" />
+
+<!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section' } -->
 # Questions
-## Defining Classes
+## Polymorphism
 [link to Telerik Academy Forum](http://telerikacademy.com/Forum/Category/12/telerik-school-academy)
