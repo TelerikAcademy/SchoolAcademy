@@ -205,6 +205,7 @@ java.util.ArrayList list
 <!-- # Java Platform
 ## Useful classes -->
 
+<!-- attr: { style:'font-size:0.9em' } -->
 # `java.lang`
 * `java.lang` provides classes that are fundamental to the design of the Java programming language
   * `java.lang.Object`
@@ -216,8 +217,8 @@ java.util.ArrayList list
   * `java.lang.Math`
     * Provides commonly used mathematical functions
 
+<!-- attr: { style:'font-size:0.9em' } -->
 # `java.util`
-* 
 * `java.util.Random`
   * Used to generate a stream of pseudorandom numbers
 * `java.util.ArrayList`
@@ -228,6 +229,7 @@ java.util.ArrayList list
   * Legacy Date-Time code
   * Completely redesigned in the Java SE 8 release
 
+<!-- attr: { style:'font-size:0.85em' } -->
 # `java.time`
 * `java.time.LocalTime`
   * A time without a time-zone in the ISO-8601 calendar system
