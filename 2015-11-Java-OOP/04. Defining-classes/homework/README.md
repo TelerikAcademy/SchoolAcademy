@@ -1,6 +1,6 @@
 ## Defining Classes
 ### Homework
-### _WARNING_: This homework is a copy of the C# OOP course and some of the problems might not be solvable with the material form this lecture!
+### _WARNING_: This homework is a copy of the [C# OOP](https://github.com/TelerikAcademy/Object-Oriented-Programming) course and some of the problems might not be solvable with the material form this lecture or the names of the classes and packages/namespaces differ!
 
 #### Problem 1. Define class
 *	Define a class that holds information about a mobile phone device: model, manufacturer, price, owner, battery characteristics (model, hours idle and hours talk) and display characteristics (size and number of colors).
