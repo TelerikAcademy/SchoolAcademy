@@ -202,34 +202,42 @@ java.util.ArrayList list
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
-# java.lang
+<!-- # Java Platform
+## Useful classes -->
 
-# java.lang.Object
+# `java.lang`
+* `java.lang` provides classes that are fundamental to the design of the Java programming language
+  * `java.lang.Object`
+    * The root of the class hierarchy
+  * `java.lang.Class`
+    * Represent classes at run time
+  * `java.lang.String`
+    * Commonly used operations on character strings
+  * `java.lang.Math`
+    * Provides commonly used mathematical functions
 
-# java.lang.Class
+# `java.util`
+* 
+* `java.util.Random`
+  * Used to generate a stream of pseudorandom numbers
+* `java.util.ArrayList`
+  * Resizable-array implementation of the `List` interface
+* `java.util.HashMap`
+  * Hash table based implementation of the `Map` interface
+* `java.util.Date`
+  * Legacy Date-Time code
+  * Completely redesigned in the Java SE 8 release
 
-# java.lang.String
-
-# java.lang.Math
-
-
-<!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true } -->
-# java.util
-
-# java.util.Random
-
-# java.util.ArrayList
-
-# java.util.HashMap
-
-<!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true } -->
-<!-- # java.time -->
-
-# java.time.LocalTime
-
-# java.time.LocalDateTime
+# `java.time`
+* `java.time.LocalTime`
+  * A time without a time-zone in the ISO-8601 calendar system
+  * _Example_: 10:15:30
+* `java.time.LocalDate`
+  * A date without a time-zone in the ISO-8601 calendar system
+  * _Example_: 2007-12-03
+* `java.time.LocalDateTime`
+  * A date-time without a time-zone in the ISO-8601 calendar system
+  * _Example_: 2007-12-03T10:15:30
 
 
 <!-- section start -->
