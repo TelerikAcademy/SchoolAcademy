@@ -214,10 +214,70 @@ default ZonedDateTime getZonedDateTime(String zoneString) {
 * When an abstract class is subclassed, the **subclass usually provides implementations** for all of the `abstract` methods in its parent class
   * If it does not, then the **subclass** must also be declared `abstract`
 
+<!-- attr: { showInPresentation:true } -->
+<!-- # Abstract classes -->
+* _Example_:
+
+```java
+abstract class GraphicObject {
+    int x, y;
+    ...
+    void moveTo(int newX, int newY) {
+        ...
+    }
+    abstract void draw();
+    abstract void resize();
+}
+```
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Abstract classes -->
+```java
+class Circle extends GraphicObject {
+    void draw() {
+        ...
+    }
+    void resize() {
+        ...
+    }
+}
+```
+```java
+class Rectangle extends GraphicObject {
+    void draw() {
+        ...
+    }
+    void resize() {
+        ...
+    }
+}
+```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Abstract classes -->
 ## [Demo]()
+
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- # Abstract classes<br/>vs.<br/>Interfaces -->
+
+<!-- attr: { style:'font-size:0.9em' } -->
+# Which should you use
+* Consider using `abstract classes` if any of these statements apply to your situation:
+  * You want to share code among several closely related classes
+  * You expect that classes that extend your abstract class have many common methods or fields, or require access modifiers other than public (such as protected and private)
+  * You want to declare non-static or non-final fields
+    * This enables you to define methods that can access and modify the state of the object to which they belong
+
+<!-- attr: { style:'font-size:0.9em' } -->
+# Which should you use
+* Consider using `interfaces` if any of these statements apply to your situation:
+  * You expect that unrelated classes would implement your interface
+    * For example, the interfaces Comparable and Cloneable are implemented by many unrelated classes
+  * You want to specify the behavior of a particular data type, but not concerned about who implements its behavior
+  * You want to take advantage of multiple inheritance of type
+
 
 
 <!-- section start -->
