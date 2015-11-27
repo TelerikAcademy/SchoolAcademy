@@ -5,11 +5,9 @@ Homework: Polymorphism
 *	Define `abstract` class `Shape` with only one `abstract` method `calculateSurface()` and fields `width` and `height`.
 *	Define two new classes `Triangle` and `Rectangle` that implement the `abstract` method and return the surface of the figure (height * width for rectangle and height * width/2 for triangle).
 *	Define class `Square` and suitable constructor so that at initialization `height` **must** be kept equal to `width` and implement the `calculateSurface()` method.
+* 	Test the behaviour of the `calculateSurface()` method for different shapes (`Square`, `Rectangle`, `Triangle`) stored in an array.
 
-### Problem 2. Surface areas
-* Write a program that tests the behaviour of the `calculateSurface()` method for different shapes (`Square`, `Rectangle`, `Triangle`) stored in an array.
-
-### Problem 3. Computer store
+### Problem 2. Computer store
 *	Define interface `IComputer` with only one method `compute()` and field `bits` that can be either `32` or `64`.
 	*	Define class `Laptop` that is always 64 bits.
 	*	Define class `SmartPhone` that is always 32 bits.
