@@ -22,4 +22,4 @@ Homework: Virtual and abstract classes and methods
 	* Print the worker with the highest salary and the least `workHoursPerDay`.
 * 	Initialize a list of 10 students
 	* Print the top three students with the highest average grade.
-	* Print the top student with the highest grade.
+	* Print the student with the highest grade from each student type _(`PRIMARY`, `SECONDARY` and `COLLEGE`)_.
