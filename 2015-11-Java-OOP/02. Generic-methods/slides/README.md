@@ -1,7 +1,7 @@
 <!-- section start -->
 <!-- attr: { class:'slide-title', hasScriptWrapper:true } -->
 # Generic methods
-##  
+##  How to create methods
 <div class="signature">
     <p class="signature-course">Java OOP</p>
     <p class="signature-initiative">Telerik School Academy</p>
