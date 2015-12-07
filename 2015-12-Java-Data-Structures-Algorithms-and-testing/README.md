@@ -1,8 +1,7 @@
 # Java Data Structures and OOP
+###   Presentations Schedule
 
-##   Presentations Schedule
-
-###  Day 1 - 14 (Mon) December 2015
+##  Day 1 - 14 (Mon) December 2015
 
 | Time  | Title                                     | Trainer  |
 | ----- | ----------------------------------------- | -------- |
@@ -12,7 +11,7 @@
 | 14:30 | Recursion                                 | Evlogi   |
 | 16:30 | Hash tables<br/> - HashMap<br/> - HashSet<br/> - MapList | Evlogi   |
 
-###  Day 2 - 15 (Tue) December 2015
+##  Day 2 - 15 (Tue) December 2015
 
 | Time  | Title                       | Trainer |
 | ----- | --------------------------- | ------- |
@@ -23,7 +22,7 @@
 | 14:30 | Trees<br/> - TreeMap<br/> - TreeSet<br/> - Implementing heaps  | Doncho  |
 | 17:00 | Tree Traversal<br/> - post-order, pre-order, in-order | Doncho  |
 
-###  Day 3 - 16 (Wed) December 2015
+##  Day 3 - 16 (Wed) December 2015
 
 | Time  | Title                       | Trainer |
 | ----- | --------------------------- | ------- |
