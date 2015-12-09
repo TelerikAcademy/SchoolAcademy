@@ -15,13 +15,9 @@
 - Lists
   - Static and Linked Implementation
   - `List<T>` and `LinkedList<T>`
-- Queues
-  - Circular and Linked Implementation
-  - The `Queue<T>` Class
-- Stacks
-  - Static and Linked Implementation
-  - The `Stack<T>` Class
-- Deck
+- `Queue<T>`
+- `Stack<T>`
+- `Decque`
 
 
 <!-- section start -->
@@ -39,7 +35,7 @@
   - Can be implemented in several ways
     - Statically (using array &rarr; fixed size)
     - Dynamically (linked implementation)
-    - Using resizable array (the `List<T>` class)
+    - Using resizable array (the `ArrayList<T>` class)
 
 # Static List
 - Implemented by an array
@@ -86,7 +82,7 @@
   - `add(T)` – appends given element at the end
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
-# `ArrayList<T>` – Simple Example
+# `ArrayList<T>`<br/>Simple Example
 ```java
 static void main(String[] args) {
   List<String> list = new ArrayList<>();
@@ -102,7 +98,6 @@ static void main(String[] args) {
   //   SQL
 }
 ```
-<div class="fragments balloon" style="width:300px; right:5%; top:32%" >Inline initialization: the compiler adds specified elements to the list</div>
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section' } -->

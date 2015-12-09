@@ -6,7 +6,7 @@
 | Time  | Title                                     | Trainer  |
 | ----- | ----------------------------------------- | -------- |
 | 10:00 | IT Test                                   | Kristian |
-| 11:40 | Linear data structures<br/> - ArrayList<br/> - LinkedList<br/> - Queue<br/> - Stack<br/> - Deck | Evlogi   |
+| 11:40 | Linear data structures<br/> - ArrayList<br/> - LinkedList<br/> - Queue<br/> - Stack<br/> - Deque | Evlogi   |
 | 13:30 | Lunch break                               | ------   |
 | 14:30 | Recursion                                 | Evlogi   |
 | 16:30 | Hash tables<br/> - HashMap<br/> - HashSet<br/> - MapList | Evlogi   |
