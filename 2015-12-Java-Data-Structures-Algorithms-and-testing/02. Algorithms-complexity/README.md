@@ -1,5 +1,5 @@
 ## Data Structures, Algorithms and Complexity
-### [View Presentation online](https://rawgit.com/TelerikAcademy/SchoolaAcademy/master/Java-Data-Structures-and-Algorithms/05.%20Data-Structures-Algorithms-and-Complexity/slides/index.html)
+### [View Presentation online](https://rawgit.com/TelerikAcademy/SchoolAcademy/master/2015-12-Java-Data-Structures-Algorithms-and-testing/02.%20Algorithms-complexity/slides/index.html)
 ### Table of Contents
 - Data Structures Overview
   - Linear Structures, Trees, Hash Tables, Others
