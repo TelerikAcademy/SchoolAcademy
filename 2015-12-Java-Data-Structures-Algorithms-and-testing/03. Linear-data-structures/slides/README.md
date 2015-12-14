@@ -106,19 +106,13 @@ static void main(String[] args) {
 
 <!-- attr: { hasScriptWrapper:true } -->
 # `ArrayList<T>` – Functionality
-- `list.get(index)` – access element by index
-- `insert(index, T)` – inserts given element to the list at a specified position
+- `get(index)` – access element by index
+- `add(index, T)` – inserts given element to the list at a specified position
 - `remove(T)` – removes the first occurrence of given element
 - `remove(index)` – removes the element at the specified position
 - `clear()` – removes all elements
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # ArrayList<T> – Functionality -->
-- `contains(T)` – determines whether an element is part of the list
 - `indexOf()` – returns the index of the first occurrence of a value in the list (zero-based)
 - `toArray()` – converts the elements of the list to an array
-- `trimToSize()` – sets the capacity to the actual number of elements
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
