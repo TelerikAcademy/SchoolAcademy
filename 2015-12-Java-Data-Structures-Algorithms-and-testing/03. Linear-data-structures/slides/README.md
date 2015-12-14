@@ -1,7 +1,7 @@
 <!-- section start -->
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
 # Linear Data Structures
-## Arrays, Lists, Queues, Stacks, Deck<br/>Static and Dynamic Implementation
+## Arrays, Lists, Queues, Stacks, Deque<br/>Static and Dynamic Implementation
 
 <div class="signature">
     <p class="signature-course">Java DSA</p>
