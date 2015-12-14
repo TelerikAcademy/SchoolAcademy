@@ -109,7 +109,7 @@ static void main(String[] args) {
 - `list.get(index)` – access element by index
 - `insert(index, T)` – inserts given element to the list at a specified position
 - `remove(T)` – removes the first occurrence of given element
-- `removeAt(index)` – removes the element at the specified position
+- `remove(index)` – removes the element at the specified position
 - `clear()` – removes all elements
 
 
