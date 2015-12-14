@@ -237,7 +237,7 @@ Example of `pseudocode`
 | exponential| O(2<sup>n</sup>),<br/>O(k<sup>n</sup>),<br/> O(n!) | Exponential number of operations, fast growing, e.g. n = 20 &rarr; 1 048 576 operations |
 
 
-<!-- attr: { style:'font-size:0.65em' } -->
+<!-- attr: { hasScriptWrapper:true, style:'font-size:0.65em' } -->
 # Time Complexity and Speed
 | Complexity | 10 | 20 | 50 | 100 | 1000 | 10000 | 100000 |
 |------------|----|----|----|-----|-------|--------|---------|
