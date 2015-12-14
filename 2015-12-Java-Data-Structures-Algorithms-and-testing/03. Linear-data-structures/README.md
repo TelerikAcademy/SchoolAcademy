@@ -7,4 +7,4 @@
   - List<T> and LinkedList<T>
 - Queue<T>
 - Stack<T>
-- Decque
+- Deque
