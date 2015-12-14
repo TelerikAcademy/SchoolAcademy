@@ -164,7 +164,7 @@ static List<Integer> findPrimes(int start, int end)  {
   - `T` can be any type, e.g. `LinkedList<Integer>`, `LinkedList<String>`, etc.
   - Elements can be added at both sides
 - Basic `LinkedList<T>` functionality:
-  - `addFirst(T)`, `addLast(T)`, `addBefore(T)`, `addAfter(T)`, `removeFirst(T)`, `removeLast(T)`
+  - `addFirst(T)`, `addLast(T)`, `removeFirst(T)`, `removeLast(T)`
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
