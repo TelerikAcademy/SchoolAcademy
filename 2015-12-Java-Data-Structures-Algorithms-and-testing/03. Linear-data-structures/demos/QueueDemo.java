@@ -3,7 +3,7 @@ import java.util.Queue;
 
 public class QueueDemo {
   public static void main(String[] args) {
-    Queue<String> queue = new LinkedList<String>();
+    Queue<String> queue = new LinkedList<>();
     queue.add("Message One");
     queue.add("Message Two");
     queue.add("Message Three");
@@ -13,5 +13,7 @@ public class QueueDemo {
       String message = queue.poll();
       System.out.println(message);
     }
+
+    System.out.println(queue);
   }
 }

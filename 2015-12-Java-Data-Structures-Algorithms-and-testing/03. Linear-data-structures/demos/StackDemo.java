@@ -1,13 +1,12 @@
-import java.util.LinkedList;
+import java.util.Stack;
 
 public class StackDemo {
   public static void main(String[] args) {
-    LinkedList<String> list = new LinkedList<String>();
-    list.addFirst("First");
-    list.addLast("Last");
-    list.add(1, "After First");
-    list.add(2, "Before Last");
+    Stack<String> stack = new Stack<>();
+    stack.push("First");
+    stack.push("Last");
 
-    System.out.println(list);
+    System.out.println(stack.peek());
+    System.out.println(stack);
   }
 }
