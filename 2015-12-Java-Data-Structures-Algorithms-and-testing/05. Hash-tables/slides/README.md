@@ -134,7 +134,6 @@
 
 <!-- attr: { hasScriptWrapper:true } -->
 # `HashSet<E>`
-
 ```java
 Set<String> set = new HashSet<>();
 set.add("Jordan");
