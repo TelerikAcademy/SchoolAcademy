@@ -38,37 +38,6 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<<<<<<< HEAD
-<!-- # `HashMap<K,V>` -->
-
-<!-- attr: { hasScriptWrapper:true } -->
-# `HashMap<K,V>`
-- Hash table based implementation of the Map interface
-  - Permits `null` values and the `null` key
-- Makes no guarantees as to the order of the map
-  - It does not guarantee that the order will remain constant over time
-- _Note_: This implementation is not synchronized
-- [Class HashMap<K,V> documentation](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html)
-
-<!-- attr: { hasScriptWrapper:true, style:'font-size:0.95em' } -->
-# `HashMap<K,V>`
-- Basic operations:
-  - `size()` - returns the number of key-value mappings in this map
-  - `get(key)` - returns the value to which the specified key is mapped
-  - `put(key, value)`
-    - associates the specified value with the specified key in this map
-    - if the map previously contained a mapping for the key, the old value is replaced
-  - `containsKey(key)` - returns true if this map contains a mapping for the specified key
-
-<!-- attr: { hasScriptWrapper:true, style:'font-size:0.95em' } -->
-# `HashMap<K,V>`
-- Basic operations:
-  - `remove(key)` - removes the mapping for the specified key from this map if present
-  - `clear()` - removes all of the mappings from this map
-  - `keySet()` - returns a set view of the keys contained in this map
-  - `values()` - returns a set view of the mappings contained in this map
-  - `entrySet()` - returns a set view of the mappings contained in this map
-=======
 <!-- # Hash Table
 ## What is a Hash Table and how it works -->
 
@@ -81,7 +50,6 @@
   <div class="balloon" style="width:120px; top:70%; left:65%">Hash table of size m</div>
   <div class="balloon" style="width:160px; top:75%; left:22%">Hash function h: k → 0 … m-1</div>
 </div>
->>>>>>> b5bdcfae8df3bcc96429c3b60cee44aba27c8696
 
 <!-- attr: { hasScriptWrapper:true, style:'' } -->
 # Hash Functions and Hashing
@@ -129,10 +97,10 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # The `Set<K,V>` Interface -->
+<!-- # The `Set<E>` Interface -->
 
 <!-- attr: { hasScriptWrapper:true } -->
-# The `Set<K,V>` Interface
+# The `Set<E>` Interface
 - A `Set` is a `Collection` that cannot contain duplicate elements
 - Implementations in Java
   -  `HashSet`, `TreeSet`, and `LinkedHashSet`
@@ -166,7 +134,6 @@
 
 <!-- attr: { hasScriptWrapper:true } -->
 # `HashSet<E>`
-<<<<<<< HEAD
 
 ```java
 Set<String> set = new HashSet<>();
@@ -177,24 +144,6 @@ Set<String> set = new HashSet<>();
 
     System.out.println(set); //[Mike, Jordan, Steven]
 ```
-
-
-
-=======
-```java
-Set<String> set = new HashSet<>();
-set.add("Jordan");
-set.add("Steven");
-set.add("Mike");
-set.add("Jordan");
-
-System.out.println(set); //[Mike, Jordan, Steven]
-System.out.println(set.contains("Jordan")); // true
-
-set.remove("Jordan");
-System.out.println(set.contains("Jordan")); // false
-```
->>>>>>> b5bdcfae8df3bcc96429c3b60cee44aba27c8696
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # `HashSet<E>` -->
