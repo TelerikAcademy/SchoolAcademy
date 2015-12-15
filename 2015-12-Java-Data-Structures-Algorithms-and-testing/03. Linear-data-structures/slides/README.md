@@ -323,7 +323,7 @@ public static void main(String[] args) {
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Stack<T> -->
+<!-- # Queue<T> -->
 ## [Demo]()
 
 
