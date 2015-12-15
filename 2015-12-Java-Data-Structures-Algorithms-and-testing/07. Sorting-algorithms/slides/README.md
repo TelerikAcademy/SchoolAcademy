@@ -111,7 +111,7 @@
 ```cs
 while swapIsDone
   swapIsDone = false
-  for i = 0 ... n - 1
+  for i = 1 ... n
     if a[i-1] > a[i]
       swap a[i] a[i-i]
       swapIsDone = true
