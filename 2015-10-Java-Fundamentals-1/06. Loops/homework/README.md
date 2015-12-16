@@ -31,13 +31,13 @@ _Example 1:_
 
 | input | output     |
 |-------|------------|
-| 3 <br> 2 <br> 5 <br> 1 | min = 1 <br> max = 5 <br> sum = 8 <br> avg = 2.67 |
+| 3 <br> 2 <br> 5 <br> 1 | min = 1 <br> max = 5 <br> sum = 11 <br> avg = 2.75 |
 
 _Example 2:_
 
 | input | output     |
 |-------|------------|
-| 2 <br> -1 <br> 4 | min = -1 <br> max = 4 <br> sum = 3 <br> avg = 1.50 |
+| 2 <br> -1 <br> 4 | min = -1 <br> max = 4 <br> sum = 5 <br> avg = 1.66 |
 
 
 ### Problem 4.	Print a Deck of 52 Cards
