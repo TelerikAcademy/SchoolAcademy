@@ -1,7 +1,7 @@
 ## Data Structures, Algorithms and Complexity
 ### _Homework_
 
-1. **What is the expected running time of the following C# code?**
+1. **What is the expected running time of the following Java code?**
   - Explain why using Markdown.
   - Assume the array's size is `n`.
 
@@ -20,7 +20,7 @@
   }
   ```
 
-2. **What is the expected running time of the following C# code?**
+2. **What is the expected running time of the following Java code?**
   - Explain why using Markdown.
   - Assume the input matrix has size of `n * m`.
 
@@ -36,7 +36,7 @@
   }
   ```
 
-3. **(*) What is the expected running time of the following C# code?**
+3. **(*) What is the expected running time of the following Java code?**
   - Explain why using Markdown.
   - Assume the input matrix has size of `n * m`.
 
