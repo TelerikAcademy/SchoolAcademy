@@ -167,7 +167,7 @@ _Note: The above output is just an example. Due to randomness, your program most
 ### Problem 13.	Binary to Decimal Number
 *	Using loops write a program that converts a binary integer number to its decimal form.
 *	The input is entered as string. The output should be a variable of type long.
-*	Do not use the built-in .NET functionality.
+*	Do not use the built-in functionality.
 
 _Examples:_
 
@@ -181,7 +181,7 @@ _Examples:_
 ### Problem 14.	Decimal to Binary Number
 *	Using loops write a program that converts an integer number to its binary representation.
 *	The input is entered as long. The output should be a variable of type string.
-*	Do not use the built-in .NET functionality.
+*	Do not use the built-in functionality.
 
 _Examples:_
 
@@ -195,7 +195,7 @@ _Examples:_
 ### Problem 15.	Hexadecimal to Decimal Number
 *	Using loops write a program that converts a hexadecimal integer number to its decimal form.
 *	The input is entered as string. The output should be a variable of type long.
-*	Do not use the built-in .NET functionality.
+*	Do not use the built-in functionality.
 
 _Examples:_
 
@@ -208,7 +208,7 @@ _Examples:_
 ### Problem 16.	Decimal to Hexadecimal Number
 *	Using loops write a program that converts an integer number to its hexadecimal representation.
 *	The input is entered as long. The output should be a variable of type string.
-*	Do not use the built-in .NET functionality.
+*	Do not use the built-in functionality.
 
 _Examples:_
 
