@@ -1,5 +1,5 @@
 ## Exceptions and Exception Handling in Java
-### [View Presentation online](https://rawgit.com/TelerikAcademy/SchoolAcademy/master/2015-12-Java-Data-Structures-Algorithms-and-testing/10.%20Exceptions/slides/index.html)
+### [View Presentation online](https://rawgit.com/TelerikAcademy/SchoolAcademy/master/2015-12-Java-Data-Structures-Algorithms-and-testing/10.%20Exceptoins/slides/index.html)
 ### Table of Contents
 - What are Exceptions?
 - Handling Exceptions
