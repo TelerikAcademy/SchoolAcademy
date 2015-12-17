@@ -37,7 +37,7 @@ _Example 2:_
 
 | input | output     |
 |-------|------------|
-| 2 <br> -1 <br> 4 | min = -1 <br> max = 4 <br> sum = 5 <br> avg = 1.66 |
+| 2 <br> -1 <br> 4 | min = -1 <br> max = 4 <br> sum = 5 <br> avg = 1.67 |
 
 
 ### Problem 4.	Print a Deck of 52 Cards
