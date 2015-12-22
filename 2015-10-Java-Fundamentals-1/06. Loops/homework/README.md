@@ -130,15 +130,17 @@ _Examples:_
 
 | numbers           | result |
 |-------------------|--------|
-| 2 1 1 6 3         | yes    |
-| product = 6       |        |
+| 2 1 1 6 3         | yes    |  
+| product = 6       |        |	    
 |                   |        |
-| 3 10 4 6 5 1      | yes    |
+| 3 10 4 6 5 1      | yes    |  
 | product = 60      |        |
 |                   |        |
 | 4 3 2 5 2         | no     |
 | odd_product = 16  |        |
 | even_product = 15 |        |
+
+_Note: The first two examples are not quite right._
 
 ### Problem 11.	Random Numbers in Given Range
 *	Write a program that enters `3` integers `n`, `min` and `max` (`min != max`) and prints `n` random numbers in the range `[min...max]`.
