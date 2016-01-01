@@ -140,8 +140,6 @@ _Examples:_
 | odd_product = 16  |        |
 | even_product = 15 |        |
 
-_Note: The first two examples are not quite right._
-
 ### Problem 11.	Random Numbers in Given Range
 *	Write a program that enters `3` integers `n`, `min` and `max` (`min != max`) and prints `n` random numbers in the range `[min...max]`.
 
