@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<title>JavaScript Demo</title>
+	<script type="text/javascript">
+		function calcSum() 
+		{
+			value1 = parseInt(document.mainForm.textBox1.value);
+			value2 = parseInt(document.mainForm.textBox2.value);
+			sum = value1 + value2;
+			document.mainForm.textBoxSum.value = sum;
+		}
+	</script>
+</head>
+
+<body>
+	<form name="mainForm" action="" method="get">
+		<input type="text" name="textBox1" /> <br/>
+		<input type="text" name="textBox2" /> <br/>
+		<input type="button" value="Calculate Sum" onClick="javascript: calcSum()" />
+		<br/>Sum = <input type="text" name="textBoxSum" readonly="readonly"/>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<title>JavaScript Functions - Demo</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		function sum() {
+			var sum = 0;
+			for (var i = 0; i < arguments.length; i ++){
+				sum += parseInt(arguments[i]);
+			}
+			return sum;
+		}
+		alert(sum(1, 2, 4));
+	</script>
+</body>
+
+</html>

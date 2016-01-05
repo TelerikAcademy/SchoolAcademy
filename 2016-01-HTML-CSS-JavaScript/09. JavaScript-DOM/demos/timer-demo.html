@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<title>JavaScript - Timer Demo</title>
+	<script type="text/javascript">
+		function timerFunc() {
+			var clockInputField = document.getElementById("clock");
+			var now = new Date();
+			var hour = now.getHours();
+			var min = now.getMinutes();
+			var sec = now.getSeconds();
+			var timeStr = "" + hour + ":" + min + ":" + sec;
+			clockInputField.value = timeStr;
+		}
+		
+		function startTimer() {
+			setInterval('timerFunc()', 1000);
+			timerFunc();
+		}
+	</script>
+	<style type="text/css">
+		body
+		{ 
+			background-color: #CCCCCC;
+			margin: 0;
+			padding: 0;
+		}
+		#clock {
+			border:3px solid red;
+			display:block;
+			font-family:Arial;
+			font-size:24pt;
+			font-weight:bold;
+			padding: 30px;
+			margin: 50px auto;
+			text-align:center;			
+		}
+	</style>
+</head>
+
+<body onload="startTimer()">
+	<input type="text" id="clock" readonly="readonly" />
+</body>
+
+</html>
