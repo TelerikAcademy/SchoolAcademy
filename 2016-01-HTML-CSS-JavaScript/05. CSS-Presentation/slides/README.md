@@ -21,7 +21,7 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
-# Text-related Properties
+<!-- # Text-related Properties -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -68,7 +68,7 @@ font-family: verdana;
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
-# More Fonts
+<!-- # More Fonts -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->

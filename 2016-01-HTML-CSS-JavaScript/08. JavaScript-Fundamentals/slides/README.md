@@ -23,8 +23,8 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# JavaScript
-##  Dynamic Behavior in a Web Page
+<!-- # JavaScript
+##  Dynamic Behavior in a Web Page -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -164,8 +164,7 @@ function printMessage(message) {
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-
-# The JavaScript Syntax
+<!-- The JavaScript Syntax -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->

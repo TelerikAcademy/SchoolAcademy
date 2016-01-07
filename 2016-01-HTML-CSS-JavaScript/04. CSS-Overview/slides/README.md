@@ -22,8 +22,8 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Cascading Style Sheets
-##  Separating Content from Presentation
+<!-- # Cascading Style Sheets
+##  Separating Content from Presentation -->
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size: 36px' } -->
 # CSS: A New Philosophy
@@ -39,8 +39,8 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# CSS Intro
-## Styling with Cascading Stylesheets
+<!-- # CSS Intro
+## Styling with Cascading Stylesheets -->
 
 <!-- attr: { showInPresentation:true, style:'font-size: 40px' } -->
 # CSS Introduction
@@ -98,8 +98,8 @@ h1,h2,h3 { color: green; font-weight: bold; }
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
-# Common Selectors
-##  Select the Elements to Apply a Style
+<!-- # Common Selectors
+##  Select the Elements to Apply a Style -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Selectors
@@ -192,8 +192,8 @@ p.post-text.special {font-weight: bold}
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Importing CSS Into HTML
-##  How to Use CSS with HTML?
+<!-- # Importing CSS Into HTML
+##  How to Use CSS with HTML? -->
 
 <!-- attr: { hasScriptWrapper: true, showInPresentation:true, style:'font-size: 40px' } -->
 # Importing CSS Into HTML
@@ -662,8 +662,8 @@ color: rgb (7, 242, 179)
 ## [Demo]()
 
 <!-- section start --> <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Default Browser Styles
-## Why Things Look Different on Different Browsers?
+<!-- # Default Browser Styles
+## Why Things Look Different on Different Browsers? -->
 
 <!-- attr: { hasScriptWrapper: true, showInPresentation:true, style:'font-size: 40px' } -->
 

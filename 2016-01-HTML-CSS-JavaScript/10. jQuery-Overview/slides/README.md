@@ -22,8 +22,8 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# What is jQuery?
-##  The world’s most popular JavaScript library
+<!-- # What is jQuery?
+##  The world’s most popular JavaScript library -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -72,7 +72,7 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Selectors and DOM Manipulation
+<!-- # Selectors and DOM Manipulation -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
 # Selectors
@@ -118,8 +118,8 @@ $("ul.menu li")
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# DOM Traversal
-##  Traversing the nodes of the DOM
+<!-- # DOM Traversal
+##  Traversing the nodes of the DOM -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
 # DOM Traversal
@@ -187,8 +187,8 @@ $node.parents("#wrapper")     .attr("id");
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Altering the DOM
-##  Adding and removing DOM elements
+<!-- # Altering the DOM
+##  Adding and removing DOM elements -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
 
@@ -249,7 +249,7 @@ $('p').remove();
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# jQuery Extended DOM Elements
+<!-- # jQuery Extended DOM Elements -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
 # jQuery Objects
@@ -281,8 +281,8 @@ var $content = $(content);
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# jQuery Events
-##  Cross-browser events
+<!-- # jQuery Events
+##  Cross-browser events -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
 # jQuery Events
@@ -319,8 +319,8 @@ $("ul").on("click", "li", onListItemClick);
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# jQuery Chaining
-##  Call after call, after call… Like an angry girlfriend
+<!-- # jQuery Chaining
+##  Call after call, after call… Like an angry girlfriend -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
 # jQuery Chaining

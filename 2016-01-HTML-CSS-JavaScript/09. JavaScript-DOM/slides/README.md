@@ -19,7 +19,7 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Document Object Model (DOM)
+<!-- # Document Object Model (DOM) -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -129,7 +129,7 @@ alert (el.childNodes[1].
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# The HTML DOM Event Model
+<!-- # The HTML DOM Event Model -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->

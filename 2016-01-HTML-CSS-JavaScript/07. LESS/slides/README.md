@@ -22,8 +22,8 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# LESS Overview
-##  What is LESS?
+<!-- # LESS Overview
+##  What is LESS? -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -40,8 +40,8 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Working with LESS
-##  Client and Server Side
+<!-- # Working with LESS
+##  Client and Server Side -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 36px' } -->
 # Using LESS on the Client
@@ -96,8 +96,8 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# LESS Features
-##  Selector Nesting, Mixins, Variables, etc…
+// # LESS Features
+// ##  Selector Nesting, Mixins, Variables, etc…
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 34px' } -->

@@ -25,8 +25,8 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# WWW and URL
-##  What is WWW? What is URL?
+<!-- # WWW and URL
+##  What is WWW? What is URL? -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -131,8 +131,8 @@ http://www.google.bg/search?&q=бира
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# The HTTP Protocol
-## How HTTP Works?
+<!-- # The HTTP Protocol
+## How HTTP Works? -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -378,8 +378,8 @@ Location: http://www.telerik.com/academy/
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# AJAX
-##  Asynchronous JavaScript and XML
+<!-- # AJAX
+##  Asynchronous JavaScript and XML -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -413,8 +413,8 @@ Location: http://www.telerik.com/academy/
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# jQuery AJAX
-##  The easier way of doing AJAX
+<!-- # jQuery AJAX
+##  The easier way of doing AJAX -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->

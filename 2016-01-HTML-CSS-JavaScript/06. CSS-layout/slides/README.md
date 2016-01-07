@@ -23,7 +23,7 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# A
+<!-- # A -->
 <img class="slide-image" src="imgs/width-height.png" style="width:80%; top:10%; left:10%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -85,7 +85,7 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Display
+<!-- # Display -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -133,7 +133,7 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Margins and Paddings
+<!-- # Margins and Paddings -->
 
 <img class="slide-image" src="imgs/margins.png" style="width:80%; top:40%; left:10%" />
 
@@ -166,7 +166,7 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Box Model
+<!-- # Box Model -->
 <img class="slide-image" src="imgs/box-model.png" style="width:65%; top:40%; left:18%" />
 
 
@@ -207,7 +207,7 @@ box-sizing: border-box;
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Positioning
+<!-- # Positioning -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
@@ -256,7 +256,7 @@ box-sizing: border-box;
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Floating
+<!-- # Floating -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
 # Float
