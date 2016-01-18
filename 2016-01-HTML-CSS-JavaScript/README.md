@@ -2,28 +2,29 @@
 ## January 2016
 ##  Course Program
 
-### Date to be added...
+### 20 January 2016
 
-| №  | Topic                 | Duration | Trainer |
+| #  | Topic                 | Duration | Trainer |
 |:---|:----------------------|:---------|:--------|
-| 00 | HTML Fundamentals     | ...h     | ....... |
-| 01 | HTML Forms and Frames | ...h     | ....... |
-| 02 | CSS Overview          | ...h     | ....... |
-| 03 | CSS Presentation      | ...h     | ....... |
-| 04 | CSS Layout            | ...h     | ....... |
-| 05 | LESS                  | ...h     | ......  |
+| 01 | HTML Fundamentals     | 1h       | Marto   |
+| 02 | HTML Forms and Frames | 1.5h     | Marto   |
+| 03 | CSS Overview          | 1.5h     | Doncho  |
+| 00 | IT test               | 2h       | Cuki    |
 
-### Date to be added...
+### 21 January 2016
 
-| №  | Topic                   | Duration | Trainer |
+| #  | Topic                   | Duration | Trainer |
 |:---|:------------------------|:---------|:--------|
-| 00 | JavaScript Fundamentals | ...h     | ....... |
-| 01 | JavaScript DOM          | ...h     | ....... |
+| 04 | CSS Layout              | 1.5h     | Evlogi  |
+| 05 | CSS Presentation        | 1.5h     | Evlogi  |
+| 06 | LESS                    | 1h       | Marto   |
+| 07 | JavaScript Fundamentals | 2h       | Evlogi  |
 
+### 22 January 2016
 
-### Date to be added...
-
-| №  | Topic            | Duration | Trainer |
+| #  | Topic            | Duration | Trainer |
 |:---|:-----------------|:---------|:--------|
-| 00 | jQuery Overview  | ...h     | ....... |
-| 01 | AJAX with jQuery | ...h     | ....... |
+| 08 | JavaScript DOM   | 2h       | Marto   |
+| 09 | jQuery Overview  | 2h       | Evlogi  |
+| 10 | AJAX with jQuery | 1h       | Evlogi  |
+
