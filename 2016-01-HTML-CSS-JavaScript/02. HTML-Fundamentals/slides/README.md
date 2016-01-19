@@ -111,7 +111,7 @@
 </html>
 ```
 <div class="balloon fragment" style="position: absolute; top: 63%; left: 23%; opacity: 0.7;">Opening tag</div>
-<div class="balloon fragment" style="position: absolute; top: 77%; left: 24%; opacity: 0.7;">Ivan tag</div>
+<div class="balloon fragment" style="position: absolute; top: 77%; left: 24%; opacity: 0.7;">Closing tag</div>
 
 <!-- attr: { hasScriptWrapper: true, style: 'font-size: 40px'} -->
 
@@ -548,14 +548,14 @@ This one is <strong>more emphasized.</strong>
 <!-- attr: {hasScriptWrapper: true, style: 'font-size: 40px'} -->
 
 # Course Web Site & Forums
--	Register for the [Telerik Academy Forums](http://http://telerikacademy.com/Forum/Category/64/windows-mobile-apps)
+-	Register for the [Telerik Academy Forums](http://telerikacademy.com/Forum/Category/12/telerik-school-academy)
 	-	Discuss the course exercises with your colleagues
 	-	Find solutions for the exercises
 	-	Share source code / discuss ideas
--	The course official [web site](http://telerikacademy.com/Courses/Courses/Details/300)
+-	The course official [web site](http://telerikacademy.com/Courses/Courses/Details/309)
 -	More resources:
-  - [Course materials](https://github.com/TelerikAcademy/Windows-Applications)
-  - [Youtube Channel](https://www.youtube.com/playlist?list=PLF4lVL1sPDSnpR5Qc128e1oyqOLprk52A)
+  - [Course materials](https://github.com/TelerikAcademy/SchoolAcademy/tree/master/2016-01-HTML-CSS-JavaScript)
+  - [Youtube Channel]()
   </br>
 <a href="http://www.telerikacademy.com" target="\_blank"><img src="imgs/telerik-academy-logo.png" /></a>
 
@@ -567,7 +567,7 @@ This one is <strong>more emphasized.</strong>
   -  Homework peer reviews
   - Presence cards with barcode
   - Reports about your results
-- [Course site](http://telerikacademy.com/Courses/Courses/Details/300)
+- [Course site](http://telerikacademy.com/Courses/Courses/Details/309)
 </br>
 <a href="http://www.telerikacademy.com" target="\_blank"><img src="imgs/telerik-academy-logo.png" /></a>
 <!-- section start  -->
