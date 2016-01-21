@@ -104,7 +104,6 @@ font-family: verdana;
 ```
 
 
-
 <<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 40px' } -->
 # Text Overflow
 - Specifies what should happen when text overflows the containing element
@@ -159,7 +158,7 @@ font-family: verdana;
 border: 1px solid red
 ```
 
-- 	is equal to writing:
+- Is equal to writing:
 
 ```
 border-width:1px;
@@ -198,7 +197,12 @@ border: 8px solid #000;
 - Allows to easily implement multiple drop shadows (outer or inner) on box elements
 - Specifying values for color, size, blur and offset
 - Example:
-- -moz-box-shadow: 10px 10px 5px #888;-webkit-box-shadow: 10px 10px 5px #888;box-shadow: 10px 10px 5px #888;
+
+```
+-moz-box-shadow: 10px 10px 5px #888;
+-webkit-box-shadow: 10px 10px 5px #888;
+box-shadow: 10px 10px 5px #888;
+```
 
 <div class="fragment"><img class="slide-image" src="imgs/box-shadow.png" style="width:70%; top:58%; left:15%" /></div>
 
