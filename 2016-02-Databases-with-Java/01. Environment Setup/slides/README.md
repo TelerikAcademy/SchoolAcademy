@@ -91,6 +91,9 @@
 <!-- # SQL Developer Tool -->
 <img class="slide-image" src="imgs/sql-developer-new-connection.png" style="width:70%; top:20%; left:10%" />
 
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # SQL Developer -->
+## [Demo]()
 
 <!-- # Errors
 - Fix Listener
