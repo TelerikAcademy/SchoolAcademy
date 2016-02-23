@@ -1,0 +1,39 @@
+USE world;
+SELECT * FROM city LIMIT 100, 10;
+
+---------------------------------------------------------------------
+
+SHOW DATABASES;
+
+---------------------------------------------------------------------
+
+USE world;
+
+---------------------------------------------------------------------
+
+SHOW TABLES;
+
+---------------------------------------------------------------------
+
+CHECK TABLE city;
+
+REPAIR TABLE city;
+
+OPTIMIZE TABLE city;
+
+---------------------------------------------------------------------
+
+DESCRIBE city;
+
+---------------------------------------------------------------------
+
+REPLACE INTO City(ID, Name, CountryCode, District, Population)
+VALUES(100000, 'Kaspichan', 'BG', 'Shoumen', 3300);
+
+SELECT * FROM City WHERE CountryCode = 'BG';
+
+REPLACE INTO City(ID, Name, CountryCode, District, Population)
+VALUES(100000, 'Kaspichan', 'BG', 'Shoumen', 3300);
+
+---------------------------------------------------------------------
+
