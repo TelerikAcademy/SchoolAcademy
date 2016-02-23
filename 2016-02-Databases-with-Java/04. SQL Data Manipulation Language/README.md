@@ -1,5 +1,5 @@
-## 07. Structured Query Language (SQL)
-### [View Presentation online](https://rawgit.com/TelerikAcademy/Databases/master/07.%20Intro%20to%20SQL/Slides/index.html)
+## Structured Query Language (SQL)
+### [View Presentation online](https://rawgit.com/TelerikAcademy/SchoolAcademy/master/2016-02-Databases-with-Java/04.%20SQL%20Data%20Manipulation%20Language/slides/index.html)
 ### Table of Contents
 *	Relational Databases and SQL - [go to slide](https://rawgit.com/TelerikAcademy/Databases/master/07.%20Intro%20to%20SQL/Slides/index.html#/sql)
 *	SQL and T-SQL Languages - [go to slide](https://rawgit.com/TelerikAcademy/Databases/master/07.%20Intro%20to%20SQL/Slides/index.html#/sql-introduction)

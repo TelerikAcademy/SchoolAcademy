@@ -1,5 +1,5 @@
 ## Database Modeling
-### [View Presentation online](https://rawgit.com/TelerikAcademy/SchoolAcademy/tree/master/2016-02-Databases-with-Java/03.%20Database%20Modeling/slides/index.html)
+### [View Presentation online](https://rawgit.com/TelerikAcademy/SchoolAcademy/master/2016-02-Databases-with-Java/03.%20Database%20Modeling/slides/index.html)
 ### Table of Contents
 *   Data Modeling – Principles - [go to slide](https://rawgit.com/TelerikAcademy/Databases/master/06.%20Database%20Modeling/Slides/index.html#/data-modelling)
 *	Data Types in SQL Server - [go to slide](https://rawgit.com/TelerikAcademy/Databases/master/06.%20Database%20Modeling/Slides/index.html#/data-types)

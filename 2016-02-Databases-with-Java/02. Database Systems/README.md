@@ -1,4 +1,4 @@
-## 02. Database Systems
+## Database Systems
 ### [View Presentation online](https://rawgit.com/TelerikAcademy/SchoolAcademy/master/2016-02-Databases-with-Java/02.%20Database%20Systems/slides/index.html)
 ### Table of Contents
 *	DBMS & RDBMS Systems - [go to slide](https://rawgit.com/TelerikAcademy/Databases/master/04.%20Database%20Systems%20-%20Overview/Slides/index.html#/rdbms-systems)
