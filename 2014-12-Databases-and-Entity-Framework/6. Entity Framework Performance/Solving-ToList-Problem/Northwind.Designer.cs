@@ -1,4 +1,0 @@
-﻿// Default code generation is disabled for model 'C:\NAKOV\Databases\2013\9. Entity Framework Performance\Entity-Framework-Performance-Demos\Solving-ToList-Problem\Northwind.edmx'. 
-// To enable default code generation, change the value of the 'Code Generation Strategy' designer
-// property to an alternate value. This property is available in the Properties Window when the model is
-// open in the designer.
