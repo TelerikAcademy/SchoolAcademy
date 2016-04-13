@@ -27,6 +27,8 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("junit:junit")
+    
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
 }
 
 task wrapper(type: Wrapper) {
