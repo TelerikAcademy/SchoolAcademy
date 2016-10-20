@@ -23,6 +23,7 @@
   - Lots of **homework**
   - Final project to win a **certificate**
 
+<!-- attr: {style: "font-size: 0.9em"} -->
 # We Train Concepts!
 
 - We **train concepts**, not just technologies
@@ -67,7 +68,7 @@
   </div>
 </div>
 
-<!-- attr: {hasScriptWrapper: true, style: "font-size: 0.85em"} -->
+<!-- attr: {hasScriptWrapper: true, style: "font-size: 0.75em"} -->
 # Telerik School Academy <br/> Season 2016/2017
 
 - The topic of Telerik School Academy this year is <br/> **Web and Mobile development with TypeScript**
@@ -94,6 +95,7 @@
   - Ability to read technical documentation is good enough
 - **Serious attitude** and **high motivation**!
 
+<!-- attr: {style: 'font-size: 0.9em'} -->
 # Live and Online Participation
 
 - **Live participation**
@@ -128,24 +130,24 @@
 # About Telerik Academy
 
 <div style="text-align: center">
-  <strong style="display: inline-block; width: 33%;font-size: 0.7em; text-align: center; border: 1px solid white; margin-bottom: 50px; padding: 15px; position: relative; background-color: white; border-radius: 5px;color: black; text-shadow: none">
+  <strong style="display: inline-block; width: 33%;font-size: 0.7em; text-align: center; border: 1px solid white; margin-bottom: 35px; padding: 15px; position: relative; background-color: white; border-radius: 5px;color: black; text-shadow: none">
     <a href="#" style="color: black;">Dojo@TelerikAcademy</a>
     <span style="display: block; padding: 5px; border-radius: 5px;position: absolute; bottom: -15px; right: -15px; font-size: 0.55em; background-color: white; color: black; text-shadow: none; border: 1px solid black;">1-3 grade</span>
   </strong>
 </div>
 
 <div style="text-align: center">
-<strong style="display: inline-block; width: 33%;font-size: 0.7em; text-align: center; border: 1px solid white; margin-bottom: 50px; padding: 15px; position: relative; background-color: white; border-radius: 5px;color: black; text-shadow: none">
+<strong style="display: inline-block; width: 33%;font-size: 0.7em; text-align: center; border: 1px solid white; margin-bottom: 35px; padding: 15px; position: relative; background-color: white; border-radius: 5px;color: black; text-shadow: none">
   <a href="#" style="color: black;">Telerik Kids Academy</a>
     <span style="display: block; padding: 5px; border-radius: 5px;position: absolute; bottom: -15px; right: -15px; font-size: 0.55em; background-color: white; color: black; text-shadow: none;border: 1px solid black">4-6 grade</span>
   </strong>
 </div>
 
 <div style="text-align: center">
-  <strong style="display: inline-block; width: 33%;font-size: 0.7em; text-align: center; border: 1px solid white; margin-bottom: 50px; padding: 15px; background-color: white; border-radius: 5px; border: 1px solid black; text-shadow: none; color: black;">
+  <strong style="display: inline-block; width: 33%;font-size: 0.7em; text-align: center; border: 1px solid white; margin-bottom: 35px; padding: 15px; background-color: white; border-radius: 5px; border: 1px solid black; text-shadow: none; color: black;">
     <a href="#" style="color: black;">Telerik Digital Academy</a>
   </strong>
-  <strong style="display: inline-block; width: 33%;font-size: 0.7em; text-align: center; border: 1px solid white; margin-bottom: 50px; padding: 15px; position: relative; background-color: white; border-radius: 5px; border: 1px solid black; text-shadow: none; color: black;">
+  <strong style="display: inline-block; width: 33%;font-size: 0.7em; text-align: center; border: 1px solid white; margin-bottom: 35px; padding: 15px; position: relative; background-color: white; border-radius: 5px; border: 1px solid black; text-shadow: none; color: black;">
     <a href="#" style="color: black;">Telerik School Academy</a>
     <span style="display: block; padding: 5px; border-radius: 5px;position: absolute; bottom: -15px; right: -15px; font-size: 0.55em; background-color: white; color: black; text-shadow: none;border: 1px solid black">7-12 grade</span>
   </strong>
