@@ -28,7 +28,6 @@
 
 - We **train concepts**, not just technologies
     - Experienced developers know that **language and platform does not matter**
-      - You are either good developer or lamer
 - The topics cover **Object-oriented programming**, **databases**, **software engineering**, **web applications**, **mobile applications**, etc...
   - TypeScript, C#, .NET, JavaScript, HTML, are good to illustrate these concepts in practice
 - Once you become a software engineer, you can easily switch between platforms
@@ -100,10 +99,10 @@
 
 - **Live participation**
   - Attend at least `5` out of `7` meetings
-  - Submit most of the homework assignments
+  - Submit `50%`of all homework assignments
 - **Online participation**
   - Attend less than `5` meetings
-  - Submit `90%` of all homework assignments
+  - Submit at least `90%` of all homework assignments
 - All students are involved in the peer evaluation of the assignments
   - After each homework deadline, you evaluate `3` random homeworks of other students
 
