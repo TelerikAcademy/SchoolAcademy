@@ -1,6 +1,6 @@
 # School Academy Project Requirements
 
-1. [Mobile Application](./MOBILE_APP_REQUIREMENTS.md)
+1. [Mobile Application](./MOBILE_APP_REQUREMENTS.md)
 2. [Single-page application](./SPA_APP_REQUIREMENTS.md)
 3. [Standart web application](./WEB_APP_REQUIREMENTS.md)
 
