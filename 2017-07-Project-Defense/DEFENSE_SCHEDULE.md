@@ -1,0 +1,29 @@
+# Schedule for Project Defense, Telerik School Academy, 2016/2017
+
+| Username            | Time  |
+| ------------------- | ----- | 
+| boryanavalkova      | 11:00 |
+| Iveta_Makedonska    | 11:15 |
+| ihristova11         | 11:30 |
+| Loretta             | 11:45 |
+| Hrisooo             | 12:00 |
+| pepm99              | 12:15 |
+| GabrielAtan         | 12:30 |
+| Invisible           | 13:15 |
+| vladimir.mutafov    | 13:30 |
+| Hristo99atanasov	  | 13:45 |
+| KristinaVid         | 14:00 |
+| mitakapopow         | 14:15 |
+| Georgi_Nedkov       | 14:30 |
+| Catts               | 14:45 |
+| kaloynstoynov	      | 15:30 |
+| Rostislav_Dimitrov  | 15:45 |
+| Ivan_Filipov	      | 16:00 |
+| Bobi_Georgiev	      | 16:15 |
+| Xflyer              | 16:30 |
+| Momchil_Borisov     | 17:15 |
+| stoyanK             | 17:30 |
+| plamen.andonov.1238 | 17:45 |
+| Telerik_Arsov	      | 18:00 |
+| deni15243           | 18:15 |
+
