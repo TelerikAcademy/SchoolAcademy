@@ -7,7 +7,7 @@
 | ihristova11         | 11:30 |
 | Loretta             | 11:45 |
 | Hrisooo             | 12:00 |
-| pepm99              | 12:15 |
+| nikolaypk           | 12:15 |
 | GabrielAtan         | 12:30 |
 | Invisible           | 13:15 |
 | vladimir.mutafov    | 13:30 |
@@ -26,4 +26,5 @@
 | plamen.andonov.1238 | 17:45 |
 | Telerik_Arsov	      | 18:00 |
 | deni15243           | 18:15 |
+| Lazar_Angelov       | 18:15 |
 
