@@ -2,6 +2,8 @@
 
 | Username            | Time  |
 | ------------------- | ----- | 
+| d.georgiev99        | 10:30 |
+| rado21              | 10:45 |
 | boryanavalkova      | 11:00 |
 | Iveta_Makedonska    | 11:15 |
 | ihristova11         | 11:30 |
@@ -26,5 +28,5 @@
 | plamen.andonov.1238 | 17:45 |
 | Telerik_Arsov	      | 18:00 |
 | deni15243           | 18:15 |
-| Lazar_Angelov       | 18:15 |
-
+| Lazar_Angelov       | 18:30 |
+| Hunterkillerdd      | 18:45 |
